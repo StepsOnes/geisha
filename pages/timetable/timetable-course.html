@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание курса «Школа жен-подруг и любовниц»</title>
+    <link rel="shortcut icon" href="../../favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../fonts/stylesheet.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <div class="nav-group">
+        <a href="../home.html" class="header-logo">
+            <img src="../../images/header/Logo_Geisha.svg" alt="Geisha">
+        </a>
+
+        <div class="header-pages">
+            <ul class="nav-list">
+                <li><a href="../../pages/template-courses.html" class="nav-item item--deep">Курсы</a></li>
+                <li><a href="../../pages/consultations.html" class="nav-item item--deep">Консультации</a></li>
+                <li><a href="../../pages/timetable/timetable-main.html" class="nav-item">Расписание</a></li>
+                <li>
+
+                    <a id="navItemAbout" class="nav-item">О центре <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_gray.svg" alt="arrow"></a>
+
+                    <div id="dropdown-item" class="dropdown-item none">
+                        <ul class="dropdown-list">
+                            <li><a href="../../pages/contacts.html" class="dropdown-link">Контакты</a></li>
+                            <li><a href="../../pages/about-us.html" class="dropdown-link">О центре</a></li>
+                            <li><a href="../../pages/articles/articles-main.html" class="dropdown-link">Статьи</a></li>
+                            <li><a href="../../pages/master-class.html" class="dropdown-link">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="header-contacts">
+
+            <div class="search__block" id="search__block">
+                <input type="text" name="" id="search__inp" class="search__inp" placeholder="Найти...">
+
+                <button id="open-search" class="header-serch"></button>
+            </div>
+            
+            
+            <a target = "_blank" href="https://yandex.ru/maps/54/yekaterinburg/?ll=60.576910%2C56.841514&mode=poi&poi%5Bpoint%5D=60.575870%2C56.841715&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1592532139&z=17.74" class="header-icon header_icon--map"></a>
+            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+
+            <button id="contacts-btn" class="contacts-btn">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+            <div class="contacts-btn__block">
+
+            <div class="contacts-dropdown-form contacts-dropdown-form__header none">
+                <form action=""></form>
+                <input id="phone" class="dropdown-form__inp" type="tel" name="" placeholder="Ваш номер телефона">
+                <input id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+            </div>
+
+            <div class="js__box"></div>
+
+            <div id="contacts-dropdown__box" class="contacts-dropdown__box contacts-dropdown__box__header none">
+               <img src="../../images/header/ring_volume.svg" alt=""> Вскоре мы вам перезвоним
+            </div>
+
+            </div>
+
+        </div>
+        </nav>
+
+        <div class="header-content header-content__timetable">
+            <div class="container">
+                    <div class="header-content__timetable__row">
+                        <div class="header-content__timetable__main">
+                            <h1 class="header__content_title header-content__timetable__course__title">
+                                Расписание курса «Школа жен-подруг и любовниц»
+                            </h1>
+
+                            <p class="header__content_subtitle  header-content__timetable__subtitle">
+                                Перед каждым посещением необходимо записываться
+                            </p>
+
+                            <p class="header__content__timetable__about">
+                                Звони, пиши — мы запишем на удобное время и подскажем какие занятия вам осталось пройти
+                            </p>
+
+                            <div class="contacts-block__btns">
+                                <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                                <button class="contacts-btn">+7 950 638 8922 <img src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                            </div>
+                        </div>
+
+                        <div class="header-content__timetable__img">
+                            <img src="../../images/timetable/course_img/07.png" alt="">
+                        </div>
+                </div>
+            </div>   
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="selected-buttons__temlates">
+            <div class="container">
+                <div class="selected-buttons__temlates-row">
+                    <button data-timetable-id="f1" class="templates-selected__button timetable__selected__button select-btn">Программа курса</button>
+                    <button data-timetable-id="f2" class="templates-selected__button timetable__selected__button">Ближайшие занятия</button>
+                </div>
+            </div>
+        </div>  
+
+        <div id="f1" class="timetable__course-program timetable__calendar">
+            <div class="container">
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #1 Консультация с метафорическими картами
+                        </h2>
+
+                        <div class="timetable__course-program__card__btns">
+                            <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                            <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="timetable__date-box">
+                        <a href="#" class="timetable__date-item">СР 28 января, 16:00</a>
+                        <a href="#" class="timetable__date-item">ПН 4 февраля, 14:00</a>
+                        <a href="#" class="timetable__date-item">ПТ 8 февраля, 13:00</a>
+                    </div>
+                </div>
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #2 Понимание мужчины. Развитие внимания и воображения. Вторая ступень
+                        </h2>
+
+                        <div class="timetable__course-program__card__btns">
+                            <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                            <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="timetable__date-box">
+                        <a href="#" class="timetable__date-item">ВТ 28 января, 16:00</a>
+                        <a href="#" class="timetable__date-item">ПТ 4 февраля, 14:00</a>
+                    </div>
+                </div>
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #3 Название урока
+                        </h2>
+
+                        <div class="contacts-block__btns">
+                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <button class="contacts-btn">+7 950 638 8922 <img src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                        </div>
+                    </div>
+
+                    <div class="timetable__none-date">
+                        <p class="timetable__none-date__text">Урока нет в расписании? Позвони или напиши что бы назначить дату</p>
+                        <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                    </div>
+                </div>
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #4 Название урока
+                        </h2>
+
+                        <div class="timetable__course-program__card__btns">
+                            <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                            <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="timetable__date-box">
+                        <a href="#" class="timetable__date-item">ВТ 28 января, 16:00</a>
+                        <a href="#" class="timetable__date-item">ПТ 4 февраля, 14:00</a>
+                        <a href="#" class="timetable__date-item">ПТ 8 февраля, 13:00</a>
+                    </div>
+                </div>
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #5 Название урока
+                        </h2>
+
+                        <div class="timetable__course-program__card__btns">
+                            <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                            <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="timetable__date-box">
+                        <a href="#" class="timetable__date-item">ВТ 28 января, 16:00</a>
+                    </div>
+                </div>
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #6 Название урока
+                        </h2>
+
+                        <div class="timetable__course-program__card__btns">
+                            <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                            <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="timetable__date-box">
+                        <a href="#" class="timetable__date-item">ВТ 28 января, 16:00</a>
+                        <a href="#" class="timetable__date-item">ПТ 4 февраля, 14:00</a>
+                    </div>
+                </div>
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #7 Название урока
+                        </h2>
+
+                        <div class="timetable__course-program__card__btns">
+                            <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                            <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="timetable__date-box">
+                        <a href="#" class="timetable__date-item">ВТ 28 января, 16:00</a>
+                        <a href="#" class="timetable__date-item">ПТ 4 февраля, 14:00</a>
+                    </div>
+                </div>
+
+                <div class="timetable__course-program__card">
+                    <div class="timetable__course-program__card__row">
+                        <h2 class="timetable__course-program__card__row__title">
+                            #8 Название урока
+                        </h2>
+
+                        <div class="timetable__course-program__card__btns">
+                            <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                            <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                        </div>
+                    </div>
+
+                    <div class="timetable__date-box">
+                        <a href="#" class="timetable__date-item">ВТ 28 января, 16:00</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="f2" class="timetable__upcoming-classes timetable__calendar none">
+            <div class="container">
+
+                <div class="timetable-upcoming-classes__block">
+                    <div class="timetable-upcoming-classes__block-date">
+                        <h2 class="main__title">Вторник, 28 января</h2>
+                    </div>
+
+                    <div class="timetable-upcoming-classes__block__cards">
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #1 Название урока номер один
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #2 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #3 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Консультация
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #4 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Консультация
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #4 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Консультация
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timetable-upcoming-classes__block">
+                    <div class="timetable-upcoming-classes__block-date">
+                        <h2 class="main__title">Среда, <br> 29 января</h2>
+                    </div>
+
+                    <div class="timetable-upcoming-classes__block__cards">
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #3 Название урока номер три
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #1 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #9 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Консультация
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="timetable-upcoming-classes__block">
+                    <div class="timetable-upcoming-classes__block-date">
+                        <h2 class="main__title">Четверг, 29 января</h2>
+                    </div>
+
+                    <div class="timetable-upcoming-classes__block__cards">
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #10 Название уроканомер три
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #6 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="timetable-upcoming-classes__block">
+                    <div class="timetable-upcoming-classes__block-date">
+                        <h2 class="main__title">Среда, <br> 29 января</h2>
+                    </div>
+
+                    <div class="timetable-upcoming-classes__block__cards">
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #3 Название урока номер три
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #1 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Школа жён-подруг и любовниц
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timetable-upcoming-classes__block__card">
+
+                            <div class="timetable-upcoming-classes__block__card__row">
+                                <h2 class="timetable-upcoming-classes__block__card__title">
+                                    #9 Название урока
+                                </h2>
+
+                                <div class="timetable__course-program__card__btns">
+                                    <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                    <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                                </div>
+                            </div>
+
+                            <div class="timetable-upcoming-classes__block__card__about">
+                                <a href="#" class="course-date__link">
+                                     16:00
+                                </a>
+
+                                <div class="timetable-upcoming-classes__block__card__about__box">
+                                    Консультация
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="help-about">
+            <div class="container">
+                <div class="help-about__row">
+                    <div class="help-about__row__img">
+                        <img src="../../images/main/home__main/course_img/04.png" alt="">
+                    </div>
+
+                    <div class="help-about__row__content">
+                        <h2 class="main__title main-title__help-about">
+                            Поможем с расписанием
+                        </h2>
+
+                        <p class="help-about__subtitle timetable__help-about__subtitle">
+                            Звони, пиши — мы запишем на удобное время и подскажем какие занятия вам осталось пройти
+                        </p>
+
+                        <div class="contacts-block__btns help-about-block__btns">
+                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <button class="contacts-btn">+7 950 638 8922 <img src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="container footer-row">
+
+            <div class="footer__contacts">
+                <div class="footer__contact__box">
+                    <div class="footer__contact__box-img">
+                        <img src="../../images/main/home__main/icons/Icon_Consultations1.svg" alt="">
+                    </div>
+
+                    <h4 class="footer-contact-box__title">
+                        Свяжись с нами
+                    </h4>
+
+                    <p class="footer-contact-box__subtitle">
+                        Проконсультируем, ответим на ваши вопросы, поможем в решении проблемы
+                    </p>
+
+                    <div class="header-contacts">
+                        <button class="contacts-btn">+7 950 638 8922 <img src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                        <a href="#" class="contacts-btn">Написать</a>
+                    </div>
+                </div>
+
+                <a href="#" class="footer-map__link">
+                    г. Екатеринбург, ул. Хомякова, д. 16
+                </a>
+            </div>
+
+            <div class="footer__content">
+
+            <div class="footer-nav">
+                <ul class="footer-nav__list">
+                    <li><a href="#" class="footer-nav-list__item--deep">Курсы</a></li>
+                    <li><a href="#" class="footer-nav-list__item--deep">Видео-курсы</a></li>
+                    <li><a href="#" class="footer-nav-list__item--deep">Консультации</a></li>
+                    <li><a href="#" class="footer-nav-list__item--deep">Расписание</a></li>
+                </ul>
+
+                <ul class="footer-nav__list">
+                    <li><a href="#" class="footer-nav-list__item">Контакты</a></li>
+                    <li><a href="#" class="footer-nav-list__item">О центре</a></li>
+                    <li><a href="#" class="footer-nav-list__item">Статьи</a></li>
+                    <li><a href="#" class="footer-nav-list__item">Мастер-классы</a></li>
+                </ul>
+
+                <div class="company__info">
+                    <a href="/">Geisha</a>
+                    <p>с 2005-2022</p>
+                </div>
+            </div>
+
+            <h3 class="footer__subtitle">
+                Мы в социальных сетях:
+            </h3>
+
+            <p class="footer__text">
+                Психологические советы, техники и идеи. Cкидки и открытые мастер-классы. Подписывайся!
+            </p>
+
+            <div class="social__networks">
+
+                <a href="#" class="social__network-link">
+                    <div class="icon_social">
+                        <img src="../../images/footer/instagram_icon.svg" alt="">
+                    </div>
+                    Instagram
+                </a>
+
+                <a href="#" class="social__network-link">
+                    <div class="icon_social">
+                        <img src="../../images/footer/vk_icon.svg" alt="">
+                    </div>
+                    Вконтакте
+                </a>
+            </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <a href="#" class="whatsup-fixed"></a>
+
+    <script src="../../js/header-scripts.js"></script>
+    <script src="../../js/filter-script.js"></script>
+</body>
+</html>

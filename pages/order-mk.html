@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформление заказа</title>
+    <link rel="shortcut icon" href="../favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../fonts/stylesheet.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="header-nav">
+            <div class="nav-group">
+        <a href="../pages/home.html" class="header-logo">
+            <img src="../images/header/Logo_Geisha.svg" alt="Geisha">
+        </a>
+
+        <div class="header-pages">
+            <ul class="nav-list">
+                <li><a href="../pages/template-courses.html" class="nav-item item--deep">Курсы</a></li>
+                <li><a href="../pages/consultations.html" class="nav-item item--deep">Консультации</a></li>
+                <li><a href="../pages/timetable/timetable-main.html" class="nav-item">Расписание</a></li>
+                <li>
+
+                    <a id="navItemAbout" class="nav-item">О центре <img class="dropdown-arrow" src="../images/header/keyboard_arrow_gray.svg" alt="arrow"></a>
+
+                    <div id="dropdown-item" class="dropdown-item none">
+                        <ul class="dropdown-list">
+                            <li><a href="../pages/contacts.html" class="dropdown-link">Контакты</a></li>
+                            <li><a href="../pages/about-us.html" class="dropdown-link">О центре</a></li>
+                            <li><a href="../pages/articles/articles-main.html" class="dropdown-link">Статьи</a></li>
+                            <li><a href="../pages/master-class.html" class="dropdown-link">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="header-contacts">
+
+            <div class="search__block" id="search__block">
+                <input type="text" name="" id="search__inp" class="search__inp" placeholder="Найти...">
+
+                <button id="open-search" class="header-serch"></button>
+            </div>
+            
+            
+            <a target = "_blank" href="https://yandex.ru/maps/54/yekaterinburg/?ll=60.576910%2C56.841514&mode=poi&poi%5Bpoint%5D=60.575870%2C56.841715&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1592532139&z=17.74" class="header-icon header_icon--map"></a>
+            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+
+            <button id="contacts-btn" class="contacts-btn">+7 950 638 8922 <img class="dropdown-arrow" src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+            <div class="contacts-btn__block">
+
+            <div class="contacts-dropdown-form contacts-dropdown-form__header none">
+                <form action=""></form>
+                <input id="phone" class="dropdown-form__inp" type="tel" name="" placeholder="Ваш номер телефона">
+                <input id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+            </div>
+
+            <div class="js__box"></div>
+
+            <div id="contacts-dropdown__box" class="contacts-dropdown__box contacts-dropdown__box__header none">
+               <img src="../images/header/ring_volume.svg" alt=""> Вскоре мы вам перезвоним
+            </div>
+
+            </div>
+
+        </div>
+        </nav>
+
+        
+    </header>
+    
+    <main class="main">
+        <div class="container">
+
+            <div class="order__content">
+                <h1 class="order__title">
+                    Оформление заказа
+                </h1>
+
+                <p class="order__subtitle">
+                    Мастер-класс «Искусство жить»
+                </p>
+
+                <div class="payment__block">
+                        <div class="checkbox__wrapper">
+
+                            <div class="participation-type__block">
+                                <h2 class="checkbox__wrapper__title">
+                                    Тип участия
+                                </h2>
+
+                                <label for="participation-online" class="radio-btn">
+                                    <div class="group-inp">
+                                        <input type="radio" id="participation-online" name="radio" class="radio-rate"  value="rate-block-1">
+                                        <span></span>
+
+                                        <p class="radio-btn__name">Онлайн</p>
+                                    </div>
+                                </label>
+    
+                                <label for="participation-offline" class="radio-btn">
+                                    <div class="group-inp">
+                                        <input type="radio" id="participation-offline" name="radio" class="radio-rate"  value="rate-block-2">
+                                        <span></span>
+
+                                        <p class="radio-btn__name">Вживую в Екатеринбурге</p>
+                                    </div>
+                                </label>
+
+                            </div>
+                           
+                            <div  class="radio-blocks" id="rate-block-1" value="rate-block-1" style="display:none">
+                                <h2 class="checkbox__wrapper__title">
+                                    Тариф участия
+                                </h2>
+    
+                               <label for="master-class-online" class="radio-btn">
+                                    <div class="radio__row">
+
+                                        <div class="group-inp">
+                                            <input type="radio" class="radio-form" value="radio-form" id="master-class-online" name="radio-form">
+                                            <span></span>
+
+                                            <p class="radio-btn__name">Видеозапись</p>
+                                        </div>
+
+                                        <p class="radio-btn__price">2500 руб</p>
+                                    </div>
+
+                                    <p class="radio-btn__about">
+                                        Просмотр обучающего мастер-класса в формате видео
+                                    </p>
+                                </label>
+    
+                                <label for="master-class-offline" class="radio-btn">
+                                    <div class="radio__row">
+                                        <div class="group-inp">
+                                            <input type="radio" class="radio-form" value="radio-form" id="master-class-offline" name="radio-form">
+                                            <span></span>
+
+                                            <p class="radio-btn__name">Индивидуально с преподавателем</p>
+                                        </div>
+
+                                        <p class="radio-btn__price">5000 руб</p>
+                                    </div>
+
+                                    <p class="radio-btn__about">
+                                        Индивидуальное онлайн занятие 1 на 1 с нашим преподавателем
+                                    </p>
+                                </label>
+
+                            </div>
+    
+                            <div  class="radio-blocks" id="rate-block-2"  value="rate-block-2" style="display:none">
+                                <h2 class="checkbox__wrapper__title">
+                                    Тариф участия
+                                </h2>
+
+                                <label for="masster-classes-online-group" class="radio-btn">
+                                    <div class="radio__row">
+                                        <div class="group-inp">
+                                            <input type="radio" class="radio-form" value="radio-form" id="masster-classes-online-group" name="radio-form-2">
+                                            <span></span>
+
+                                            <p class="radio-btn__name">Групповое занятие</p>
+                                        </div>
+
+                                        <p class="radio-btn__price">2500 руб</p>
+                                    </div>
+
+                                    <p class="radio-btn__about">
+                                        Занятие в группе
+                                    </p>
+                                </label>
+    
+                                <label for="masster-classes-online-indivil" class="radio-btn">
+                                    <div class="radio__row">
+                                        <div class="group-inp">
+                                            <input type="radio" class="radio-form" value="radio-form" id="masster-classes-online-indivil" name="radio-form-2">
+                                            <span></span>
+
+                                            <p class="radio-btn__name">Индивидуально</p>
+                                        </div>
+
+                                        <p class="radio-btn__price">5000 руб</p>
+                                    </div>
+
+                                    <p class="radio-btn__about">
+                                        Индивидуальное онлайн занятие 1 на 1 с нашим преподавателем
+                                    </p>
+                                </label>
+    
+                            </div>
+
+                            
+                            <div class="master-class__form" id="radio-form" value="radio-form" style="display:none">
+                                <h2 class="checkbox__wrapper__title">
+                                    Контакты
+                                </h2>
+
+                                <form action="">
+                                    <input class="master-class__form-inp" type="text" name="" id="" placeholder="Имя">
+
+                                    <input class="master-class__form-inp" type="text" name="" id="" placeholder="Телефон">
+
+                                    <input class="master-class__form-inp" type="text" name="" id="" placeholder="Эл. почта">
+                                </form>
+                            </div>
+                        </div>
+
+
+                    <div class="ordering__block">
+                        <div class="purchase-card">
+                            <p class="purchase-card__old-price">
+                                55 000 руб (-20%)
+                            </p>
+                           
+                            <div class="purchase-card__row">
+                                <p class="purchase-card__row__text">
+                                    Итого:
+                                </p>
+
+                                <p class="purchase-card__current-price">
+                                    35000 руб
+                                </p>
+                                
+                            </div>
+
+                            <a href="#" class="purchase-card__btn">
+                                Оформить заказ
+                            </a>
+
+                        </div>
+                        
+                        <div class="promo-box">
+                            <input class="promo-inp" type="text" placeholder="Промокод">
+                            <button class="promo-btn">Применить</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="help-about">
+            <div class="container">
+                <div class="help-about__row help-about__row__order">
+                    <div class="help-about__row__img">
+                        <img src="../images/main/home__main/course_img/04.png" alt="">
+                    </div>
+
+                    <div class="help-about__row__content help-about__row__content__order">
+                        <h2 class="main__title main-title__help-about">
+                            Нужна помощь?
+                        </h2>
+
+                        <p class="help-about__subtitle">
+                            Ответим на вопросы и поможем с оформлением
+                        </p>
+
+                        <div class="contacts-block__btns help-about-block__btns">
+                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <button class="contacts-btn">+7 950 638 8922 <img src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer-order">
+        <div class="container">
+            <div class="footer-order__row">
+                <div class="footer-logo__group">
+                    <div class="footer-logo__order">
+                    <a href="../pages/home.html"><img src="../images/footer/logo_order.svg" alt="geisha"></a> 
+                    </div>
+
+                    <p class="footer-logo__order_about">
+                        с 2005-2022
+                    </p>
+                </div>
+
+                <div class="contacts-block__btns help-about-block__btns">
+                    <a href="#" class="contacts-btn contacts-btn--white ">Написать в WhatsApp</a>
+                    <button class="contacts-btn contacts-btn--white ">+7 950 638 8922 <img src="../images/header/keyboard_arrow_gray.svg" alt="arrow"></button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/header-scripts.js"></script>
+    <script src="../js/order-scripts.js"></script>
+</body>
+</html>
