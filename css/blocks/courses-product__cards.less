@@ -1,0 +1,50 @@
+//main: ../main.css
+
+.courses-product__cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.courses-product__card {
+    border: 1px solid #EDEEEF;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover .courses-product-card__img img{
+        transform: scale(1.1);
+    }
+}
+
+.courses-product-card__img {
+    width: 68px;
+    height: 64px;
+    border-radius: 6px;
+    overflow: hidden;
+
+    & img {
+        transition: 1s;
+    }
+}
+
+.courses-product-card__about {
+    display: flex;
+    column-gap: 32px;
+}
+
+.courses-product-card__content {
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.courses-product-card__title {
+    font-family: 'Roca Two';
+    font-size: 24px;
+    line-height: 36px;
+    color: #1C3965
+}
+

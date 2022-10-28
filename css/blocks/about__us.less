@@ -1,0 +1,90 @@
+// main: ../main.css
+
+.about-us {
+    padding: 128px 0;
+}
+
+.main-title__about_us {
+    margin-bottom: 60px;
+}
+
+.about-us__video {
+    width: 100%;
+    height: 426px;
+    background-color: rgb(128, 36, 36);
+    border-radius: 12px;
+}
+
+.about-us__row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 22px;
+}
+
+.about-us__main_text h3 {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 38px;
+    max-width: 777px;
+}
+
+.about-us__main_subtext p{
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.7;
+    max-width: 371px;
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(/images/main/home__main/icons/star.svg);
+        width: 205px;
+        height: 221px;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.about-us__subtitle {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.7;
+    max-width: 626px;
+}
+
+.about-us__btn {
+    cursor: pointer;
+    padding: 11px 46px 13px 44px;
+    color: #FFF;
+    border-radius: 6px;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    .yellow__block();
+    transition: 0.4s;
+
+    &.about-us__btn--grey {
+        background-color: #F2F2F2;
+        color: @deep;
+        
+        &:hover {
+            background-color: darken(#F2F2F2, 7%);
+        }
+
+        &:active{
+            background-color: darken(#F2F2F2, 11%);
+        }
+    }
+}
+
+.about-us__main__link {
+    margin-top: 48px;
+}

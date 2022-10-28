@@ -1,0 +1,87 @@
+//main: ../main.css
+
+.ordering__block {
+    margin-top: 67px;
+}
+
+.purchase-card {
+    padding: 32px;
+    background-color: @blue;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.purchase-card__old-price {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: right;
+    text-decoration-line: line-through;
+    opacity: 0.4;
+}
+
+.purchase-card__current-price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: right;
+}
+
+.purchase-card__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purchase-card__btn {
+    border-radius: 6px;
+    color: #FFF;
+    .btn();
+    .red__block();
+    padding: 24px 0;
+    min-width: 309px;
+    text-align: center;
+    display: block;
+    margin-top: 16px;
+    transition: 0.4s;
+}
+
+.promo-box {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 4px 4px 16px;
+    border: 1px solid #EDEEEF;
+    border-radius: 8px;
+}
+.promo-inp {
+    border: none;
+    outline: none;
+    font-family: 'Open Sans';
+    font-size: 13px;
+    line-height: 18px;
+    color: #1C3965;
+    opacity: 0.5;
+}
+
+.promo-btn {
+    color: #FFF;
+    border: none;
+    padding: 12px 16px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    background: #D2D7E0;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.radio-blocks {
+    margin: 64px 0;
+}

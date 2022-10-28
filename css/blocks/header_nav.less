@@ -1,0 +1,147 @@
+// main: ../main.css
+
+.search__block--open {
+    .block__color(#F6F8FD);
+    cursor: none;
+}
+
+.rotate img{
+    rotate: 180deg;
+}
+
+.nav-group {
+    display: flex;
+    column-gap: 64px;
+}
+
+.header-nav {
+    padding: 24px 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(39, 85, 96, 0.1);
+    font-family: 'Noto Sans';
+    
+    
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+}
+
+.header-pages {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+}
+
+.nav-list li {
+    cursor: pointer;
+}
+
+.nav-item {
+    color: @deep;
+    text-decoration: none;
+    font-size: 18px;
+    opacity: 0.5;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+
+
+    &.item--deep {
+        opacity: 1;
+    }
+}
+
+.header-contacts {
+    display: flex;
+    column-gap: 16px;
+}
+
+.header-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #EDEEEF;
+    border-radius: 6px;
+    background-color: #FFFFFF;
+    display: block;
+    position: relative;
+
+    &.header_icon--map {
+        background-image: url(../images/header/place.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.search__block {
+    border: 1px solid #EDEEEF;
+    border-radius: 6px;
+    display: block;
+    position: relative;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.header-serch {
+    background-image: url(../images/header/search.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    outline: none; 
+    border: 0;
+    background-color: transparent;
+}
+
+.search__inp {
+    border: none;
+    outline: none;
+    opacity: 0.7;
+    color: @deep;
+    padding: 0;
+    width: 0;
+    .block__color(#F6F8FD);
+    transition: 0.6s;
+}
+
+.dropdown-item {
+    position: absolute;
+    top: 79px;
+
+    background: #ffffff;
+    box-shadow: 0px 2px 20px rgba(39, 85, 96, 0.1);
+    border-radius: 12px;
+    padding: 24px 40px 24px 32px;
+}
+
+.dropdown-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.dropdown-link {
+    color: @deep;
+    font-size: 18px;
+    line-height: 36px;
+    text-decoration: none;
+}
+
+.header__content_title__consltation {
+    max-width: 913px;
+    margin-bottom: 16px;
+}

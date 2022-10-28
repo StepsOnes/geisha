@@ -1,0 +1,66 @@
+//main: ../main.css
+
+.timetable__upcoming-classes {
+    padding: 96px 0 145px 0;
+    font-family: 'Noto Sans';
+}
+
+.timetable-upcoming-classes__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.timetable-upcoming-classes__block-date {
+    max-width: 195px;
+}
+
+.timetable-upcoming-classes__block__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.timetable-upcoming-classes__block__card {
+    padding: 32px;
+    width: 877px;
+    background-color: @blue;
+    border-radius: 12px;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: @grey;
+    }
+}
+
+.timetable-upcoming-classes__block__card__title {
+    font-size: 20px;
+    line-height: 38px;
+}
+
+.timetable-upcoming-classes__block__card__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.timetable-upcoming-classes__block__card__about {
+    display: flex;
+    gap: 8px;
+}
+
+.timetable-upcoming-classes__block__card__about__box {
+    padding: 8px 16px 8px 16px;
+    background-color:#EDEEEF;
+    border-radius: 100px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    opacity: 0.6;
+}

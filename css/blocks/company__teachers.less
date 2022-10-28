@@ -1,0 +1,134 @@
+// main: ../main.css
+
+.company__teachers__container {
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.company__teachers {
+    padding: 129px 0;
+    border-bottom: 1px solid @grey;
+}
+
+.main-title__company__teachers {
+    margin-bottom: 48px;
+}
+
+.company-teachers__slaider {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.company-teachers__slaide {
+    padding: 127px 24px 32px 24px;
+    background-color: #F6F8FD;
+    border-radius: 12px;
+    position: relative;
+
+    &:hover .company-teachers__img img {
+        transform: scale(1.1);
+    }
+}
+
+.company-teachers__img {
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    transform:translateX(-50%);
+    overflow: hidden;
+
+    & img {
+        transition: 1s;
+    }
+}
+
+.company-teachers__box {
+    background-image: url(../images/main/home__main/company__persons/icons/back-block.png);
+    width: 325px;
+    height: 269px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 4px;
+}
+
+.company__teacher__name {
+    font-family: 'Roca Two';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.company__teacher__post {
+    font-family: 'Noto Sans';
+    line-height: 36px;
+    opacity: 0.7;
+}
+
+.slide-scenery {
+    & span {
+        position: absolute;
+    }
+
+    position: absolute;
+}
+
+.scenery1 {
+    background-image: url(../images/main/home__main/company__persons/items/01.svg);
+    width: 44px;
+    height: 46px;
+
+    position: absolute;
+    top: 70px;
+    left: 258px;
+    z-index: 999;
+}
+
+.scenery2 {
+    background-image: url(../images/main/home__main/company__persons/items/02.svg);
+    width: 90px;
+    height: 92px;
+
+    position: absolute;
+    bottom: 73px;
+    left: -25px;
+    z-index: 999;
+}
+
+
+.scenery3 {
+    background-image: url(../images/main/home__main/company__persons/items/01.svg);
+    width: 44px;
+    height: 46px;
+
+    position: absolute;
+    top: 150px;
+    left: 49.6%;
+    transform: translateX(-49.6%);
+    z-index: 999;
+}
+
+.scenery4 {
+    background-image: url(../images/main/home__main/company__persons/items/02.svg);
+    width: 90px;
+    height: 92px;
+
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 999;
+}
+
+.scenery5 {
+    background-image: url(../images/main/home__main/company__persons/items/03.svg);
+    width: 46px;
+    height: 48px;
+
+    position: absolute;
+    bottom: 0;
+    right: 143px;
+    z-index: 999;
+}

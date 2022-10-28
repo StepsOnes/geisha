@@ -1,0 +1,46 @@
+//main: ../main.css
+
+.course-date__block {
+    display: flex;
+    column-gap: 16px;
+}
+
+.course__trial-lesson__row {
+    display: flex;
+    align-items: center;
+    column-gap: 23px;
+    margin-bottom: 50px;
+}
+
+.course__trial-lesson__text {
+    font-family: 'Noto Sans';
+    opacity: 0.5;
+}
+
+.course-date__link {
+    display: block;
+    padding: 6px 18px;
+    border-radius: 100px;
+    background-color: #FFF;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: none;
+    color: @deep;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: @deep;
+        color: #FFF;
+    }
+
+    &.course-date__link--blue {
+        background-color: #F6F8FD;
+
+        &:hover {
+            color: #F6F8FD;
+            background-color: @deep;
+        }
+    }
+}

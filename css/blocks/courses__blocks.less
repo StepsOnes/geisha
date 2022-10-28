@@ -1,0 +1,143 @@
+// main: ../main.css
+
+.main-courses__blocks {
+    display: flex;
+    flex-direction: column;
+    row-gap: 48px;
+}
+
+.courses-img  {
+    transition: ease 1s;
+    overflow: hidden;
+    max-width: 644px;
+    max-height: 410px;
+    border-radius: 12px;
+}
+
+.courses-img img {
+    transition: 1s;
+}
+
+.courses__block {
+    padding: 32px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover .courses-img img{
+        transform: scale(1.1);
+    }
+}
+
+.courses-block__title {
+    font-family: 'Roca Two';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+    min-width: 435px;
+
+    &.courses-block__title--blue {
+        color: #1C3965;
+    }
+}
+
+
+.courses-block__content {
+    max-width: 379px;
+}
+
+.conditions-course__list {
+    margin-top: 32px;
+}
+
+.conditions-course__item {
+    font-size: 15px;
+    line-height: 24px;
+    color: #FFFFFF;
+    opacity: 0.9;
+    font-family: 'Noto Sans';
+    margin-bottom: 16px;
+
+    &:last-child {
+        margin: 0;
+    }
+
+    &.conditions-course__item--blue {
+        color: #1C3965;
+    }
+}
+
+.courses-btns {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 16px;
+}
+
+.block__courses--btns {
+    margin-top: 32px;
+}
+
+
+.courses-enroll__btn {
+    border-radius: 6px;
+    padding: 11px 35px 13px 33px;
+    color: #fff;
+    font-family: 'Noto Sans Display', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.yellow {
+        .courses__block--color(#FFB924);
+        &:hover {
+            background-color: #FFBE33;
+        }
+    }
+
+    &.orange {
+        .courses__block--color(#FE6534);
+        &:hover {
+            background-color: #FE7042;
+        }
+    } 
+}
+
+.courses-enroll__btn__trial-lessons {
+    width: 100%;
+    margin-top: 8px;
+    padding: 11px 0 13px 0;
+    text-align: center;
+}
+
+.conditions-course__price {
+    margin-top: 24px;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+
+
+.courses__block--yellow {
+    .courses__block--color(#FFB924)
+}
+
+.courses__block--pink {
+    .courses__block--color(#FEEFFA)
+}
+
+.courses__block--blue {
+    .courses__block--color(#1C3965)
+}
+
+.courses__block--white {
+    background-color: #FFF;
+}

@@ -1,0 +1,51 @@
+//main: ../main.css
+
+.about-courses__block {
+    padding: 64px;
+    border-top: 1px solid @grey;
+    display: flex;
+    column-gap: 181px;
+}
+
+.about-courses__block:first-child {
+    border: none;
+}
+
+.about-courses__block__text {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    line-height: 32px;
+    opacity: 0.8;
+}
+
+.decor__courses__img,.decor__courses__img--top {
+    position: relative;
+}
+
+.decor__courses__img {
+    max-width: 224px;
+    max-height: 224px;
+    border-radius: 50%;
+}
+
+.decor__courses__img--top::before {
+    content: '';
+    background-image: url(../images/courses__img/decoration/star.svg);
+    width: 301px;
+    height: 294px;
+
+    position: absolute;
+    z-index: 999;
+    top: -100px;
+}
+
+.decor__courses__img--bottom::before {
+    content: '';
+    background-image: url(../images/courses__img/decoration/star.svg);
+    width: 301px;
+    height: 294px;
+
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+}

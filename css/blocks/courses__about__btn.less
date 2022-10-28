@@ -1,0 +1,44 @@
+// main: ../main.css
+
+.courses-about__btn {
+    border-radius: 6px;
+    padding: 11px 48px 13px 46px;
+    font-family: 'Noto Sans Display',sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #FFF;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: #FFF;
+        color: @deep;
+    }
+
+    &.courses-about__btn--deep {
+        color: @deep;
+    }
+
+    &.blue {
+        background: #F6F8FD;
+        color: @deep;
+        opacity: 1;
+        font-weight: 600;
+    }
+
+    &.courses-about__btn--grey {
+        .block__color (rgb(235, 235, 235));
+        color: @deep;
+    }
+
+    &.courses-about__btn--visible {
+        background-color: #FFF;
+        color: @deep;
+    }
+    
+   
+}

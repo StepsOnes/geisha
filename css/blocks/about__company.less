@@ -1,0 +1,103 @@
+// main: ../main.css
+
+.about__company {
+    padding: 0 0 128px 0;
+    border-bottom: 1px solid #EDEEEF;
+}
+
+.about__company_cards {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    &.top {
+        position: relative;
+        top: -122px;
+    }
+}
+
+.about__company_card {
+    text-decoration: none;
+    display: block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 40px 33px 32px 32px;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: #FBFCFE;
+    }
+
+    &.about__company_card--blue {
+        .block__color(#F6F8FD);
+        &:hover {
+            background-color: #F4F5F5;
+        }
+    }
+}
+
+.about__card_title {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    margin-top: 22px;
+    text-decoration: none;
+    color: @deep;
+}
+
+.about__card_subtitle {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 24px;
+    opacity: 0.7;
+    width: 309px;
+    text-decoration: none;
+    color: @deep;
+}
+
+.company__achievements {
+    padding: 48px 0 54px 32px;
+    background: #F6F8FD;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 54px;
+
+    &.company__achievements--white {
+        .block__color(#FFF)
+    }
+}
+
+.achievemets__title {
+    font-family: 'Roca Two';
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 8px;
+
+    &.achievemets__title--yellow {
+        color: rgba(255, 185, 36, 1);
+        
+    }
+}
+
+.achievemets__text {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 24px;
+    opacity: 0.7;
+}
+
+.about__company_cards__consultation {
+    display: flex;
+}
+
+.about__company_card__consultation {
+    padding: 32px 234px 32px 32px;
+}
+
+.main__link_about__company {
+    margin-bottom: 30px;
+    margin-top: -100px;
+}

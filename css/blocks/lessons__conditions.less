@@ -1,0 +1,39 @@
+// main: ../main.css
+
+.lessons__conditions {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 8px;
+}
+
+.lessons-condition__box {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFF;
+    padding: 6px 18px 8px 16px;
+    background: #FFB924;
+    border-radius: 100px;
+    display: block;
+    cursor: pointer;
+
+    &.lessons-condition__box--grey  {
+        .block__color (rgb(243, 242, 242));
+        color: @deep;
+    }
+
+    &.lessons-condition__box--white {
+        .block__color (rgb(255, 255, 255));
+        color: @deep;
+    }
+    
+    &.lessons-condition__box--blue {
+        background-color: #F6F8FD;
+        color: @deep;
+    }
+}
+
+.lessons-condition__box--orange, .courses__block--orange {
+    .courses__block--color(#FE6534)
+}

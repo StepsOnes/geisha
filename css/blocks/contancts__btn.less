@@ -1,0 +1,134 @@
+// main: ../main.css
+
+.contacts-dropdown__box__header {
+    width: 410px;
+    right: 0;
+    top: 60px;
+}
+
+.contacts-dropdown-form__main {
+    width: 320px;
+    right: -100px;
+    top: 66px;
+    position: absolute;
+    background-color: #FE6534;
+}
+
+.dropdown-form__inp.dropdown-form__inp__main {
+    font-size: 17px;
+}
+.erorInp {
+    border: 1px solid red;
+}
+
+.contacts-btn {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    padding: 9px 24px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #FFF;
+    background: #FE6534;
+    border-radius: 6px;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+    outline: none;
+
+    &:hover {
+        background-color: #FE7042;
+    }
+
+    &:active {
+        background-color: darken(#FE6534, 10%);
+    }
+
+    &.contacts-btn--grey {
+        background-color: #EDEEEF;
+        color: @deep;
+
+        &:hover {
+            background-color: #FFF;
+        }
+    }
+
+    &.contacts-btn--yellow {
+        .yellow__block()
+    }
+
+    &.contacts-btn--white {
+        background-color: #FFF;
+        color: @deep;
+    }
+
+}
+
+.contacts-btn__block {
+    position: relative;
+}
+
+.contacts-dropdown-form {
+    padding: 24px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 20px rgba(39, 85, 96, 0.1);
+    border-radius: 12px;
+
+    position: absolute;
+}
+
+.contacts-dropdown-form__header {
+    right: 0px;
+    top: 60px;
+    width: 445px;
+}
+
+.dropdown-form__inp {
+    width: 100%;
+    padding: 24px;
+    border: 1px solid #EDEEEF;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 38px;
+    opacity: 0.5;
+    margin-bottom: 16px;
+    outline: none;
+}
+
+.dropdown-form__btn {
+    width: 100%;
+    padding: 12px 0;
+    background-color: #FFB924;
+    border-radius: 6px;
+    color: #FFF;
+    border: none;
+    font-size: 14px;
+    line-height: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(#FFB924, 8%);
+    }
+}
+
+.contacts-dropdown__box {
+    background: #FFFFFF;
+    box-shadow: 0px 2px 20px rgba(39, 85, 96, 0.1);
+    border-radius: 12px;
+    font-size: 20px;
+    line-height: 38px;
+    padding: 35px 48px 35px 32px;
+    position: absolute;
+
+    & img {
+        margin-right: 10px;
+    }
+}
+
+
+
+

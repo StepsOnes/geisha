@@ -1,0 +1,128 @@
+//main: ../main.css
+
+.timetable__about {
+    padding: 96px 0 128px 0;
+    .border();
+}
+
+.timetable__about__cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 128px;
+}
+
+.timetable__about__card {
+    width: 575px;
+    height: 244px;
+    background-color: @blue;
+    padding: 174px 0 32px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    display: block;
+    transition: 0.6s;
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        background-color:  #F4F5F5;
+    }
+}
+
+.timetable__about__card__text {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 38px;
+    text-decoration: none;
+    color: @deep;
+}
+
+.timetable__about__card__dec-1,.timetable__about__card__dec-2, .timetable__about__card__dec-3,.timetable__about__card__dec-4 {
+    position: absolute;
+    background-size: cover;
+}
+
+.timetable__about__card__dec-1{
+    background-image: url(../images/timetable/icons/star_icons.svg);
+    width: 217px;
+    height: 206px;
+    bottom: 0;
+    right: -15px;
+}
+
+
+.timetable__about__card__dec-2 {
+    background-image: url(../images/timetable/icons/bouble_icons.svg);
+    width: 97px;
+    height: 61px;
+    top: 50px;
+    left: 0;
+}
+
+.timetable__about__card__dec-3 {
+    background-image: url(../images/timetable/icons/flower_icon.svg);
+    width: 170px;
+    height: 211px;
+    right: 0;
+    bottom: -20px;
+}
+
+.timetable__about__card__dec-4 {
+    background-image: url(../images/timetable/icons/bouble_icons02.svg);
+    width: 97px;
+    height: 61px;
+    left: 105px;
+    top: 0;
+}
+
+.timetable__about__box__title {
+    margin-bottom: 64px;
+}
+
+
+.timetable__about__links {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 26px;
+    row-gap: 32px;
+}
+
+.timetable__about__link {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    display: block;
+    position: relative;
+    width: 373px;
+    height: 244px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 74.59%), url(.jpg), #FFFFFF;
+
+    &:hover .timetable__about__link__img img{
+        transform: scale(1.1);
+    }
+}
+
+.timetable__about__link__img {
+    max-width: 373px;
+    max-height: 244px;
+    position: relative;
+    border-radius: 12px;
+
+    & img {
+        transition: 1s;
+    }
+}
+
+.timetable__about__link__text {
+    font-family: 'Noto Sans';
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #FFF;
+    position: absolute;
+    bottom: 32px;
+    left: 32px;
+}

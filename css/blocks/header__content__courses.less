@@ -1,0 +1,172 @@
+//main: ../main.css
+
+.header-content__courses {
+    padding-bottom: 96px;
+}
+
+.header-content__courses--red {
+    background-color: #FE6534;
+}
+
+.header-content__courses--deep {
+    background-color: #1C3965;
+}
+
+.header-content__courses--yellow {
+    background-color: #FFB924;
+}
+
+.header-content__courses--grey {
+    background-color: @grey;
+}
+
+
+.header-courses__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-courses__title {
+    font-family: 'Roca Two';
+    font-size: 56px;
+    line-height: 70px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+
+.header-courses__subtitle {
+    margin-top: 24px;
+    color: #FFF;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    line-height: 38px;
+    
+    max-width: 565px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+}
+
+.courses-skills {
+    margin: 32px 0;
+
+    & tr {
+        display: flex;
+        // column-gap: 24px;
+        justify-content: space-between;
+        margin-top: 8px;
+    }
+}
+
+.courses-skills__text {
+    font-family: 'Noto Sans';
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-align: left;
+    width: 335px;
+}
+
+
+.header-courses__btn {
+    display: inline-block;
+    padding: 25px 64px;
+    border-radius: 6px;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.4s;
+    font-family: 'Noto Sans Display', sans-serif;
+    .yellow__block();
+
+    &.header-courses__btn--red {
+        .red__block()
+    }
+}
+
+.header-courses__contacts-text {
+    margin-top: 16px;
+    color: #FFFFFF;
+    opacity: 0.7;
+
+    & a {
+        color: #FFFFFF;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.sale-block {
+    background: #FFB924;
+    border-radius: 100px;
+    padding: 20px 32px 20px 54px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content: space-between;
+
+    position: absolute;
+    left: 50%;
+    top: -31px;
+    transform: translateX(-50%);
+
+    &.sale-block--red {
+        background-color: @red;
+    }
+}
+
+.header-courses__video {
+    width: 474px;
+    height: 583px;
+    background-color: #412e2e;
+    border-radius: 12px;
+    position: relative;
+}
+
+.sale__text {
+    font-family: 'Noto Sans';
+    margin-right: 24px;
+    position: relative;
+
+    & span {
+        font-weight: 700;
+        font-size: 22px;
+
+        &::before {
+            content: '';
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/main/home__main/icons/whatshot_icon.svg);
+            background-repeat: no-repeat;
+
+            position: absolute;
+            left: -35px;
+        }
+    }
+}
+
+.sale__timer {
+    position: relative;
+    padding-left: 24px;
+    
+    &::before {
+        content: '';
+        height: 62px;
+        border-left: 1px solid rgba(246, 248, 253, 0.3);
+        position: absolute;
+        top: -23px;
+        left: 0px;
+    }
+}
+
+.header-courses__title--deep, .header-courses__subtitle--deep, .courses-skills--deep  tr td, .header-courses__contacts-text--deep, .header-courses__contacts-text--deep a {
+    color: @deep;
+}
+
+.header-courses__subtitle--deep {
+    border-bottom: 1px solid #FFF;
+}

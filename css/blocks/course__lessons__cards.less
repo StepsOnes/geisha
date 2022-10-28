@@ -1,0 +1,121 @@
+//main: ../main.css
+
+.course-lessons__cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-lessons__card {
+    padding: 32px;
+    background: #F6F8FD;
+    border-radius: 12px;
+    width: 373px;
+
+    &.course-lessons__card--red {
+        background-color: @red;
+    }
+
+    &.course-lessons__card--yellow {
+        background-color: @yellow;
+    }
+
+    &.course-lessons__card--pink {
+        background-color: @pink;
+    }
+
+    &.course-lessons__card--deep {
+        background-color: @deep;
+    }
+}
+
+.lessons-card__img {
+    border-radius: 12px;
+    max-width: 309px;;
+}
+
+.lessons__title {
+    font-family: 'Roca Two';
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 24px 0 16px 0;
+
+    &.lessons__title--white {
+        color: #FFF;
+    }
+}
+
+.lessons-card__img {
+    overflow: hidden;
+}
+
+.lessons-card__img img{
+    transition: ease 1s;
+}
+
+.course-lessons__card:hover .lessons-card__img img {
+    transform:scale(1.1);
+}
+
+
+.lessons-list {
+    margin: 24px 0 20px 0;
+}
+
+.lessons-item {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 36px;
+    opacity: 0.7;
+
+    &.lessons-item--white {
+        color: #FFF;
+        opacity: 1;
+    }
+}
+
+.course-lessons__price {
+    margin-bottom: 8px;
+
+    &.course-lessons__price--white {
+        color: #FFF;
+    }
+}
+
+.lessons-list--small {
+    & li {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+}
+
+.course-lessons__btn {
+    font-family: 'Noto Sans Display', sans-serif;
+    font-weight: 600;
+    display: block;
+    padding: 12px 0;
+    background: #FE6534;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFF;
+    transition: 0.4s;
+
+    &:hover {
+        background:  #FE7042;
+    }
+
+    &.course-lessons__btn--yellow {
+        .yellow__block();
+    }
+}
+
+.main__title--lesson {
+    margin-top: 128px;
+}
+
+.main__subtitle--lesson {
+    margin: 16px 0 64px 0;
+}

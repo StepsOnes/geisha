@@ -1,0 +1,51 @@
+//main: ../main.css
+
+.timetable-filter__block {
+    padding: 48px 0;
+    .border();
+}
+
+.timetable-filter__inp {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: #F6F8FD;
+    border: 1px solid #F6F8FD;
+    border-radius: 100px;
+    outline: none;
+    padding: 28px 0 34px 80px;
+    font-family: 'Open Sans';
+    font-size: 22px;
+    line-height: 18px;
+    position: relative;
+}
+
+.timetable-filter__block__inp {
+    position: relative;
+    &::after {
+        content: '';
+        background-image: url(../images/timetable/icons/search_icon.svg);
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+        position: absolute;
+        left: 32px;
+        top: 24px;
+    }
+
+    margin-bottom: 48px;
+}
+
+.timetable-filter__btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: 1px solid #EDEEEF;
+    color: @deep;
+    background-color: #FFF;
+    cursor: pointer;
+    margin: 0 16px 24px 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+}

@@ -1,0 +1,99 @@
+//main: ../main.css
+
+.timetable__course-program {
+    padding: 96px 0 128px 0;
+    font-family: 'Noto Sans';
+}
+
+.timetable__course-program__card {
+    padding: 48px 32px;
+    .border();
+    transition: 0.6s;
+
+    &:hover {
+        background-color: @blue;
+    }
+
+    &:hover .timetable__date-item {
+        background-color: #FFF;
+
+        &:hover {
+            background-color: @deep;
+            color: #FFF;
+        }
+    }
+
+    &:first-child {
+        padding-top: 0;
+    }
+}
+
+.timetable__course-program__card__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.timetable__course-program__card__row__title {
+    font-size: 26px;
+    line-height: 48px;
+    max-width: 600px;
+}
+
+.timetable__course-program__card__btns {
+    display: flex;
+    column-gap: 16px;
+    align-items: center
+}
+
+.timetable__course-program__card__btn__about {
+    .btn();
+    font-family: 'Noto Sans';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: @deep;
+}
+
+.timetable__course-program__card__btn__enroll {
+    .btn();
+    .red__block();
+    padding: 12px 32px;
+    color: #FFF;
+}
+
+.timetable__date-box {
+    display: flex;
+    gap: 16px;
+}
+
+.timetable__date-item {
+    padding: 6px 16px 8px 16px;
+    background-color: @blue;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    border-radius: 100px;
+    transition: 0.5s;
+    color: @deep;
+    text-decoration: none;
+
+    &:hover {
+        background-color: @deep;
+        color: #FFF;
+    }
+}
+
+.timetable__none-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timetable__none-date__text {
+    font-size: 15px;
+    line-height: 25px;
+    opacity: 0.5;
+}

@@ -1,0 +1,73 @@
+//main: ../main.css
+
+.yandex-map iframe {
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+}
+
+.contacts-map {
+    position: relative;
+    top: -80px;
+}
+
+.yandex-map {
+    position: relative;
+}
+
+.map-box {
+    position: absolute;
+    top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #FFF;
+    padding: 24px 40px 31px 32px;
+    border: 1px solid #F6F8FD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    width: 94%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.map-box__row {
+    display: flex;
+    column-gap: 28px;
+}
+
+.place-circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #F6F8FD;
+    background-image: url(../images/main/home__main/icons/place.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.place-text {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 4px;
+}
+
+.time-work {
+    opacity: 0.5;
+    font-family: 'Noto Sans';
+    line-height: 25px;
+}
+
+.open-map__btn {
+    display: block;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: @deep;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 1px solid #EDEEEF;
+    border-radius: 6px;
+}

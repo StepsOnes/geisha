@@ -1,0 +1,49 @@
+// main: ../main.css
+
+.help-about {
+    padding: 128px 0;
+    background: #F6F8FD;
+
+    &.help-about--white {
+        background-color: #FFF;
+    }
+}
+
+.help-about__row{
+    display: flex;
+    column-gap: 115px;
+}
+
+.main-title__help-about {
+    max-width: 571px;
+    margin-bottom: 32px;
+}
+
+.help-about__subtitle {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    opacity: 0.7;
+    max-width: 505px;
+}
+
+.help-about-block__btns {
+    margin-top: 48px;
+}
+
+.help-about__row__content {
+    position: relative;
+
+    &::before {
+        content: '';
+        background-image: url(../images/main/home__main/icons/arrow_yellow.svg);
+        width: 106px;
+        height: 67px;
+
+        position: absolute;
+        bottom: 60px;
+        left: -70px;
+    }
+}

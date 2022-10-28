@@ -1,0 +1,201 @@
+//main: ../main.css
+
+.course-cards {
+    padding: 128px 0;
+}
+
+.course-cards__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-fee {
+    background-color: #FE6534;
+    border-radius: 12px;
+    padding: 32px;
+    padding-bottom: 0px;
+    color: #FFF;
+    font-family: 'Noto Sans';
+}
+
+.course-fee__title {
+    font-family: 'Roca Two';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 63px;
+}
+
+.course-fee__img {
+    position: relative;
+    max-width: 511px;
+    max-height: 362px;
+    margin-bottom: 32px;
+    border-radius: 12px;
+}
+
+.course-fee__old-price {
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 36px;
+    text-decoration-line: line-through;
+    opacity: 0.7;
+}
+
+.course-fee__current-price {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.course-fee__installment-plan {
+    font-weight: 300;
+    opacity: 0.7;
+    font-size: 15px;
+    line-height: 26px;
+    margin-bottom: 32px;
+}
+
+.course-fee__btn {
+    font-family: 'Noto Sans Display', sans-serif;
+    display: block;
+    padding: 24px;
+    background-color: #FFB924;
+    border-radius: 6px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    transition: 0.4s;
+    margin-bottom: 24px;
+
+    &:hover {
+        background-color: #FFBE33;
+    }
+
+    &.course-fee__btn--red {
+        background-color: #FE6534;
+        &:hover {
+            background-color: #FE7042;
+        }
+    }
+}
+
+.course-fee__guarantees {
+    padding-top: 16px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.guarantees__text {
+    font-size: 15px;
+    line-height: 24px;
+
+
+    &.p1 {
+        max-width: 293px;
+    }
+
+    &.p2 {
+        max-width: 116px;
+    }
+}
+
+.guarantees-box {
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+}
+
+.trial-consultation {
+    padding: 32px;
+    background-color: #F6F8FD;
+    border-radius: 12px;
+    padding-bottom: 0px;
+}
+
+.trial-consultation__title {
+    font-family: 'Roca Two';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 32px;
+    color: @deep;
+}
+
+.trial-consultation__img {
+    max-width: 511px;
+    max-height: 210px;
+    border-radius: 12px;
+}
+
+.trial-consultation__subtitle {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-family: 'Roca Two';
+    font-weight: bold;
+    font-size: 24px;
+    color: @deep;    
+}
+
+.trial-consultation-list {
+    margin-top: 32px;
+    margin-bottom: 114px;
+
+    & li {
+        font-family: 'Noto Sans';
+        margin-bottom: 16px;
+        font-size: 15px;
+        line-height: 24px;
+        color: #1C3965;
+        opacity: 0.9;
+    }
+
+    & li:last-child {
+        margin: 0;
+    }
+}
+
+.trial-consultation-price {
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    line-height: 38px;
+    color: #1C3965;
+    margin-bottom: 8px;
+}
+
+.questions__block {
+    margin-top: 30px;
+    width: 100%;
+    padding: 23px 32px;
+    border: 1px solid #EDEEEF;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions__block__text {
+    font-weight: 400;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    line-height: 38px;
+    color: @deep;
+}
+
+.trial-consultation-list__data-blocks {
+    margin-bottom: 24px;
+}
+
+.course__cards__trial-lesson__row {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+}
+
+.course__cards__lesson__text {
+    margin-bottom: 8px;
+    margin-top: 24px;
+    text-align: left;
+}

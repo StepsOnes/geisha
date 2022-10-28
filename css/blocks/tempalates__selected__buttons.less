@@ -1,0 +1,28 @@
+// main: ../main.css
+
+.selected-buttons__temlates {
+    padding: 48px 0;
+    border-bottom: 1px solid @grey;
+}
+
+.selected-buttons__temlates-row {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 22px;
+}
+
+.templates-selected__button {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 6px;
+    border: none;
+    background: #F6F8FD;
+    color: @deep;
+    cursor: pointer;
+
+    &.active{
+        background: #1C3965;
+        color: #FFF;
+    }
+}
