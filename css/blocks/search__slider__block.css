@@ -1,0 +1,23 @@
+.search-slider__block {
+  padding: 128px 0 128px 20px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.search-slider__block:last-child {
+  padding-top: 0;
+}
+.search-slider__block__title {
+  margin-bottom: 64px;
+}
+.search-slider {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  max-width: 1350px;
+}
+.search-slider .owl-nav {
+  position: absolute;
+  top: -110px;
+  right: 30px;
+  line-height: 0;
+}

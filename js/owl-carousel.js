@@ -40,5 +40,18 @@ $(document).ready(function(){
       '<button id="master-classes__btn-next" class="master-classes__btn master-classes__btn--blue"></button>'
     ]
 });
+
+
+$(".search-slider ").owlCarousel({
+  dots: false,
+  margin: 30,
+  autoWidth: true,
+  items: 3,
+  nav: true,
+  navText: [
+    '<button id="master-classes__btn-pred" class="master-classes__btn master-classes__btn--blue"></button>',
+    '<button id="master-classes__btn-next" class="master-classes__btn master-classes__btn--blue"></button>'
+  ]
+});
   
 }); 

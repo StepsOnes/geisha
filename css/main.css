@@ -504,6 +504,8 @@ body {
   background: #F6F8FD;
   border-radius: 12px;
   width: 373px;
+  display: block;
+  text-decoration: none;
 }
 .course-lessons__card.course-lessons__card--red {
   background-color: #fe6534;
@@ -527,6 +529,7 @@ body {
   font-size: 24px;
   line-height: 36px;
   margin: 24px 0 16px 0;
+  color: #1c3965;
 }
 .lessons__title.lessons__title--white {
   color: #FFF;
@@ -4119,6 +4122,35 @@ input:checked label {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
+}
+.header-content__search {
+  padding-bottom: 96px;
+}
+.header__content__search__title span {
+  opacity: 0.25;
+}
+.search-slider__block {
+  padding: 128px 0 128px 20px;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+.search-slider__block:last-child {
+  padding-top: 0;
+}
+.search-slider__block__title {
+  margin-bottom: 64px;
+}
+.search-slider {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  max-width: 1350px;
+}
+.search-slider .owl-nav {
+  position: absolute;
+  top: -110px;
+  right: 30px;
+  line-height: 0;
 }
 .main-courses__templates {
   padding: 64px 0 128px 0;
