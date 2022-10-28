@@ -1,0 +1,15 @@
+.header-content__about-us {
+  padding-bottom: 332px;
+  position: relative;
+}
+.about-us-page__video {
+  height: 546px;
+  width: 1200px;
+  border-radius: 12px;
+  background-color: #5b5b5b;
+  position: absolute;
+  bottom: -280px;
+}
+.main_about-us {
+  padding-top: 388px;
+}
