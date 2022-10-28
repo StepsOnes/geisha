@@ -4,6 +4,79 @@
   <link rel="stylesheet" href="/404/404.css">
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/fonts/stylesheet.css">
+  <style>
+    /*! CSS Used from: http://127.0.0.1:5500/css/main.css */
+.none{display:none;}
+*,*::after,*::before{-webkit-box-sizing:border-box;box-sizing:border-box;}
+.nav-group{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-column-gap:64px;column-gap:64px;}
+.header-nav{padding:24px 48px;background:#fff;-webkit-box-shadow:0 2px 20px rgba(39,85,96,0.1);box-shadow:0 2px 20px rgba(39,85,96,0.1);font-family:'Noto Sans';width:100%;position:fixed;top:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;z-index:9999;}
+.header-pages{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.nav-list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-column-gap:32px;column-gap:32px;}
+.nav-list li{cursor:pointer;}
+.nav-item{color:#1c3965;text-decoration:none;font-size:18px;opacity:.5;-webkit-transition:.3s;transition:.3s;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+.nav-item.item--deep{opacity:1;}
+.header-contacts{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-column-gap:16px;column-gap:16px;}
+.header-icon{width:42px;height:42px;border:1px solid #edeeef;border-radius:6px;background-color:#fff;display:block;position:relative;}
+.header-icon.header_icon--map{background-image:url(http://127.0.0.1:5500/images/header/place.svg);background-repeat:no-repeat;background-position:center;}
+.search__block{border:1px solid #edeeef;border-radius:6px;display:block;position:relative;padding:9px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:42px;-webkit-transition:1s;transition:1s;cursor:pointer;}
+.header-serch{background-image:url(http://127.0.0.1:5500/images/header/search.svg);background-repeat:no-repeat;background-position:center;cursor:pointer;width:24px;height:24px;outline:none;border:0;background-color:transparent;}
+.search__inp{border:none;outline:none;opacity:.7;color:#1c3965;padding:0;width:0;background-color:#f6f8fd;-webkit-transition:.6s;transition:.6s;}
+.dropdown-item{position:absolute;top:79px;background:#fff;-webkit-box-shadow:0 2px 20px rgba(39,85,96,0.1);box-shadow:0 2px 20px rgba(39,85,96,0.1);border-radius:12px;padding:24px 40px 24px 32px;}
+.dropdown-list{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;row-gap:16px;}
+.dropdown-link{color:#1c3965;font-size:18px;line-height:36px;text-decoration:none;}
+.contacts-dropdown__box__header{width:410px;right:0;top:60px;}
+.contacts-btn{font-family:'Noto Sans Display',sans-serif;padding:9px 24px;font-weight:600;font-size:14px;line-height:18px;color:#fff;background:#fe6534;border-radius:6px;text-decoration:none;border:none;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;-webkit-transition:.4s;transition:.4s;outline:none;}
+.contacts-btn:hover{background-color:#fe7042;}
+.contacts-btn:active{background-color:#fe3e01;}
+.contacts-btn__block{position:relative;}
+.contacts-dropdown-form{padding:24px;background-color:#fff;-webkit-box-shadow:0 2px 20px rgba(39,85,96,0.1);box-shadow:0 2px 20px rgba(39,85,96,0.1);border-radius:12px;position:absolute;}
+.contacts-dropdown-form__header{right:0;top:60px;width:445px;}
+.dropdown-form__inp{width:100%;padding:24px;border:1px solid #edeeef;border-radius:8px;font-size:20px;line-height:38px;opacity:.5;margin-bottom:16px;outline:none;}
+.dropdown-form__btn{width:100%;padding:12px 0;background-color:#ffb924;border-radius:6px;color:#fff;border:none;font-size:14px;line-height:18px;-webkit-transition:.5s;transition:.5s;cursor:pointer;}
+.dropdown-form__btn:hover{background-color:#faaa00;}
+.contacts-dropdown__box{background:#fff;-webkit-box-shadow:0 2px 20px rgba(39,85,96,0.1);box-shadow:0 2px 20px rgba(39,85,96,0.1);border-radius:12px;font-size:20px;line-height:38px;padding:35px 48px 35px 32px;position:absolute;}
+.contacts-dropdown__box img{margin-right:10px;}
+/*! CSS Used from: http://127.0.0.1:5500/css/reset.css */
+div,a,img,ul,li,form,nav{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+nav{display:block;}
+ul{list-style:none;}
+/*! CSS Used fontfaces */
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:300;font-display:swap;src:url(https://fonts.gstatic.com/s/notosans/v27/o-0NIpQlx3QUlC5A4PNjThZlYw.ttf) format('truetype');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:400;font-display:swap;src:url(https://fonts.gstatic.com/s/notosans/v27/o-0IIpQlx3QUlC5A4PNb4g.ttf) format('truetype');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:500;font-display:swap;src:url(https://fonts.gstatic.com/s/notosans/v27/o-0NIpQlx3QUlC5A4PNjFhdlYw.ttf) format('truetype');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:600;font-display:swap;src:url(https://fonts.gstatic.com/s/notosans/v27/o-0NIpQlx3QUlC5A4PNjOhBlYw.ttf) format('truetype');}
+@font-face{font-family:'Noto Sans';font-style:normal;font-weight:700;font-display:swap;src:url(https://fonts.gstatic.com/s/notosans/v27/o-0NIpQlx3QUlC5A4PNjXhFlYw.ttf) format('truetype');}
+@font-face{font-family:'Noto Sans Display';font-style:normal;font-weight:600;font-stretch:normal;font-display:swap;src:url(https://fonts.gstatic.com/s/notosansdisplay/v20/RLpbK4fy6r6tOBEJg0IAKzqdFZVZxpMkXJMhnB9XjO1o90LuV-PT4Doq_AKp_6kNVTE.ttf) format('truetype');}
+    .content404 {
+    background-color: #fe6534;
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 219px;
+    color: #fff;
+    font-family: 'Roca Two';
+    font-weight: 900;
+    position: relative;
+  }
+  .title__404 {
+    font-size: 176px;
+    line-height: 150px;
+    position: relative;
+    margin-bottom: 24px;
+  }
+  .title__404::before {
+    content: '';
+    background-image: url(../images/404/flower.svg);
+    width: 110px;
+    height: 136.78px;
+    background-size: cover;
+    position: absolute;
+    left: -74px;
+    z-index: 100;
+    top: 37px;
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+  }
+  </style
 </head>    
 
 <header class="header">
