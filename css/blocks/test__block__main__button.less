@@ -1,0 +1,48 @@
+//main: ../main.css
+
+.test-block__main__buttons {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+.test-block__main__button {
+    & span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 31.5px 64px 31.5px 64px;
+        font-size: 20px;
+        line-height: 28px;
+        color: rgba(28, 57, 101, 0.5);
+        border: 1px solid #EDEEEF;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+}
+
+.test-block__main__button--40 span {
+    padding: 31.5px 40px 31.5px 40px;
+}
+
+.test-block__main__radio:checked + span {
+   background-color: @deep;
+   color: #FFF;
+}
+
+.test-block__main__input {
+    border: 1px solid rgb(237, 238, 239);
+    border-radius: 8px; 
+    padding: 23px 0 25px 37px;
+    font-size: 20px;
+    line-height: 38px;
+    color: #8E9CB2;
+    width: 776px;
+    margin-bottom: 32px;
+    outline: none;
+
+    &.mb-none {
+        margin-bottom: 0;
+    }
+}
