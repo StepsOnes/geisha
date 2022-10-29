@@ -43,20 +43,13 @@
     top: -100px;
 }
 
-.decor__courses__img--bottom {
+.decor__courses__img--bottom::before {
+    content: '';
+    background-image: url(../images/courses__img/decoration/star.svg);
+    width: 301px;
+    height: 294px;
 
-    &::before{
-        content: '';
-        background-image: url(../images/courses__img/decoration/star.svg);
-        width: 301px;
-        height: 294px;
-
-        position: absolute;
-        z-index: 999;
-        top: 20px;
-    }
-
-    &::after {
-        
-    }
+    position: absolute;
+    z-index: 999;
+    top: 20px;
 }

@@ -17,9 +17,9 @@ function hideElem(){
     },1000);
 };
 
-// $(document).ready(function () {
-//     $("#phone").inputmask({"mask": "+7 (999) 999-99-99"});
-// });
+$(document).ready(function () {
+    $(".phone").inputmask({"mask": "+7 (999) 999-99-99"});
+});
 
 searchBlock.onclick = function(){
     searchBlock.classList.add('search__block--open');
@@ -32,19 +32,6 @@ navItemAbout.onclick = function() {
 };
 
 const selectBtn = document.querySelectorAll('.templates-selected__button');
-
-// selectBtn.forEach((item)=>{
-//     item.addEventListener('click', function(){
-//         for (let elem of selectBtn){
-//             elem.style.backgroundColor = "#f6f8fd";
-//             elem.style.color = "#1c3965";
-//         };
-        
-//         this.style.backgroundColor = "#1c3965";
-//         this.style.color = "#FFF";
-
-//     });
-// })
 
 selectBtn.forEach((item)=>{
     item.addEventListener('click', function(){
