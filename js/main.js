@@ -1,26 +1,27 @@
 const contactsBtns = document.querySelectorAll('.contacts-btn-form');
 const contactsMessage= document.querySelectorAll('.dropdown-form__btn');
 
-let hideTime = 0;
+
 
 contactsBtns.forEach((contactBtn) => {
     contactBtn.addEventListener('click', function(){
+        let hideTime = 0;
         const form = document.getElementById(contactBtn.dataset.formId);
-        this.classList.toggle('rotate')
+        contactBtn.classList.toggle('rotate')
         form.classList.toggle('none');
-
 
         contactsMessage.forEach((messageBtn) => {
             messageBtn.addEventListener('click', function(){
                 const messageForm = document.getElementById(messageBtn.dataset.messageId);
-                form.classList.toggle('none');
-                // contactBtn.classList.toggle('rotate')
+                form.classList.add('none');
+                contactBtn.classList.toggle('rotate')
                 messageForm.classList.remove('none');
-                let timerlId = setInterval(function(){
+                let timerId = setInterval(function(){
                     hideTime++;
-                    if (hideTime == 10){
+                    if (hideTime >= 5){
                         messageForm.classList.add('none');
-                        clearInterval(timerlId);
+                        clearInterval(timerId);
+                        hideTime = 0;
                     }
                 }, 1000)
             })

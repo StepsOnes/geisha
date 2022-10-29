@@ -1,11 +1,5 @@
 // main: ../main.css
 
-.contacts-dropdown__box__header {
-    width: 410px;
-    right: 0;
-    top: 60px;
-}
-
 .contacts-dropdown-form__main {
     width: 320px;
     right: -100px;
@@ -86,6 +80,7 @@
     top: 60px;
     width: 445px;
     position: absolute;
+    z-index: 100;
 }
 
 .dropdown-form__inp {
@@ -103,7 +98,6 @@
 .dropdown-form__btn {
     width: 100%;
     padding: 12px 0;
-    background-color: #FFB924;
     border-radius: 6px;
     color: #FFF;
     border: none;
@@ -111,10 +105,8 @@
     line-height: 18px;
     transition: 0.5s;
     cursor: pointer;
-
-    &:hover {
-        background-color: darken(#FFB924, 8%);
-    }
+    .btn();
+    .yellow__block();
 }
 
 .contacts-dropdown__box {
@@ -125,10 +117,32 @@
     line-height: 38px;
     padding: 35px 48px 35px 32px;
     position: absolute;
+    z-index: 100;
 
     & img {
         margin-right: 10px;
     }
+}
+
+.contacts-dropdown__box__header {
+    font-size: 20px;
+    line-height: 38px;
+    width: 410px;
+    right: 0;
+    top: 60px;
+    font-family: 'Noto Sans';
+}
+
+.contacts-dropdown__box__footer, .contacts-dropdown-form__footer {
+    width: 379px;
+    right: -30px;
+    top: 60px;
+    z-index: 100;
+}
+
+.contacts-dropdown__box__footer {
+    font-size: 17px;
+    line-height: 28px;
 }
 
 
