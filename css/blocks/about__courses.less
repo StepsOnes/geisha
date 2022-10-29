@@ -11,10 +11,10 @@
 }
 
 .about__courses-video {
-    background-color: black;
     border-radius: 12px;
     height: 425px;
     margin-bottom: 72px;
+    position: relative;
 }
 
 .about-courses__row {
@@ -87,4 +87,45 @@
 .about-courses-item--small {
     font-size: 16px;
     opacity: 0.8;
+}
+
+.about__courses-video__priview {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 12px;
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+
+    & img {
+        transition: 1s;
+    }
+}
+.about__courses-video__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 22px 32px;
+    padding-left: 64px;
+    background: #FFB924;
+    border-radius: 120px;
+    cursor: pointer;
+    font-family: 'Noto Sans';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #FFFFFF;
+
+    &::before {
+        content: '';
+        background-image: url(../images/video_img/play_arrow_24px.svg);
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 24px;
+        top: 16px;
+    }
 }

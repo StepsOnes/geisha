@@ -108,6 +108,7 @@
     align-items: center;
     width: 90%;
     justify-content: space-between;
+    z-index: 1000;
 
     position: absolute;
     left: 50%;
@@ -122,7 +123,6 @@
 .header-courses__video {
     width: 474px;
     height: 583px;
-    background-color: #412e2e;
     border-radius: 12px;
     position: relative;
 }
@@ -171,3 +171,45 @@
     border-bottom: 1px solid #FFF;
 }
 
+.header-courses__video__preview {
+    position: absolute;
+    background: linear-gradient(0deg, rgba(254, 101, 52, 0.1), rgba(254, 101, 52, 0.1));
+    z-index: 998;
+}
+
+.play-video__course::after {
+    content: 'Видео о курсе';
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    line-height: 26px;
+    width: 138px;
+    color: #FFFFFF;
+}
+
+.play-video--white {
+    background-color: #FFF;
+    
+    &::before {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-image: url(/images/video_img/play_arrow_24px_deep.svg);
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.play-video--white--shadow {
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    
+    &::after {
+        color: #1C3965;
+    }
+}
