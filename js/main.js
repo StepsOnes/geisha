@@ -6,15 +6,15 @@ let hideTime = 0;
 contactsBtns.forEach((contactBtn) => {
     contactBtn.addEventListener('click', function(){
         const form = document.getElementById(contactBtn.dataset.formId);
-        const formInp = form.form;
-        console.log(formInp)
         this.classList.toggle('rotate')
         form.classList.toggle('none');
+
 
         contactsMessage.forEach((messageBtn) => {
             messageBtn.addEventListener('click', function(){
                 const messageForm = document.getElementById(messageBtn.dataset.messageId);
                 form.classList.toggle('none');
+                // contactBtn.classList.toggle('rotate')
                 messageForm.classList.remove('none');
                 let timerlId = setInterval(function(){
                     hideTime++;
