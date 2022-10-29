@@ -1,4 +1,4 @@
-const contactsBtns = document.querySelectorAll('.contacts-btn');
+const contactsBtns = document.querySelectorAll('.contacts-btn-form');
 const contactsMessage= document.querySelectorAll('.dropdown-form__btn');
 
 let hideTime = 0;
