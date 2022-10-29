@@ -6,9 +6,20 @@
   height: 546px;
   width: 1200px;
   border-radius: 12px;
-  background-color: #5b5b5b;
   position: absolute;
   bottom: -280px;
+}
+.about-us-page__video__preview {
+  position: absolute;
+  border-radius: 12px;
+  background: linear-gradient(0deg, rgba(28, 57, 101, 0.1), rgba(28, 57, 101, 0.1));
+  overflow: hidden;
+}
+.about-us-page__video__preview img {
+  transition: 1s;
+}
+.about-us-page__video__preview:hover img {
+  transform: scale(1.05);
 }
 .main_about-us {
   padding-top: 388px;

@@ -9,10 +9,26 @@
     height: 546px;
     width: 1200px;
     border-radius: 12px;
-    background-color: rgb(91, 91, 91);
+
+    
 
     position: absolute;
     bottom: -280px;
+}
+
+.about-us-page__video__preview {
+    position: absolute;
+    border-radius: 12px;
+    background: linear-gradient(0deg, rgba(28, 57, 101, 0.1), rgba(28, 57, 101, 0.1));
+    overflow: hidden;
+
+    & img {
+        transition: 1s;
+    }
+
+    &:hover img{
+        transform: scale(1.05);
+    }
 }
 
 .main_about-us {
