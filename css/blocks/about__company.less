@@ -3,6 +3,11 @@
 .about__company {
     padding: 0 0 128px 0;
     border-bottom: 1px solid #EDEEEF;
+    position: relative;
+
+    @media @breakpoint-mobile {
+        padding: 200px 0 64px 0;
+    }
 }
 
 .about__company_cards {
@@ -13,6 +18,18 @@
     &.top {
         position: relative;
         top: -122px;
+
+        @media @breakpoint-mobile {
+            position: absolute;
+            top: -600px;
+        }
+    }
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -35,6 +52,11 @@
             background-color: #F4F5F5;
         }
     }
+
+    @media @breakpoint-mobile {
+        width: 333px;
+        padding: 24px;
+    }
 }
 
 .about__card_title {
@@ -52,7 +74,7 @@
     font-size: 15px;
     line-height: 24px;
     opacity: 0.7;
-    width: 309px;
+    max-width: 309px;
     text-decoration: none;
     color: @deep;
 }
@@ -68,6 +90,12 @@
     &.company__achievements--white {
         .block__color(#FFF)
     }
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+    }
 }
 
 .achievemets__title {
@@ -79,6 +107,10 @@
     &.achievemets__title--yellow {
         color: rgba(255, 185, 36, 1);
         
+    }
+
+    @media @breakpoint-mobile {
+        font-weight: 900;
     }
 }
 
@@ -100,4 +132,8 @@
 .main__link_about__company {
     margin-bottom: 30px;
     margin-top: -100px;
+
+    @media @breakpoint-mobile {
+        margin-top: 0px;
+    }
 }

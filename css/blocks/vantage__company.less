@@ -12,9 +12,22 @@
 .vantage-company__cards {
     display: flex;
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 .vantage-company__card {
+    position: relative;
+
+    @media @breakpoint-mobile {
+        max-width: 320px;
+    }
+}
+
+.vantage-company__card__img {
     position: relative;
 }
 

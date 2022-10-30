@@ -17,6 +17,10 @@
     &:hover .courses-product-card__img img{
         transform: scale(1.1);
     }
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+    }
 }
 
 .courses-product-card__img {
@@ -47,4 +51,12 @@
     line-height: 36px;
     color: #1C3965
 }
+
+.lessons__conditions__product {
+    display: none;
+    @media @breakpoint-mobile {
+        display: none;
+    }
+}
+
 

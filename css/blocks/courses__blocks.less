@@ -9,13 +9,19 @@
 .courses-img  {
     transition: ease 1s;
     overflow: hidden;
-    max-width: 644px;
+    width: 100%;
     max-height: 410px;
     border-radius: 12px;
+    background-size: cover;
+
+    @media @breakpoint-mobile {
+        max-height: 220px;
+    }
 }
 
 .courses-img img {
     transition: 1s;
+    width: 100%;
 }
 
 .courses__block {
@@ -27,6 +33,11 @@
     &:hover .courses-img img{
         transform: scale(1.1);
     }
+
+    @media @breakpoint-mobile {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
 }
 
 .courses-block__title {
@@ -36,10 +47,15 @@
     line-height: 48px;
     color: #FFFFFF;
     margin-bottom: 32px;
-    min-width: 435px;
 
     &.courses-block__title--blue {
         color: #1C3965;
+    }
+
+    @media @breakpoint-mobile {
+        font-weight: 900;
+        font-size: 28px;
+        margin-bottom: 24px;
     }
 }
 
@@ -50,6 +66,10 @@
 
 .conditions-course__list {
     margin-top: 32px;
+
+    @media @breakpoint-mobile {
+        margin-top: 20px;
+    }
 }
 
 .conditions-course__item {
@@ -67,18 +87,27 @@
     &.conditions-course__item--blue {
         color: #1C3965;
     }
+
+    @media @breakpoint-mobile {
+        font-size: 13px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
 }
 
 .courses-btns {
     display: flex;
     justify-content: flex-start;
     column-gap: 16px;
+
+    @media @breakpoint-mobile {
+        column-gap: 12px;
+    }
 }
 
 .block__courses--btns {
     margin-top: 32px;
 }
-
 
 .courses-enroll__btn {
     border-radius: 6px;
@@ -107,6 +136,10 @@
             background-color: #FE7042;
         }
     } 
+
+    @media @breakpoint-mobile {
+        padding: 11px 28px;
+    }
 }
 
 .courses-enroll__btn__trial-lessons {

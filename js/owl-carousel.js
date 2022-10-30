@@ -53,5 +53,23 @@ $(".search-slider ").owlCarousel({
     '<button id="master-classes__btn-next" class="master-classes__btn master-classes__btn--blue"></button>'
   ]
 });
+
+$(".course-lessons__cards").owlCarousel({
+  dots: false,
+  margin: 15,
+  autoWidth: true,
+  items: 3,
+  // mouseDrag: false,
+
+  responsive:{
+    1250:{
+        items: 1,
+        margin: 30,
+        touchDrag: true,
+        mouseDrag: true,
+    }
+  }
+    
+});
   
 }); 

@@ -1,18 +1,36 @@
-// main: ../main.css
-
-
+//main: ../main.css
 
 .content_title--home {
-    width: 700px;
+    max-width: 700px;
     margin-bottom: 16px;
+
+    @media @breakpoint-mobile {
+        max-width: 320px;
+        margin-bottom: 24px;
+    }
 }
 
 .content_subtitle--home {
     margin-bottom: 24px;
+
+    @media @breakpoint-mobile {
+        max-width: 320px;
+        margin-bottom: 0;
+    }
 }
 
-.header-content {
-    padding: 190px 0 256px 0;
+.content_about--home {
+    @media @breakpoint-mobile {
+       display: none;
+    }
+}
+
+.header-content--home {
+    padding: 196px 0 256px 0;
+
+    @media @breakpoint-mobile {
+        padding-bottom: 656px;
+     }
 }
 
 .content-video {
@@ -45,12 +63,20 @@
         top: -13px;
         z-index: 999;
     }
+
+    @media @breakpoint-mobile {
+        display: none;    
+    }
 }
 
 .header__row--home {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        justify-content: center;
+     }
 }
 
 .content-video__preview {

@@ -28,6 +28,11 @@
     &.course-lessons__card--deep {
         background-color: @deep;
     }
+
+    @media @breakpoint-mobile {
+        width: 286px;
+        padding: 16px;
+    }
 }
 
 .lessons-card__img {
@@ -117,8 +122,16 @@
 
 .main__title--lesson {
     margin-top: 128px;
+
+    @media @breakpoint-mobile {
+        margin-top: 80px;
+    }
 }
 
 .main__subtitle--lesson {
     margin: 16px 0 64px 0;
+
+    @media @breakpoint-mobile {
+        margin: 8px 0 48px 0;
+    }
 }
