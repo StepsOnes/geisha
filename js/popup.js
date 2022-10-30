@@ -1,8 +1,8 @@
 const exit = e => {
     const shouldExit =
-        [...e.target.classList].includes('exit-intent-popup') || // user clicks on mask
-        e.target.className === 'exit-btn' || // user clicks on the close icon
-        e.keyCode === 27; // user hits escape
+        [...e.target.classList].includes('exit-intent-popup') || 
+        e.target.className === 'exit-btn' || 
+        e.keyCode === 27; 
 
     if (shouldExit) {
         document.querySelector('.exit-intent-popup').classList.remove('visible');

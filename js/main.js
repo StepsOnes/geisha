@@ -2,7 +2,6 @@ const contactsBtns = document.querySelectorAll('.contacts-btn-form');
 const contactsMessage= document.querySelectorAll('.dropdown-form__btn');
 
 
-
 contactsBtns.forEach((contactBtn) => {
     contactBtn.addEventListener('click', function(){
         let hideTime = 0;
