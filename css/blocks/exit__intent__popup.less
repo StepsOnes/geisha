@@ -1,0 +1,110 @@
+//main: ../main.css
+
+.exit-intent-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background: rgba(28, 57, 101, 0.4);
+    transform: translateY(60%) scale(0);
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+.exit-intent-popup.visible {
+    transform: translateY(0) scale(1);
+}
+
+.newsletter {
+    font-family: 'Noto Sans';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1300px;
+    height: 786px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 20px rgba(39, 85, 96, 0.1);
+    border-radius: 12px;
+    padding: 64px;
+    
+}
+
+
+.exit-btn {
+    cursor: pointer;
+    &::after {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-image: url(../images/popUp/clear_24px.svg);
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+}
+
+.popup__title {
+    font-family: 'Roca Two';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 10px;
+}
+
+.popup__subtitle {
+    opacity: 0.7;
+    font-size: 20px;
+    line-height: 38px;
+    margin-bottom: 64px;
+}
+
+
+.popup__course-card {
+    background: #FE6534;
+    border-radius: 12px;
+    padding: 32px;
+    display: flex;
+    justify-content: space-between;
+
+    &:hover .popup__course-card__img img {
+        transform: scale(1.1);
+    }
+}
+
+.popup__course-card__content {
+    max-width: 373px;
+}
+
+.popup__course-card__content__title {
+    font-family: 'Roca Two';
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.popup__course-card__img {
+    max-width: 644px;
+    max-height: 434px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    & img {
+        transition: 1s;
+    }
+}
+
+.popup__course-card__content__btn {
+    display: block;
+    margin-top: 32px;
+    .btn();
+    .yellow__block();
+    text-align: center;
+    color: #FFF;
+    transition: 0.5s;
+    padding: 24px 0;
+}
