@@ -3,10 +3,18 @@
 .vantage__company {
     padding: 128px 0;
     background: #F6F8FD;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .main-subtitle__vantage {
     margin: 16px 0 64px 0;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 48px;
+    }
 }
 
 .vantage-company__cards {
@@ -29,6 +37,14 @@
 
 .vantage-company__card__img {
     position: relative;
+
+    & img {
+        @media @breakpoint-mobile {
+            width: 320px;
+            height: 308px;
+        }
+    }
+
 }
 
 
@@ -46,5 +62,11 @@
 
     & span{
         color: rgba(255, 185, 36, 1);
+    }
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 28px;
+        left: 24px;
     }
 }

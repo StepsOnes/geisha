@@ -20,6 +20,7 @@
 
     @media @breakpoint-mobile {
         flex-direction: column;
+        gap: 16px;
     }
 }
 
@@ -31,12 +32,32 @@
 
     & img {
         transition: 1s;
+        width: 100%;
+
+        @media @breakpoint-mobile {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+    }
+
+    @media @breakpoint-mobile {
+        max-width: 40px;
+        max-height: 40px;
+        border-radius: 50%;
+        overflow: none;
     }
 }
 
 .courses-product-card__about {
     display: flex;
     column-gap: 32px;
+
+    @media @breakpoint-mobile {
+        column-gap: 20px;
+        align-items: flex-start;
+        justify-content: center;
+    }
 }
 
 .courses-product-card__content {
@@ -49,11 +70,18 @@
     font-family: 'Roca Two';
     font-size: 24px;
     line-height: 36px;
-    color: #1C3965
+    color: #1C3965;
+
+    @media @breakpoint-mobile {
+        font-weight: 900;
+        max-width: 324px;
+    }
 }
 
 .lessons__conditions__product {
-    display: none;
+    display: flex;
+    column-gap: 8px;
+
     @media @breakpoint-mobile {
         display: none;
     }

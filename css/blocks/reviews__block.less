@@ -12,6 +12,10 @@
 .reviews-cards {
     display: flex;
     column-gap: 30px;
+
+    @media @breakpoint-mobile {
+        display: none;
+     }
 }
 
 .reviews-row {
@@ -108,6 +112,11 @@
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 16px;
+     }
 }
 
 .reviews-link {
@@ -128,7 +137,9 @@
         color: @deep;
     }
 
-
+    @media @breakpoint-mobile {
+        width: 100%;
+     }
 }
 
 .reviews-links__box {

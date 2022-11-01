@@ -7,16 +7,36 @@
     &.help-about--white {
         background-color: #FFF;
     }
+
+    @media @breakpoint-mobile {
+        padding: 90px 0 120px 0;
+    }
+}
+
+.help-about__row__img img{
+    @media @breakpoint-mobile {
+       width: 100%;
+    }
 }
 
 .help-about__row{
     display: flex;
     column-gap: 115px;
+
+    @media @breakpoint-mobile {
+       flex-direction: column;
+       justify-content: center;
+       gap: 40px;
+    }
 }
 
 .main-title__help-about {
     max-width: 571px;
     margin-bottom: 32px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 24px;
+    }
 }
 
 .help-about__subtitle {
@@ -27,6 +47,10 @@
     line-height: 26px;
     opacity: 0.7;
     max-width: 505px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 24px;
+    }
 }
 
 .help-about-block__btns {
@@ -45,5 +69,10 @@
         position: absolute;
         bottom: 60px;
         left: -70px;
+
+        @media @breakpoint-mobile {
+            left: 100px;;
+            bottom: -82px;
+        }
     }
 }

@@ -3,20 +3,38 @@
 .consultation__block {
     padding: 128px 0 133px 0;
     border-bottom: 1px solid #EDEEEF;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .consultation-main__title {
     margin-bottom: 16px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 8px;
+    }
 }
 
 .consultation-main__subtitle {
     margin-bottom: 62px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 48px;
+    }
 }
 
 .consultation__cards{
     display: flex;
     column-gap: 30px;   
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+        justify-content: center;
+    }
 }
 
 .consultation__card {
@@ -30,17 +48,32 @@
         background-color: #F4F5F5;
     }
 
+    @media @breakpoint-mobile {
+        width: 320px;
+        padding: 24px;
+    }
+
 }
 
 .consultation__links {
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
 }
 
 .consultation-main__link {
     display: block;
     width: 49%;
+
+    @media @breakpoint-mobile {
+        width: 100%;
+    }
 }
 
 .consultation-card__img {

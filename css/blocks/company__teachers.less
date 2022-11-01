@@ -1,14 +1,19 @@
 // main: ../main.css
 
 .company__teachers__container {
-    max-width: 1250px;
+    max-width: 1300px;
     margin: 0 auto;
     position: relative;
+    padding-left: 20px;
 }
 
 .company__teachers {
     padding: 129px 0;
     border-bottom: 1px solid @grey;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .main-title__company__teachers {
@@ -30,6 +35,11 @@
     &:hover .company-teachers__img img {
         transform: scale(1.1);
     }
+
+    @media @breakpoint-mobile {
+        width: 286px;
+        padding: 127px 16px 16px 16px;
+    }
 }
 
 .company-teachers__img {
@@ -42,6 +52,7 @@
     & img {
         transition: 1s;
     }
+
 }
 
 .company-teachers__box {
@@ -53,6 +64,10 @@
     justify-content: center;
     align-items: center;
     row-gap: 4px;
+
+    @media @breakpoint-mobile {
+        width: 254px;
+    }
 }
 
 .company__teacher__name {
@@ -60,12 +75,14 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 36px;
+    text-align: center;
 }
 
 .company__teacher__post {
     font-family: 'Noto Sans';
     line-height: 36px;
     opacity: 0.7;
+    text-align: center;
 }
 
 .slide-scenery {
@@ -85,6 +102,10 @@
     top: 70px;
     left: 258px;
     z-index: 999;
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .scenery2 {
@@ -96,6 +117,10 @@
     bottom: 73px;
     left: -25px;
     z-index: 999;
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 
@@ -109,6 +134,12 @@
     left: 49.6%;
     transform: translateX(-49.6%);
     z-index: 999;
+
+    
+    @media @breakpoint-mobile {
+        top: 60px;
+        left: 280px;
+    }
 }
 
 .scenery4 {
@@ -120,6 +151,11 @@
     top: 100px;
     right: 0;
     z-index: 999;
+
+    @media @breakpoint-mobile {
+        top: 430px;
+        left: 0;
+    }
 }
 
 .scenery5 {
@@ -131,4 +167,9 @@
     bottom: 0;
     right: 143px;
     z-index: 999;
+
+    @media @breakpoint-mobile {
+        bottom: 50px;
+        right: 0;
+    }
 }
