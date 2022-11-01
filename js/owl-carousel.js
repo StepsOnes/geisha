@@ -59,7 +59,7 @@ $(".course-lessons__cards").owlCarousel({
   margin: 15,
   autoWidth: true,
   items: 3,
-  // mouseDrag: false,
+  
 
   responsive:{
     1250:{
@@ -71,5 +71,35 @@ $(".course-lessons__cards").owlCarousel({
   }
     
 });
+
+// $(".reviews-slaider-mobile").owlCarousel({
+//   dots: false,
+//   margin: 16,
+//   autoWidth: true,
+//   items: 0,
+  
+
+ 
+    
+// });
   
 }); 
+
+
+$(function() {
+  $(window).on('resize', function(){
+  var owlCarousel = $('.reviews-slaider-mobile').data('owlCarousel');
+   if($(window).width() <= 767) {
+   !owlCarousel && $('.reviews-slaider-mobile').owlCarousel({
+    dots: false,
+    margin: 16,
+    autoWidth: true,
+    items: 0,
+   });
+   }
+   else {
+   owlCarousel && owlCarousel.destroy();
+   }
+   }).trigger('resize');
+  });
+  
