@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="shortcut icon" href="favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="favicon/favicon.png" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/owl-carousel.css">
 </head>
 <body>
     <header class="header">
         <nav class="header-nav">
             <div class="nav-group">
-        <a href="#" class="header-logo">
+        <a href="404.html" class="header-logo">
             <img src="images/header/Logo_Geisha.svg" alt="Geisha">
         </a>
 
@@ -49,20 +50,20 @@
                     <input type="text" name="" id="search__inp" class="search__inp" placeholder="Найти...">
                 </form>
 
-                
+
                 <button id="open-search" class="header-serch"></button>
             </div>
-            
-            
+
+
             <a target = "_blank" href="https://yandex.ru/maps/54/yekaterinburg/?ll=60.576910%2C56.841514&mode=poi&poi%5Bpoint%5D=60.575870%2C56.841715&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1592532139&z=17.74" class="header-icon header_icon--map"></a>
             <a href="#" class="contacts-btn">Написать в WhatsApp</a>
 
             <button data-form-id="f1" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="images/header/keyboard_arrow_white.svg" alt="arrow"></button>
             <div class="contacts-btn__block">
 
-                <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">  
+                <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">
                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                        <input data-message-id="m1" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                        <input data-message-id="m1"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                 </div>
 
                 <div id="m1" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -86,7 +87,7 @@
                 <p class="header__content_subtitle content_subtitle--home">
                     Скорая психологическая помощь онлайн и вживую в Екатеринбурге
                 </p>
-                
+
                 <p class="header__content_about content_about--home">
                     У вас проблема в отношениях? Звоните и мы поможем ее решить
                 </p>
@@ -99,11 +100,11 @@
                             <div class="play-video"></div>
                         </div>
                     </div>
-                    
+
 
                 </div>
 
-                
+
             </div>
         </div>
     </header>
@@ -115,7 +116,7 @@
             </div>
 
             <menu class="header-mobile__menu">
-                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
                 <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
                 <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
             </menu>
@@ -123,10 +124,23 @@
 
         <nav class="header-mobile__nav">
             <ul class="header-mobile__nav-list">
-                <li><a href="#" class="header-mobile__nav-item active">Все курсы</a></li>
-                <li><a href="#" class="header-mobile__nav-item">Консультации</a></li>
-                <li><a href="#" class="header-mobile__nav-item">О центре</a></li>
+                <li><a href="pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
+
+            
         </nav>
     </div>
 
@@ -484,14 +498,15 @@
             <div class="contacts__block contacts__block--home">
 
                 <div class="contacts-block__btns">
-                    <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                    <a href="#" class="contacts-btn contacts-btn__mobile-none">Написать в WhatsApp</a>
+                    <a href="#" class="contacts-btn contacts-btn__mobile">Написать</a>
 
                     <button data-form-id="f2" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                     <div class="contacts-btn__block">
         
                         <div id="f2" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                 <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                <input data-message-id="m2" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                <input data-message-id="m2"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                         </div>
         
                         <div id="m2" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -575,13 +590,15 @@
             <div class="contacts__block contacts__block--home">
 
                 <div class="contacts-block__btns">
-                <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                    <a href="#" class="contacts-btn contacts-btn__mobile-none">Написать в WhatsApp</a>
+                    <a href="#" class="contacts-btn contacts-btn__mobile">Написать</a>
+
                 <button data-form-id="f3" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                 <div class="contacts-btn__block">
 
                     <div id="f3" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                             <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                            <input data-message-id="m3" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                            <input data-message-id="m3"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                     </div>
 
                     <div id="m3" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -885,7 +902,7 @@
 
                         <div class="reviews-card__user__box">
                             <div class="reviews-user__img">
-                                <img src="images/reviews__blocks/01.png" alt="">
+                                <img src="images/reviews__blocks/01.svg" alt="">
                             </div>
 
                             <div class="reviews-user__about">
@@ -992,6 +1009,10 @@
                 <div class="reviews-slaider-mobile owl-carousel owl-theme">
                     <div class="reviews-slaide">
                         <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="images/reviews__blocks/01.svg" alt="">
+                            </div>
+                            
                             <h2 class="reviews-card__user__name__mobile">
                                 Ангелина
                             </h2>
@@ -1008,8 +1029,12 @@
 
                     <div class="reviews-slaide">
                         <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="images/reviews__blocks/02.svg" alt="">
+                            </div>
+
                             <h2 class="reviews-card__user__name__mobile">
-                                Ангелина
+                                Катя
                             </h2>
 
                             <p class="reviews-card__user__about__mobile">
@@ -1018,14 +1043,18 @@
                         </div>
 
                         <p class="reviews-person__comment__mobile">
-                            Пришла с проблемой токсичных отношений. Уже была на грани развода, муж изменял. Боялась признаться себе, что страшно уходить от ненавистного мужа в некуда, с 3 детьми. Ни работы, ничего за плечами, пошла на консультацию к сексологу Андреевой. Она объяснила, что либо я принимаю все как есть и дальше мучаюсь, либо меняю отношение к мужу, его поведению, через новое отношение к себе, либо развод. Решили попробовать начать изменения с себя, пошла на «Школу жен». Записалась и сейчас уже прохожу 5 занятие. Отношение к мужу поменялось, поговорили по душам, приняли решение начать все заново. Спасибо Алексею и особенно Ларисе Баталовой за поддержку в начале моей трансформации. Настя Литвинцева все грамотно объяснила, четко по делу, какие ошибки я совершала, жду очередного занятия. Вы очень крутая
+                            Я встретила мужчину своей мечты. Он старше меня и конечно хотелось соответствовать его желаниям. Решила пройти все, что связано с сексом. Особенно впечатлили занятия «Лингам» и «Искусство орального секса»!!! Они побудили во мне море чувств, истинное желание женщины доставлять удовольствие и быть самой желанной! И главное, то, чему я научилась — приводить в восторг моего мужчину!
                         </p>
                     </div>
 
                     <div class="reviews-slaide">
                         <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="images/reviews__blocks/03.svg" alt="">
+                            </div>
+
                             <h2 class="reviews-card__user__name__mobile">
-                                Ангелина
+                                Ирина
                             </h2>
 
                             <p class="reviews-card__user__about__mobile">
@@ -1034,14 +1063,18 @@
                         </div>
 
                         <p class="reviews-person__comment__mobile">
-                            Пришла с проблемой токсичных отношений. Уже была на грани развода, муж изменял. Боялась признаться себе, что страшно уходить от ненавистного мужа в некуда, с 3 детьми. Ни работы, ничего за плечами, пошла на консультацию к сексологу Андреевой. Она объяснила, что либо я принимаю все как есть и дальше мучаюсь, либо меняю отношение к мужу, его поведению, через новое отношение к себе, либо развод. Решили попробовать начать изменения с себя, пошла на «Школу жен». Записалась и сейчас уже прохожу 5 занятие. Отношение к мужу поменялось, поговорили по душам, приняли решение начать все заново. Спасибо Алексею и особенно Ларисе Баталовой за поддержку в начале моей трансформации. Настя Литвинцева все грамотно объяснила, четко по делу, какие ошибки я совершала, жду очередного занятия. Вы очень крутая
+                            Спасибо специалистам и ведущим программы «Школы жён, подруг и любовниц». Мне очень помогли, практически спасли мою семью. Вернули мужа и папу в семью. Помогли мне избавиться от  затяжной депрессии. Счастья и процветания!!! Отдельное спасибо Мацкевичу Алексею, создателю этой программы и этого центра.
                         </p>
                     </div>
 
                     <div class="reviews-slaide">
                         <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="images/reviews__blocks/04.svg" alt="">
+                            </div>
+
                             <h2 class="reviews-card__user__name__mobile">
-                                Ангелина
+                                Артем
                             </h2>
 
                             <p class="reviews-card__user__about__mobile">
@@ -1050,7 +1083,7 @@
                         </div>
 
                         <p class="reviews-person__comment__mobile">
-                            Пришла с проблемой токсичных отношений. Уже была на грани развода, муж изменял. Боялась признаться себе, что страшно уходить от ненавистного мужа в некуда, с 3 детьми. Ни работы, ничего за плечами, пошла на консультацию к сексологу Андреевой. Она объяснила, что либо я принимаю все как есть и дальше мучаюсь, либо меняю отношение к мужу, его поведению, через новое отношение к себе, либо развод. Решили попробовать начать изменения с себя, пошла на «Школу жен». Записалась и сейчас уже прохожу 5 занятие. Отношение к мужу поменялось, поговорили по душам, приняли решение начать все заново. Спасибо Алексею и особенно Ларисе Баталовой за поддержку в начале моей трансформации. Настя Литвинцева все грамотно объяснила, четко по делу, какие ошибки я совершала, жду очередного занятия. Вы очень крутая
+                            Не смотря на название женский клуб «Гейша», тут обучают и мужчин. Спасибо за курс «Идеальный любовник» Наталии Андреевой. Получил много знаний и навыков по женскому телу, гормонам, ее оргазмам. Могу точно отметить в себе изменения в отношении к своей женщине, я стал спокойнее, тактичнее и грамотнее в управлении ласками, я больше слушаю и поддерживаю ее, так как понял, что женщины жалуются не всегда с призывом что-то идти и делать, иногда ей просто хочется поговорить, побыть маленькой девочкой, которую надо взять на ручки. Изменился подход к женщине. Всем рекомендую пройти курс, оказывается, есть где учиться, даже седым, брутальным и опытным
                         </p>
                     </div>
                 </div>
@@ -1189,13 +1222,15 @@
                             </p>
 
                             <div class="contacts-block__btns help-about-block__btns">
-                                <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                                <a href="#" class="contacts-btn contacts-btn__mobile-none">Написать в WhatsApp</a>
+                                <a href="#" class="contacts-btn contacts-btn__mobile">Написать</a>
+
                                 <button data-form-id="f4" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                                 <div class="contacts-btn__block">
 
                                     <div id="f4" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                             <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                            <input data-message-id="m4" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                            <input data-message-id="m4"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                     </div>
                 
                                     <div id="m4" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -1250,7 +1285,7 @@
                 </div>
                 </div>
             </div>
-
+        </div>
     </main>
 
     <footer class="footer">
@@ -1271,13 +1306,13 @@
                     </p>
 
                     <div class="header-contacts">                        
-                        <button data-form-id="f5" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="images/header/keyboard_arrow_white.svg" alt="arrow"></button>
-                        <a href="#" class="contacts-btn">Написать</a>
+                        <button data-form-id="f5" class="contacts-btn contacts-btn-form contacts-btn__footer__mob">+7 950 638 8922 <img class="dropdown-arrow" src="images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                        <a href="#" class="contacts-btn contacts-btn__footer__mob">Написать</a>
 
                              <div class="contacts-btn__block">
                                 <div id="f5" class="contacts-dropdown-form contacts-dropdown-form__footer none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m5" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m5" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
                 
                                 <div id="m5" class="contacts-dropdown__box contacts-dropdown__box__footer none">

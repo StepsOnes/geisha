@@ -28,6 +28,19 @@ contactsBtns.forEach((contactBtn) => {
     })
 });
 
+const selectBtn = document.querySelectorAll('.templates-selected__button');
+
+selectBtn.forEach((item)=>{
+    item.addEventListener('click', function(){
+        for (let elem of selectBtn){
+            elem.classList.remove('select-btn');
+        };
+
+        this.classList.add('select-btn')
+
+    });
+})
+
 
 
 

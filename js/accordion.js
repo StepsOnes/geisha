@@ -30,7 +30,7 @@ function boxHandler(e){
         currentBox.classList.remove('arrow-rotate__1');
         currentBox.classList.add('arrow-rotate__2');
     }
-};
+}
 
 function boxHandler2(e){
     e.preventDefault();
@@ -44,7 +44,7 @@ function boxHandler2(e){
         currentBody.style.maxHeight = (currentBody.scrollHeight + 40) + "px"; // открываем контент
     } else {
         currentBody.style.maxHeight = 0;
-    };
+    }
 }
 
 if(boxes[0]){

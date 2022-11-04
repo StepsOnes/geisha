@@ -3,12 +3,14 @@
 .content404 {
     background-color: @red;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     padding-top: 219px;
     color: #FFF;
     font-family: 'Roca Two';
     font-weight: 900;
     position: relative;
+
+
 }
 
 .title__404 {
@@ -28,6 +30,15 @@
         z-index: 100;
         top: 37px;
         transform: rotate(4deg);
+
+        @media @breakpoint-mobile {
+            display: none;
+        }
+    }
+
+    @media @breakpoint-mobile {
+        font-size: 72px;
+        line-height: 60px;
     }
 }
 
@@ -35,6 +46,12 @@
     font-size: 56px;
     line-height: 70px;
     margin-bottom: 136px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
 
 .back-img--star {
@@ -45,5 +62,13 @@
     bottom: 0px;
     width: 598px;
     height: 604px;
+
+    @media @breakpoint-mobile {
+        width: 352px;
+        height: 172px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 

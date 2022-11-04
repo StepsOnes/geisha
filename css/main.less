@@ -9,21 +9,6 @@ body {
     box-sizing: border-box;
 }
 
-
-
-.hide {
-    transform: translateY(-100%);
-    
-}
-
-.none {
-    display: none;
-}
-
-.border-none {
-    border: none;
-}
-
 *,
 *::after,
 *::before{
@@ -68,6 +53,24 @@ body {
 @import "blocks/test/test__block__main__button.less";
 @import "blocks/test/test__link.less";
 
+/* timetable */
+@import "blocks/timetable/timetable__about.less";
+@import "blocks/timetable/timetable__text__block.less";
+@import "blocks/timetable/timetable__course__program.less";
+@import "blocks/timetable/timetable__upcoming__classes.less";
+@import "blocks/timetable/timetable__filter__block.less";
+
+/* master_classes */
+@import "blocks/master_class/master__classes__block.less";
+@import "blocks/master_class/master__classes__courses.less";
+@import "blocks/master_class/master__classes__blocks.less";
+@import "blocks/master_class/master__class__header__content.less";
+@import "blocks/master_class/master__class__download__block.less";
+@import "blocks/master_class/master__class__course.less";
+@import "blocks/master_class/master__classes__lessons.less";
+@import "blocks/master_class/master__class__form.less";
+@import "blocks/master_class/about__master__class.less";
+
 @import "blocks/container.less";
 @import "blocks/about__company.less";
 @import "blocks/whatsup__fixed.less";
@@ -84,7 +87,6 @@ body {
 @import "blocks/help__problems";
 @import "blocks/courses__about__btn";
 @import "blocks/acquaintance__company.less";
-@import "blocks/master__classes__block.less";
 @import "blocks/company__teachers.less";
 @import "blocks/reviews__block.less";
 @import "blocks/vantage__company.less";
@@ -114,30 +116,19 @@ body {
 @import "blocks/appointment__psychologist.less";
 @import "blocks/download__block.less";
 @import "blocks/about-courses__block.less";
-@import "blocks/master__classes__courses.less";
-@import "blocks/master__classes__blocks.less";
-@import "blocks/master__class__header__content.less";
-@import "blocks/master__class__download__block.less";
-@import "blocks/about__master__class.less";
-@import "blocks/master__class__course.less";
-@import "blocks/master__classes__lessons.less";
 @import "blocks/404.less";
 @import "blocks/order__content.less";
 @import "blocks/ordering__block.less";
 @import "blocks/radio__btn.less";
-@import "blocks/master__class__form.less";
 @import "blocks/help-about__row__order.less";
-@import "blocks/timetable__about.less";
-@import "blocks/timetable__text__block.less";
-@import "blocks/timetable__course__program.less";
-@import "blocks/timetable__upcoming__classes.less";
-@import "blocks/timetable__filter__block.less";
 @import "blocks/search__slider__block.less";
 @import "blocks/main__test.less";
 @import "blocks/about__test.less";
 @import "blocks/exit__intent__popup.less";
 @import "blocks/integration__contetn.less";
 @import "blocks/enrolled__block.less";
+
+
 
 //pages
 @import "pages/courses.less";
@@ -147,9 +138,9 @@ body {
 @import "pages/course.less";
 @import "pages/consultation__page.less";
 
+/* other */
+@import "js_classes/js__classes.less";
 
 
-.select-btn {
-    background-color: @deep;
-    color: #FFF;
-}
+
+

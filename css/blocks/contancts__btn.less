@@ -17,9 +17,8 @@
 
 .contacts-btn {
     font-family: 'Noto Sans Display', sans-serif;
-    font-weight: 600;
     padding: 9px 24px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 18px;
     color: #FFF;
@@ -59,7 +58,6 @@
         background-color: #FFF;
         color: @deep;
     }
-
 }
 
 .contacts-btn__block {
@@ -81,6 +79,10 @@
     width: 445px;
     position: absolute;
     z-index: 100;
+
+    @media @breakpoint-mobile {
+        width: 320px;
+    }
 }
 
 .dropdown-form__inp {
@@ -127,12 +129,20 @@
 }
 
 .contacts-dropdown__box__header {
+    font-family: 'Noto Sans';
     font-size: 20px;
     line-height: 38px;
     width: 410px;
     right: 0;
     top: 60px;
-    font-family: 'Noto Sans';
+    display: flex;
+    align-items: center;
+
+    @media @breakpoint-mobile {
+        width: 320px;
+        font-size: 17px;
+        padding: 20px;
+    }
 }
 
 .contacts-dropdown__box__footer, .contacts-dropdown-form__footer {
@@ -147,6 +157,25 @@
     line-height: 28px;
 }
 
+.contacts-btn__mobile-none {
+    @media @breakpoint-mobile {
+        display: none;
+    }
+}
+
+.contacts-btn__mobile {
+    display: none;
+
+    @media @breakpoint-mobile {
+        display: flex;
+    }
+}
+
+.contacts-btn__footer__mob {
+    @media @breakpoint-mobile {
+        padding: 9px 16px;
+    }
+}
 
 
 

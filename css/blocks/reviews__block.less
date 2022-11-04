@@ -170,6 +170,18 @@
     margin-bottom: 24px;
     background-color: #FFF;
     border-radius: 12px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        width: 26px;
+        height: 20px;
+        background: url(../images/reviews__blocks/decor.svg);
+        background-size: cover;
+    }
 }
 
 .reviews-card__user__name__mobile {
@@ -195,5 +207,12 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
+}
+
+.reviews-card__user__photo {
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    top: -36px;
 }
 

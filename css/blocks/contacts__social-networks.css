@@ -1,0 +1,20 @@
+.contacts-social-networks__title {
+  margin-bottom: 20px;
+}
+.contacts-social-networks__subtitle {
+  margin-bottom: 48px;
+}
+.social__network-link--yellow {
+  background-color: #FFB924;
+  color: #FFF;
+  opacity: 1;
+  font-family: 'Noto Sans';
+  padding: 22px 43px 23px 32px;
+  transition: 0.4s;
+}
+.social__network-link--yellow:hover {
+  background-color: #faaa00;
+}
+.contacts__social-networks {
+  padding-bottom: 128px;
+}

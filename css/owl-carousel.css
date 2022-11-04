@@ -1,3 +1,9 @@
 .owl-theme .owl-nav [class*='owl-']:hover {
     background-color: transparent;
 }
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+     overflow: visible;
+    -webkit-transform: translate3d(0,0,0);
+}
