@@ -2,6 +2,11 @@
 
 .contacts-payment__cards {
     display: flex;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 42px;
+    }
 }
 
 .contacts-payment__circle {

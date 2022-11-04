@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Курсы</title>
-    <link rel="shortcut icon" href="../favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -60,7 +62,7 @@
 
                 <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                        <input data-message-id="m1" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                        <input data-message-id="m1" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                 </div>
 
                 <div id="m1" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -82,15 +84,15 @@
                     У вас проблема в отношениях? Звоните и мы поможем ее решить
                 </p>
 
-                <div class="contacts-block__btns">
-                    <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                <div class="contacts-block__btns mobile-none">
+                    <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
 
                     <button data-form-id="f2" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                     <div class="contacts-btn__block">
         
                         <div id="f2" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                 <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                <input data-message-id="m2" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                <input data-message-id="m2" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                         </div>
         
                         <div id="m2" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -102,15 +104,50 @@
     
                 </div>
             </div>
-        </div>
+
         
     </header>
+
+    <div class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../index.html"><img src="../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+        </nav>
+    </div>
  
     <main class="main">
 
         <div class="selected-buttons__temlates">
             <div class="container">
-                <div class="selected-buttons__temlates-row">
+                <div id="select-buttons-carousel-1" class="selected-buttons__temlates-row owl-carousel owl-theme">
                     <button class="templates-selected__button select-btn">Все курсы</button>
                     <button class="templates-selected__button">Женщинам</button>
                     <button class="templates-selected__button">Мужчинам</button>
@@ -261,7 +298,7 @@
                                 Школа массажа 7 нот
                             </h3>
 
-                            <div class="lessons__conditions">
+                            <div class="lessons__conditions__product">
                                 <div class="lessons-condition__box lessons-condition__box--grey online">Онлайн</div>
                                 <div class="lessons-condition__box lessons-condition__box--grey  offline">В Екатеринбурге</div>
                             </div>
@@ -287,7 +324,7 @@
                                 Флирт и актёрское мастерство
                             </h3>
 
-                            <div class="lessons__conditions">
+                            <div class="lessons__conditions__product">
                                 <div class="lessons-condition__box lessons-condition__box--grey online">Онлайн</div>
                                 <div class="lessons-condition__box lessons-condition__box--grey offline">В Екатеринбурге</div>
                             </div>
@@ -306,14 +343,14 @@
             <div class="contacts__block contacts__block--home">
                 
                 <div class="contacts-block__btns">
-                    <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                    <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                    
                     <button data-form-id="f3" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                     <div class="contacts-btn__block">
         
                         <div id="f3" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                 <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                <input data-message-id="m3" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                <input data-message-id="m3" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                         </div>
         
                         <div id="m3" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -350,7 +387,7 @@
                 Полезные занятия для тех кто впервые
             </p>
 
-            <div class="course-lessons__cards">
+            <div class="course-lessons__cards owl-carousel owl-theme">
 
                 <div class="course-lessons__card">
                     <div class="lessons-card__img">
@@ -377,7 +414,7 @@
                         Бесплатно
                     </p>
 
-                    <a href="#" class="course-lessons__btn">
+                    <a href="../pages/order/order-course.html" class="course-lessons__btn">
                         Записаться
                     </a>
                 </div>
@@ -407,7 +444,7 @@
                         500 руб
                     </p>
 
-                    <a href="#" class="course-lessons__btn">
+                    <a href="../pages/order/order-course.html" class="course-lessons__btn">
                         Записаться
                     </a>
                 </div>
@@ -437,7 +474,7 @@
                         500 руб
                     </p>
 
-                    <a href="#" class="course-lessons__btn">
+                    <a href="../pages/order/order-course.html" class="course-lessons__btn">
                         Записаться
                     </a>
                 </div>
@@ -463,14 +500,14 @@
                         </p>
 
                         <div class="contacts-block__btns help-about-block__btns">
-                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                         
                             <button data-form-id="f4" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                             <div class="contacts-btn__block">
                 
                                 <div id="f4" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m4" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m4" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
                 
                                 <div id="m4" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -505,13 +542,13 @@
                     </p>
 
                     <div class="header-contacts">
-                        <button data-form-id="f5" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
-                        <a href="#" class="contacts-btn">Написать</a>
+                        <button data-form-id="f5" class="contacts-btn contacts-btn-form contacts-btn__footer__mob">+7 950 638 8922 <img class="dropdown-arrow" src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                        <a href="#" class="contacts-btn contacts-btn__footer__mob">Написать</a>
 
                              <div class="contacts-btn__block">
                                 <div id="f5" class="contacts-dropdown-form contacts-dropdown-form__footer none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m5" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m5" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
                 
                                 <div id="m5" class="contacts-dropdown__box contacts-dropdown__box__footer none">
@@ -575,6 +612,16 @@
             </div>
             </div>
 
+            <div class="footer-logo__mobile">
+                <div class="footer-logo__mobile__img">
+                    <a href="#"><img src="../images/header/Logo_Geisha.svg" alt=""></a>
+                </div>
+
+                <p class="footer-logo__mobile__about">
+                    с 2005-2022
+                </p>
+            </div>
+
         </div>
     </footer>
 
@@ -629,6 +676,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="../js/jquery.inputmask.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/owl-carousel.js"></script>
     <script src="../js/header-scripts.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/CookieService.js"></script>

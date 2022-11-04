@@ -15,7 +15,6 @@ body {
     box-sizing: border-box;
 }
 
-
 /* Helpers */
 @import "helpers/vars.less";
 @import "helpers/mixins.less";
@@ -140,6 +139,13 @@ body {
 
 /* other */
 @import "js_classes/js__classes.less";
+
+
+.mobile-none {
+    @media @breakpoint-mobile {
+        display: none;
+    }
+}
 
 
 

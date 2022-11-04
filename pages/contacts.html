@@ -78,7 +78,7 @@
                 </h1>
 
                 <div class="contacts-block__btns">
-                    <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                    <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                     
                     <button data-form-id="f2" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                         <div class="contacts-btn__block">
@@ -99,6 +99,41 @@
             </div>
 
     </header>
+
+    <div class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../index.html"><img src="../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+        </nav>
+    </div>
 
     <main class="main">
 
@@ -146,14 +181,14 @@
 
         <div class="social__networks">
 
-            <a href="#" class="social__network-link social__network-link--yellow">
+            <a target="_blank" href="https://www.instagram.com/geishaclub" class="social__network-link social__network-link--yellow">
                 <div class="icon_social">
                    <img src="../images/main/home__main/icons/instagram_icon.svg" alt="">
                 </div>
                 Instagram
             </a>
 
-            <a href="#" class="social__network-link social__network-link--yellow">
+            <a target="_blank" href="https://vk.com/geisha_zen" class="social__network-link social__network-link--yellow">
                 <div class="icon_social">
                     <img src="../images/main/home__main/icons/vk_icon.svg" alt="">
                 </div>
@@ -380,6 +415,16 @@
                     Вконтакте
                 </a>
             </div>
+            </div>
+
+            <div class="footer-logo__mobile">
+                <div class="footer-logo__mobile__img">
+                    <a href="#"><img src="../images/header/Logo_Geisha.svg" alt=""></a>
+                </div>
+
+                <p class="footer-logo__mobile__about">
+                    с 2005-2022
+                </p>
             </div>
 
         </div>

@@ -122,8 +122,20 @@
             background-color: darken(#F2F2F2, 11%);
         }
     }
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .about-us__main__link {
     margin-top: 48px;
+}
+
+.about-us__btn__mobile {
+    display: none;
+
+    @media @breakpoint-mobile {
+        display: block;
+    }
 }

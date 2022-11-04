@@ -58,6 +58,12 @@
         background-color: #FFF;
         color: @deep;
     }
+
+    @media @breakpoint-mobile {
+        & span {
+            display: none;
+        }
+    }
 }
 
 .contacts-btn__block {
@@ -155,20 +161,6 @@
 .contacts-dropdown__box__footer {
     font-size: 17px;
     line-height: 28px;
-}
-
-.contacts-btn__mobile-none {
-    @media @breakpoint-mobile {
-        display: none;
-    }
-}
-
-.contacts-btn__mobile {
-    display: none;
-
-    @media @breakpoint-mobile {
-        display: flex;
-    }
 }
 
 .contacts-btn__footer__mob {

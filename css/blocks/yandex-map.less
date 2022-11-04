@@ -3,11 +3,19 @@
 .yandex-map iframe {
     border-radius: 12px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+
+    @media @breakpoint-mobile {
+        height: 448px;
+    }
 }
 
 .contacts-map {
     position: relative;
     top: -80px;
+
+    @media @breakpoint-mobile {
+        top: -100px;
+    }
 }
 
 .yandex-map {
@@ -44,6 +52,10 @@
     background-image: url(../images/main/home__main/icons/place.svg);
     background-repeat: no-repeat;
     background-position: center;
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .place-text {
@@ -51,6 +63,12 @@
     font-size: 20px;
     line-height: 38px;
     margin-bottom: 4px;
+
+    @media @breakpoint-mobile {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
 }
 
 .time-work {
@@ -58,6 +76,11 @@
     font-family: 'Noto Sans';
     line-height: 25px;
     font-size: 15px;
+
+    @media @breakpoint-mobile {
+        font-size: 11px;
+        line-height: 18px;
+    }
 }
 
 .open-map__btn {
@@ -71,4 +94,8 @@
     padding: 12px 24px;
     border: 1px solid #EDEEEF;
     border-radius: 6px;
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }

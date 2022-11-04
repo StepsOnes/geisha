@@ -2,10 +2,21 @@
 
 .contacts-social-networks__title {
     margin-bottom: 20px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 8px;
+    }
 }
 
 .contacts-social-networks__subtitle {
     margin-bottom: 48px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 16px;
+        font-size: 13px;
+        line-height: 24px;
+        opacity: 0.9;
+    }
 }
 
 .social__network-link--yellow {
@@ -15,8 +26,17 @@
     font-family: 'Noto Sans';
     padding: 22px 43px 23px 32px;
     transition: 0.4s;
+    margin-bottom: 0;
+
+    @media @breakpoint-mobile {
+        padding: 19px 24px 21px 22px;
+    }
 }
 
 .contacts__social-networks{
     padding-bottom: 128px;
+
+    @media @breakpoint-mobile {
+        padding-bottom: 64px;
+    }
 }
