@@ -10,14 +10,14 @@ let numCards = articleCards.length;
 if (numCards > 9){
     for (let i = 0; i <= 9; i++){
         articleCards[i].classList.add('active-article');
-    };
+    }
     showArticleBtn.addEventListener('click', handlerButton)
 }else if (numCards < 9) {
     for (let i = 0; i <= 3; i++){
         articleCardSearch[i].classList.add('active-article');
-    };
+    }
     showArticleBtnSearch.addEventListener('click', handlerButtonSearch);
-};
+}
 
 function handlerButton(){
 
@@ -35,10 +35,10 @@ function handlerButton(){
         flag = true;
         for (let i = numCards; i >= 10; i--){
             articleCards[i].classList.remove('active-article');
-        };
+        }
         showArticleBtn.textContent = messageShow;
-    };
-};
+    }
+}
 
 
 function handlerButtonSearch(){
@@ -57,7 +57,7 @@ function handlerButtonSearch(){
         flag = true;
         for (let i = numCards; i >= 4; i--){
             articleCards[i].classList.remove('active-article');
-        };
+        }
         showArticleBtnSearch.textContent = messageShow;
-    };
-};
+    }
+}

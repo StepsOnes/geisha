@@ -21,6 +21,7 @@
 .reviews-cards {
     display: flex;
     column-gap: 30px;
+    min-height: 906px;
 
     @media @breakpoint-mobile {
         display: none;
@@ -30,7 +31,7 @@
 .reviews-row {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    justify-content: space-between;
 }
 
 .reviews__card {
@@ -99,8 +100,6 @@
     line-height: 28px;
     color: #1C3965;
     margin-top: 24px;
-    max-width: 509px;
-
     &.reviews-person__comment--white {
         color: #FFF;
     }
@@ -135,7 +134,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 31%;
+    width: 32%;
     text-decoration: none;
 
     & p {

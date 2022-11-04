@@ -35,11 +35,40 @@ body {
 @import "helpers/vars.less";
 @import "helpers/mixins.less";
 
+//templates
+@import "templates/footer__order.less";
+@import "templates/header__mobile.less";
+@import "templates/footer.less";
+@import "templates/header_nav.less";
+
 /* Blocks */
+
+/* header */
+@import "blocks/header/header_content.less";
+@import "blocks/header/header__content_home.less";
+@import "blocks/header/header__content__courses.less";
+@import "blocks/header/header__box.less";
+@import "blocks/header/header__top__article-scroll.less";
+@import "blocks/header/header__content__test.less";
+@import "blocks/header/header-content__search.less";
+@import "blocks/header/header__content__timetable.less";
+
+/* article */
+@import "blocks/article/article__main__header-content.less";
+@import "blocks/article/article_blocks.less";
+@import "blocks/article/all__articles__block.less";
+@import "blocks/article/article__header__content.less";
+@import "blocks/article/article__main__content.less";
+@import "blocks/article/article__main__conten__course.less";
+@import "blocks/article/article__consultation.less";
+@import "blocks/article/article__course__block.less";
+
+/* test */
+@import "blocks/test/test__block.less";
+@import "blocks/test/test__block__main__button.less";
+@import "blocks/test/test__link.less";
+
 @import "blocks/container.less";
-@import "blocks/header_nav.less";
-@import "blocks/header_content.less";
-@import "blocks/header__content_home.less";
 @import "blocks/about__company.less";
 @import "blocks/whatsup__fixed.less";
 @import "blocks/main__courses.less";
@@ -73,7 +102,6 @@ body {
 @import "blocks/bank-transfer.less";
 @import "blocks/about__center.less";
 @import "blocks/advantage__about__us.less";
-@import "blocks/header__content__courses.less";
 @import "blocks/scroll__header__nav.less";
 @import "blocks/course__trial__lesson.less";
 @import "blocks/course__date__block.less";
@@ -89,40 +117,24 @@ body {
 @import "blocks/master__classes__courses.less";
 @import "blocks/master__classes__blocks.less";
 @import "blocks/master__class__header__content.less";
-@import "blocks/header__box.less";
 @import "blocks/master__class__download__block.less";
 @import "blocks/about__master__class.less";
 @import "blocks/master__class__course.less";
 @import "blocks/master__classes__lessons.less";
-@import "blocks/article__main__header-content.less";
-@import "blocks/article_blocks.less";
-@import "blocks/all__articles__block.less";
-@import "blocks/article__header__content.less";
-@import "blocks/article__main__content.less";
-@import "blocks/article__main__conten__course.less";
-@import "blocks/article__consultation.less";
 @import "blocks/404.less";
-@import "blocks/header__top__article-scroll.less";
-@import "blocks/article__course__block.less";
 @import "blocks/order__content.less";
 @import "blocks/ordering__block.less";
 @import "blocks/radio__btn.less";
 @import "blocks/master__class__form.less";
 @import "blocks/help-about__row__order.less";
-@import "blocks/header__content__timetable.less";
 @import "blocks/timetable__about.less";
 @import "blocks/timetable__text__block.less";
 @import "blocks/timetable__course__program.less";
 @import "blocks/timetable__upcoming__classes.less";
 @import "blocks/timetable__filter__block.less";
-@import "blocks/header-content__search.less";
 @import "blocks/search__slider__block.less";
-@import "blocks/header__content__test.less";
 @import "blocks/main__test.less";
 @import "blocks/about__test.less";
-@import "blocks/test__block.less";
-@import "blocks/test__block__main__button.less";
-@import "blocks/test__link.less";
 @import "blocks/exit__intent__popup.less";
 @import "blocks/integration__contetn.less";
 @import "blocks/enrolled__block.less";
@@ -135,10 +147,7 @@ body {
 @import "pages/course.less";
 @import "pages/consultation__page.less";
 
-//templates
-@import "templates/footer__order.less";
-@import "templates/header__mobile.less";
-@import "templates/footer.less";
+
 
 .select-btn {
     background-color: @deep;

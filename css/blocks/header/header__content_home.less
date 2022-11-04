@@ -1,0 +1,117 @@
+//main: ../main.css
+
+.content_title--home {
+
+    margin-bottom: 24px;
+
+    @media @breakpoint-mobile {
+        max-width: 320px;
+        margin-bottom: 24px;
+    }
+}
+
+.content_subtitle--home {
+    margin-bottom: 24px;
+
+    @media @breakpoint-mobile {
+        max-width: 320px;
+        margin-bottom: 0;
+    }
+}
+
+.content_about--home {
+    @media @breakpoint-mobile {
+       display: none;
+    }
+}
+
+.header-content--home {
+    padding: 196px 0 256px 0;
+
+    @media @breakpoint-mobile {
+        padding-bottom: 656px;
+     }
+}
+
+.content-video {
+    width: 373px;
+    height: 233px;
+    border-radius: 10px;
+    background-color: grey;
+    position: relative;
+
+    &::before{
+        content: '';
+        background-image: url(../images/header/line.svg);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        left: 87px;
+        top: 206px;
+        z-index: 999;
+    }
+
+    &::after{
+        content: '';
+        background-image: url(../images/header/circle.svg);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        left: -17px;
+        top: -13px;
+        z-index: 999;
+    }
+
+    @media @breakpoint-mobile {
+        display: none;    
+    }
+}
+
+.header__row--home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        justify-content: center;
+     }
+}
+
+.content-video__preview {
+    position: absolute;
+    & img {
+        border-radius: 10px;
+    }
+}
+
+.play-video {
+    width: 48px;
+    height: 48px;
+    background: #FFB924;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer !important;
+    z-index: 1000;
+
+    &::before {
+        content: '';
+        width: 32px;
+        height: 32px;
+        background-image: url(../images/video_img/play_arrow_24px.svg);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    &.play-video-64px {
+        height: 64px;
+        width: 64px;
+    }
+}

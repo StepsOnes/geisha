@@ -9,7 +9,6 @@
 .courses-img  {
     transition: ease 1s;
     overflow: hidden;
-    width: 100%;
     max-height: 410px;
     border-radius: 12px;
     background-size: cover;
@@ -21,7 +20,11 @@
 
 .courses-img img {
     transition: 1s;
-    width: 100%;
+
+
+    @media @breakpoint-mobile {
+        width: 100%;
+    }
 }
 
 .courses__block {
@@ -47,6 +50,7 @@
     line-height: 48px;
     color: #FFFFFF;
     margin-bottom: 32px;
+    width: 435px;
 
     &.courses-block__title--blue {
         color: #1C3965;
@@ -56,6 +60,7 @@
         font-weight: 900;
         font-size: 28px;
         margin-bottom: 24px;
+        width: 288px;
     }
 }
 

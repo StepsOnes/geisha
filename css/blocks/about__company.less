@@ -41,8 +41,9 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
-    padding: 40px 33px 32px 32px;
+    padding: 32px 33px 32px 32px;
     transition: 0.4s;
+    min-width: 374px;
 
     &:hover {
         background-color: #FBFCFE;
@@ -53,6 +54,8 @@
         &:hover {
             background-color: #F4F5F5;
         }
+
+        box-shadow: none;
     }
 
     @media @breakpoint-mobile {
@@ -62,13 +65,14 @@
 }
 
 .about__card_title {
-    font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Noto Sans';
     font-weight: 600;
     font-size: 20px;
     line-height: 38px;
     margin-top: 22px;
     text-decoration: none;
     color: @deep;
+    margin-bottom: 14px;
 }
 
 .about__card_subtitle {
@@ -105,6 +109,7 @@
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 8px;
+    font-weight: bold;
 
     &.achievemets__title--yellow {
         color: rgba(255, 185, 36, 1);
@@ -133,9 +138,18 @@
 
 .main__link_about__company {
     margin-bottom: 30px;
-    margin-top: -100px;
+    margin-top: -90px;
 
     @media @breakpoint-mobile {
         margin-top: 0px;
     }
+}
+
+.about__company__consultations {
+    padding-top: 70px;
+}
+
+.consultation-top {
+    position: relative;
+    top: -120px;
 }
