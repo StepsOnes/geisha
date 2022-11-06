@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Все статьи</title>
-    <link rel="shortcut icon" href="../../favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../../favicon/favicon.png" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../fonts/stylesheet.css">
@@ -61,7 +61,7 @@
             <div class="contacts-btn__block">
                 <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                        <input data-message-id="m1" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                        <input data-message-id="m1" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                 </div>
 
                 <div id="m1" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -88,6 +88,41 @@
         </div>
     </header>
 
+    <div class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../index.html"><img src="../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+
+        </nav>
+    </div>
+
     <main class="main">
         <div class="article_blocks">
             <div class="article_block">
@@ -95,6 +130,7 @@
                     Курсы
                 </h2>
 
+                <div class="div">
                 <div class="article_blocks__slaider owl-carousel owl-theme">
 
                         <div class="course-lessons__card course-lessons__card--red">
@@ -218,6 +254,7 @@
                         </div>
                 </div>
             </div>
+                </div>
 
             <div class="article_block">
                 <h2 class="main__title article_block__title">

@@ -7,13 +7,13 @@
 
 .about-us-page__video{
     height: 546px;
-    width: 1200px;
     border-radius: 12px;
-
-    
+    width: 100%;
 
     position: absolute;
     bottom: -280px;
+
+
 }
 
 .about-us-page__video__preview {
@@ -24,11 +24,19 @@
 
     & img {
         transition: 1s;
+
+        @media @breakpoint-mobile {
+            width: 100%;
+        }
     }
 
     &:hover img{
         transform: scale(1.05);
     }
+
+    //@media @breakpoint-mobile {
+    //    width: 100%;
+    //}
 }
 
 .main_about-us {

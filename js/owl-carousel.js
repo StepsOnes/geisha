@@ -33,12 +33,20 @@ $(document).ready(function() {
         dots: false,
         margin: 30,
         autoWidth: true,
-        items: 3,
+        items: 4,
         nav: true,
         navText: [
             '<button id="master-classes__btn-pred" class="master-classes__btn master-classes__btn--blue"></button>',
             '<button id="master-classes__btn-next" class="master-classes__btn master-classes__btn--blue"></button>'
-        ]
+        ],
+
+        responsive: {
+            500: {
+                items: 1,
+                nav: false,
+            }
+        }
+
     });
 
 

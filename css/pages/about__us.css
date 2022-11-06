@@ -4,8 +4,8 @@
 }
 .about-us-page__video {
   height: 546px;
-  width: 1200px;
   border-radius: 12px;
+  width: 100%;
   position: absolute;
   bottom: -280px;
 }
