@@ -2,14 +2,31 @@
 
 .article-main__header-content {
     padding-bottom: 96px;
+
+    @media @breakpoint-mobile {
+        padding-bottom: 80px;
+    }
 }
 
 .article-main__header-content__title {
     margin-bottom: 24px;
+
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+}
+
+.article-main__header-content__subtitle {
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 28px;
+        opacity: 1;
+    }
 }
 
 .article-main__container {
-    width: 1260px;
+    max-width: 1260px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 0 20px;
 }

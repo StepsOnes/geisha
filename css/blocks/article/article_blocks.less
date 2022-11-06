@@ -2,10 +2,14 @@
 
 .article_blocks {
     padding: 128px 0;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .article_block {
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
     padding-left: 20px;
     position: relative;
@@ -14,10 +18,18 @@
     &:last-child {
         margin-bottom: 0;
     }
+
+    @media @breakpoint-mobile {
+        margin-bottom: 64px;
+    }
 }
 
 .article_block__title {
     margin-bottom: 64px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+    }
 }
 
 .article_blocks__slaider {
