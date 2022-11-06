@@ -8,16 +8,17 @@
     }
 }
 
-.main-courses__home {
-    border-bottom: 1px solid #EDEEEF;
-}
-
 .courses-product__cards--home {
     margin-bottom: 50px;
 }
 
 .main-courses__home {
     padding-bottom: 128px;
+    .border();
+
+    @media @breakpoint-mobile {
+        padding-bottom: 64px;
+    }
 }
 
 .main__title--course {

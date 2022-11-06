@@ -14,6 +14,18 @@
         align-items: center;
         margin-bottom: 46px;
         justify-content: space-between;
+
+        @media @breakpoint-mobile {
+            flex-direction: column;
+            max-width: 308px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            margin-bottom: 32px;
+        }
+    }
+
+    @media @breakpoint-mobile {
+        margin-top: 52px;
     }
 
 }
@@ -23,6 +35,11 @@
     font-size: 15px;
     line-height: 30px;
     opacity: 0.7;
+
+    @media @breakpoint-mobile {
+        font-size: 13px;
+        line-height: 30px;
+    }
 }
 
 .requisites-table__info {
@@ -32,4 +49,11 @@
     line-height: 38px;
     text-align: left;
     margin-left: 100px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 28px;
+        margin-left: 0;
+        max-width: 308px;
+    }
 }

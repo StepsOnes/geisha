@@ -4,10 +4,19 @@
     display: flex;
     justify-content: space-between;
     margin-top: -90px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 .consultation-link {
     width: 575px;
+
+    @media @breakpoint-mobile {
+        width: 100%;
+    }
 }
 
 .vantage-company__consultations {

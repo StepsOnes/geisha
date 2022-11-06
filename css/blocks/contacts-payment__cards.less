@@ -10,8 +10,8 @@
 }
 
 .contacts-payment__circle {
-    width: 64px;
-    height: 64px;
+    min-width: 64px;
+    min-height: 64px;
     border-radius: 50%;
     background-color: #FFF;
 }
@@ -51,10 +51,20 @@
     font-size: 20px;
     line-height: 38px;
     margin-bottom: 3px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 32px;
+    }
 }
 
 .requisites-bank {
     font-family: 'Noto Sans';
     opacity: 0.7;
+
+    @media @breakpoint-mobile {
+        font-size: 15px;
+        line-height: 30px;
+    }
 }
 

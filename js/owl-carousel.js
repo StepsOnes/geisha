@@ -74,7 +74,7 @@ $(document).ready(function() {
     $("#select-buttons-carousel-1").owlCarousel({
         dots: false,
         autoWidth: true,
-        items: 3,
+        items: 4,
         margin: 12,
 
         responsive: {

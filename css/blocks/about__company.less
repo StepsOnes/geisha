@@ -43,7 +43,7 @@
     border-radius: 12px;
     padding: 32px 33px 32px 32px;
     transition: 0.4s;
-    min-width: 374px;
+    width: 374px;
 
     &:hover {
         background-color: #FBFCFE;
@@ -134,6 +134,12 @@
 
 .about__company_card__consultation {
     padding: 32px 234px 32px 32px;
+    width: 575px;
+
+    @media @breakpoint-mobile {
+        padding: 24px;
+        width: 360px;
+    }
 }
 
 .main__link_about__company {
@@ -147,9 +153,18 @@
 
 .about__company__consultations {
     padding-top: 70px;
+
+    @media @breakpoint-mobile {
+        padding-top: 272px;
+    }
 }
 
 .consultation-top {
     position: relative;
     top: -120px;
+
+    @media @breakpoint-mobile {
+        position: absolute;
+        top: -350px;
+    }
 }
