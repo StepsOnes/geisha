@@ -3,22 +3,40 @@
 .timetable__text-block {
     padding: 128px 0;
     font-family: 'Noto Sans';
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .timetable__block__title {
     margin-bottom: 64px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+    }
 }
 
 .timetable__text-block__text {
     font-size: 20px;
     line-height: 38px;
     margin-bottom: 32px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 32px;
+    }
 }
 
 .timetable__text-block__row {
     display: flex;
     justify-content: space-between;
     margin-bottom: 32px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 .timetable__text-block__subtitle {

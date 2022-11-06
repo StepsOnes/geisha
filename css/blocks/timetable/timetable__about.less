@@ -3,12 +3,22 @@
 .timetable__about {
     padding: 96px 0 128px 0;
     .border();
+
+    @media @breakpoint-mobile {
+        padding: 48px 0 64px 0;
+    }
 }
 
 .timetable__about__cards {
     display: flex;
     justify-content: space-between;
     margin-bottom: 128px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 64px;
+    }
 }
 
 .timetable__about__card {
@@ -25,6 +35,10 @@
 
     &:hover {
         background-color:  #F4F5F5;
+    }
+
+    @media @breakpoint-mobile {
+        width: 100%;
     }
 }
 
@@ -78,6 +92,10 @@
 
 .timetable__about__box__title {
     margin-bottom: 64px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 48px;
+    }
 }
 
 
