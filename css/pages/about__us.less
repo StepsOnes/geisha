@@ -3,17 +3,30 @@
 .header-content__about-us {
     padding-bottom: 332px;
     position: relative;
+
+    @media @breakpoint-mobile {
+        padding-bottom: 0px;
+    }
+}
+
+.header-content__title__about {
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
 
 .about-us-page__video{
     height: 546px;
     border-radius: 12px;
-    width: 100%;
-
     position: absolute;
     bottom: -280px;
 
-
+    @media @breakpoint-mobile {
+        position: relative;
+        max-height: 180px;
+        bottom: -80px;
+    }
 }
 
 .about-us-page__video__preview {
@@ -34,11 +47,12 @@
         transform: scale(1.05);
     }
 
-    //@media @breakpoint-mobile {
-    //    width: 100%;
-    //}
 }
 
 .main_about-us {
     padding-top: 388px;
+
+    @media @breakpoint-mobile {
+        padding-top: 0px;
+    }
 }

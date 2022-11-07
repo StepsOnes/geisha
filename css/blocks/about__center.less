@@ -8,12 +8,20 @@
     padding-bottom: 128px;
     border-bottom: 1px solid @grey;
     font-family: 'Noto Sans';
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .about-center__cards {
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 .about-center__left--img {
@@ -27,6 +35,10 @@
     font-size: 20px;
     line-height: 38px;
     margin-bottom: 32px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+    }
 }
 
 .about-center__info {
@@ -40,10 +52,21 @@
 
     &.about-center__info--margin {
         margin-bottom: 14px;
+
+        @media @breakpoint-mobile {
+            margin-bottom: 32px;
+        }
     }
 }
 
 .about-center__right--img {
     border-radius: 12px;
     margin-bottom: 48px;
+}
+
+.about-center__card__content {
+    @media @breakpoint-mobile {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 }
