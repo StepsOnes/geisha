@@ -10,6 +10,12 @@
     align-items: center;
     column-gap: 23px;
     margin-bottom: 50px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
 
 .course__trial-lesson__text {

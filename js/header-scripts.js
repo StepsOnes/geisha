@@ -30,6 +30,11 @@ navItemAbout.addEventListener('mouseover', function(){
     navItemAbout.classList.toggle('rotate');
 })
 
+dropDownItem.addEventListener('mouseleave', function() {
+    dropDownItem.classList.toggle('none');
+    navItemAbout.classList.toggle('rotate');
+})
+
 
 
 

@@ -4,6 +4,19 @@
     display: flex;
     justify-content: flex-start;
     column-gap: 8px;
+
+    &.conditions-mobile-none {
+        @media @breakpoint-mobile {
+            display: none;
+        }
+    }
+
+    &.conditions-mobile-visible {
+        display: none;
+        @media @breakpoint-mobile {
+            display: flex;
+        }
+    }
 }
 
 .lessons-condition__box {
