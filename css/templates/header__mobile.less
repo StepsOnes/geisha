@@ -1,6 +1,5 @@
 //main: ../main.css
 
-
 .header-mobile__top{
     background-color: #FFF;
     padding: 20px;
@@ -8,6 +7,8 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #EDEEEF;
+    position: relative;
+    z-index: 999;
 }
 
 .header-mobile__menu {
@@ -58,7 +59,19 @@
 .header-mobile__nav {
     padding: 16px 20px 20px 20px;
     background-color: #FFF;
+    box-shadow: 0px 2px 10px 0px rgba(39, 85, 96, 0.1);
+    transition: 0.4s;
+
+    &.scroll-home {
+        transform: translateY(-100%);
+    }
+
+    &.visible {
+        transform: translateY(0%);
+    }
 }
+
+
 
 .header-mobile__nav-list {
     display: flex;
@@ -88,7 +101,6 @@
     top: 0;
     width: 100%;
     z-index: 99999;
-    box-shadow: 0px 2px 20px rgba(39, 85, 96, 0.1);
     
     @media @breakpoint-mobile {
         display: block;

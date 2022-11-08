@@ -121,7 +121,7 @@
             </menu>
         </div>
 
-        <nav class="header-mobile__nav">
+        <nav id="scroll-home" class="header-mobile__nav scroll-home visible">
             <ul class="header-mobile__nav-list">
                 <li><a href="pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
                 <li><a href="pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
@@ -1447,5 +1447,21 @@
     <script src="js/main.js"></script>
     <script src="js/CookieService.js"></script>
     <script src="js/popup.js"></script>
+
+    <script>
+        var header = $('#scroll-home'),
+            scrollPrev = 0;
+
+        $(window).scroll(function() {
+            var scrolled = $(window).scrollTop();
+
+            if ( scrolled > 100 && scrolled > scrollPrev ) {
+                header.removeClass('visible');
+            } else {
+                header.addClass('visible');
+            }
+            scrollPrev = scrolled;
+        });
+    </script>
 </body>
 </html>

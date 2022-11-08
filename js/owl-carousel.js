@@ -10,7 +10,8 @@ $(document).ready(function() {
 
     $(".master-classes__course-slaider").owlCarousel({
         items: 3,
-        margin: 60,
+        autoWidth: true,
+        margin: 30,
         dots: false,
         nav: true,
         mouseDrag: false,
@@ -82,7 +83,6 @@ $(document).ready(function() {
     $("#select-buttons-carousel-1").owlCarousel({
         dots: false,
         autoWidth: true,
-        items: 4,
         margin: 12,
 
         responsive: {
