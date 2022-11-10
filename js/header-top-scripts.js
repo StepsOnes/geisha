@@ -10,7 +10,19 @@ $(window).bind('mousewheel', function(event) {
     }
 });
 
+var header = $('#header-mobile__course__scroll'),
+    scrollPrev = 0;
 
+$(window).scroll(function() {
+    var scrolled = $(window).scrollTop();
+
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+        header.addClass('not-visible');
+    } else {
+        header.removeClass('not-visible');
+    }
+    scrollPrev = scrolled;
+});
 
 
 
