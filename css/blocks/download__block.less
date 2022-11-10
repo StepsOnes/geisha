@@ -14,6 +14,10 @@
     font-family: 'Noto Sans';
     font-size: 20px;
     line-height: 38px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+    }
 }
 
 .download__btn {
@@ -34,5 +38,9 @@
 
     &.download__btn--white {
         background-color: #FFF;
+    }
+
+    @media @breakpoint-mobile {
+        display: none   ;
     }
 }

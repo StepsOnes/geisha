@@ -6,10 +6,18 @@
 
 .faq__block {
     padding: 128px 0 113px 0;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .faq__according {
     margin-top: 48px;
+
+    @media @breakpoint-mobile {
+        margin-top: 24px;
+    }
 }
 
 .faq__accordion__header {
@@ -18,12 +26,26 @@
     align-items: center;
     font-family: 'Noto Sans';
     font-size: 26px;
+
+    @media @breakpoint-mobile {
+        font-size: 15px;
+        line-height: 24px;
+
+        & img {
+            width: 24px;
+            height: 24px;
+        }
+    }
 }
 
 .faq__according__item {
     padding: 48px 0;
     border-bottom: 1px solid #EDEEEF;
     cursor: pointer;
+
+    @media @breakpoint-mobile {
+        padding: 24px 0;
+    }
 }
 
 .faq__accordion__body {
@@ -37,6 +59,11 @@
     font-size: 20px;
     line-height: 24px;
     padding-top: 30px;
+
+    @media @breakpoint-mobile {
+        font-size: 13px;
+        padding-top: 15px;
+    }
 }
 
 .faq__accordion__img {

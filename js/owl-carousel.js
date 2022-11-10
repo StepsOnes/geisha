@@ -93,7 +93,41 @@ $(document).ready(function() {
 
     });
 
+    $("#course-date__block__slaider").owlCarousel({
+        dots: false,
+        autoWidth: true,
+        margin: 12,
 
+        responsive: {
+            1250: {
+                margin: 30,
+            }
+        }
+    });
+
+    $("#course-date__block__slaider-2").owlCarousel({
+        dots: false,
+        autoWidth: true,
+        margin: 12,
+
+        responsive: {
+            1250: {
+                margin: 30,
+            }
+        }
+    });
+
+    $("#course-date__block__slaider-3").owlCarousel({
+        dots: false,
+        autoWidth: true,
+        margin: 12,
+
+        responsive: {
+            1250: {
+                margin: 30,
+            }
+        }
+    });
 
 });
 

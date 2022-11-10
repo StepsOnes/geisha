@@ -40,11 +40,20 @@
 
 .according-arrow {
     transition: 0.5s;
+
+    @media @breakpoint-mobile {
+        width: 24px;
+        height: 32px;
+    }
 }
 
 .accordion__item {
     background-color: #FFB924;
     padding: 56px 80px 40px 48px;
+
+    @media @breakpoint-mobile {
+        padding: 24px 22px 26px 20px;
+    }
 }
 
 .accordeng__marker {
@@ -66,6 +75,10 @@
         font-size: 24px;
         color: #FFF;
     }
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .accordion__header {
@@ -84,6 +97,10 @@
         
         bottom: -30px;
         right: 10px;
+
+        @media @breakpoint-mobile {
+            width: 97%;
+        }
     }
 }
 
@@ -109,6 +126,11 @@
     font-size: 33px;
     line-height: 48px;
     color: #FFFFFF;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 24px;
+    }
 }
 
 .accordion__body {
@@ -124,8 +146,12 @@
     background-color: #FFF;
     border-radius: 12px;
     width: 940px;
-    padding: 40px 40px 0px 40px;
-    padding-bottom: 40px;
+    padding: 40px;
+
+    @media @breakpoint-mobile {
+        padding: 24px 20px;
+        padding-bottom: 0;
+    }
 }
 
 
@@ -139,6 +165,14 @@
 
     &.body__content__title__bullet {
         margin-bottom: 24px;
+
+        @media @breakpoint-mobile {
+            margin-bottom: 16px;
+        }
+    }
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
     }
 }
 
@@ -148,6 +182,12 @@
 
     & li {
         margin-bottom: 16px;
+    }
+
+    @media @breakpoint-mobile {
+        column-count: 1;
+        margin-left: 10px;
+        margin-bottom: 32px;
     }
 }
 
@@ -164,6 +204,15 @@
         top: 2px;
         left: 10px;
     }
+
+    @media @breakpoint-mobile {
+        & span {
+            left: 6px;
+        }
+
+        font-size: 13px;
+        line-height: 24px;
+    }
 }
 
 .body__content__text {
@@ -172,8 +221,18 @@
     line-height: 24px;
     max-width: 836px;
     margin-bottom: 40px;
+
+    @media @breakpoint-mobile {
+        font-size: 13px;
+        line-height: 24px;
+        margin-bottom: 32px;
+    }
 }
 
 .according__img {
     margin-bottom: 40px;
+
+    & img {
+        width: 100%;
+    }
 }

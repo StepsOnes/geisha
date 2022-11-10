@@ -2,11 +2,20 @@
 
 .course-cards {
     padding: 128px 0;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .course-cards__row {
     display: flex;
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 .course-fee {
@@ -16,6 +25,11 @@
     padding-bottom: 0px;
     color: #FFF;
     font-family: 'Noto Sans';
+
+    @media @breakpoint-mobile {
+        padding: 16px;
+        padding-bottom: 26px;
+    }
 }
 
 .course-fee__title {
@@ -24,6 +38,11 @@
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 63px;
+
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        margin-bottom: 45px;
+    }
 }
 
 .course-fee__img {
@@ -32,6 +51,14 @@
     max-height: 362px;
     margin-bottom: 32px;
     border-radius: 12px;
+
+    & img {
+        width: 100%;
+    }
+
+    @media @breakpoint-mobile {
+        margin-bottom: 24px;
+    }
 }
 
 .course-fee__old-price {
@@ -85,6 +112,11 @@
     display: flex;
     justify-content: space-between;
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 18px;
+    }
 }
 
 .guarantees__text {
@@ -112,6 +144,10 @@
     background-color: #F6F8FD;
     border-radius: 12px;
     padding-bottom: 0px;
+
+    @media @breakpoint-mobile {
+        padding: 16px 16px 24px 16px;
+    }
 }
 
 .trial-consultation__title {
@@ -121,12 +157,21 @@
     line-height: 48px;
     margin-bottom: 32px;
     color: @deep;
+
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
 }
 
 .trial-consultation__img {
     max-width: 511px;
     max-height: 210px;
     border-radius: 12px;
+
+    & img {
+        width: 100%;
+    }
 }
 
 .trial-consultation__subtitle {
@@ -173,6 +218,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @breakpoint-mobile {
+        display: block;
+        padding: 20px;
+    }
 }
 
 .questions__block__text {
@@ -181,6 +231,12 @@
     font-size: 20px;
     line-height: 38px;
     color: @deep;
+
+    @media @breakpoint-mobile {
+        font-size: 15px;
+        line-height: 26px;
+        margin-bottom: 16px;
+    }
 }
 
 .trial-consultation-list__data-blocks {
@@ -198,4 +254,5 @@
     margin-bottom: 8px;
     margin-top: 24px;
     text-align: left;
+    line-height: 24px;
 }

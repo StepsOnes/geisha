@@ -8,13 +8,21 @@
 .about__courses {
     padding: 128px 0;
     border-bottom: 1px solid @grey;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .about__courses-video {
     border-radius: 12px;
-    height: 425px;
+    max-height: 425px;
     margin-bottom: 72px;
     position: relative;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+    }
 }
 
 .about-courses__row {
@@ -25,6 +33,12 @@
 .about-courses__subtitle {
     max-width: 776px;
     margin-bottom: 16px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 32px;
+        opacity: 1;
+    }
 }
 
 .about-courses-list {
@@ -90,7 +104,6 @@
 }
 
 .about__courses-video__priview {
-    position: absolute;
     overflow: hidden;
     border-radius: 12px;
 
@@ -100,8 +113,13 @@
 
     & img {
         transition: 1s;
+
+        @media @breakpoint-mobile {
+            width: 100%;
+        }
     }
 }
+
 .about__courses-video__play {
     position: absolute;
     left: 50%;
@@ -127,5 +145,35 @@
         position: absolute;
         left: 24px;
         top: 16px;
+    }
+
+    @media @breakpoint-mobile {
+        & span {
+            display: none;
+        }
+
+        width: 64px;
+        height: 64px;
+        padding: 0;
+
+        &::before {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
+.about__video__mobile {
+    display: none;
+    font-family: 'Roca Two';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 40px;
+    margin-bottom: 48px;
+
+    @media @breakpoint-mobile {
+        display: block;
     }
 }
