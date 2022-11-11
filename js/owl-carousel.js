@@ -13,13 +13,19 @@ $(document).ready(function() {
         autoWidth: true,
         margin: 30,
         dots: false,
-        nav: true,
+        nav: false,
         mouseDrag: false,
 
         navText: [
             '<button id="master-classes__btn-pred" class="master-classes__btn"></button>',
             '<button id="master-classes__btn-next" class="master-classes__btn"></button>'
-        ]
+        ],
+
+        responsive: {
+            1250: {
+                nav: true,
+            }
+        }
     });
 
     $(".master-classes__blocks__slaider").owlCarousel({

@@ -18,7 +18,14 @@
 }
 
 .psychologist__consultation__subtitle1 {
-    margin-bottom: 25px;
+    margin-bottom: 48px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+        font-size: 17px;
+        line-height: 32px;
+        opacity: 1;
+    }
 }
 
 .psychologist__consultation__subtitle2 {
@@ -29,6 +36,12 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 64px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 32px;
+        margin-bottom: 32px;
+    }
 }
 
 .psychologist__consultation__text {

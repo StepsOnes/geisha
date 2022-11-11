@@ -26,6 +26,10 @@
     padding: 96px 0 64px 0;
     font-family: 'Noto Sans';
     border-bottom: 1px solid @grey;
+
+    @media @breakpoint-mobile {
+        padding: 48px 0 0 0;
+    }
 }
 
 .master-classes__about__text {
@@ -168,16 +172,7 @@
       }
 }
 
-.master-classes__course__card {
-    padding: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    width: 373px;
 
-    &.master-classes__course__card--border__blue {
-        border: 1px solid #EDEEEF;
-    }
-}
 
 .master-classes__course-slaider {
     display: flex;
@@ -211,6 +206,7 @@
     line-height: 36px;
     color: #FFFFFF;
     margin-bottom: 16px;
+    margin-top: 24px;
 
     &.master-classes__course__card__title--deep {
         color: @deep;
@@ -238,6 +234,12 @@
             color: @deep;
         }
     }
+
+    @media @breakpoint-mobile {
+        & li {
+            color: @deep;
+        }
+    }
 }
 
 .master-classes__course__card__price {
@@ -247,6 +249,10 @@
     line-height: 38px;
 
     &.master-classes__course__card__price--deep {
+        color: @deep;
+    }
+
+    @media @breakpoint-mobile {
         color: @deep;
     }
 }
@@ -265,6 +271,10 @@
     transition: 0.4s;
 
     &.master-classes__course__card__btn--blue {
+        background-color: #F6F8FD;
+    }
+
+    @media @breakpoint-mobile {
         background-color: #F6F8FD;
     }
 }
@@ -330,5 +340,46 @@
 .master-classes__course__card {
     &:hover .master-classes__course__card__img  img {
         transform: scale(1.1);
+    }
+}
+
+.master-classes__courses__container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+.courses-btns__course__box {
+    @media @breakpoint-mobile {
+        display: none;
+    }
+}
+
+.master-classes__course__card {
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    width: 373px;
+
+    &.master-classes__course__card--border__blue {
+        border: 1px solid #EDEEEF;
+    }
+
+    @media @breakpoint-mobile {
+        width: 300px;
+        background: #FFF;
+        color: #1C3965;
+
+        &.master-classes__course__card__title {
+            color: #1C3965;
+        }
+
+
+    }
+}
+
+.master-classes__course__card__title {
+    @media @breakpoint-mobile {
+        color: @deep;
     }
 }

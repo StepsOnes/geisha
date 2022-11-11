@@ -1,0 +1,22 @@
+.appointment__psychologist {
+  padding: 128px 0 132px 0;
+  text-align: center;
+}
+.appointment__psychologist__title {
+  margin-bottom: 16px;
+  text-align: center;
+}
+.appointment__psychologist__subtitle {
+  font-family: 'Noto Sans';
+  font-size: 15px;
+  line-height: 26px;
+  opacity: 0.7;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.appointment__psychologist__consultation-page__row {
+  justify-content: center;
+}
+.contacts-btn__consultation__psychologist {
+  text-align: center;
+}

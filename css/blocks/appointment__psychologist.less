@@ -3,11 +3,20 @@
 .appointment__psychologist {
     padding: 128px 0 132px 0;
     text-align: center;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+        text-align: left;
+    }
 }
 
 .appointment__psychologist__title {
     margin-bottom: 16px;
     text-align: center;
+
+    @media @breakpoint-mobile {
+        text-align: left;
+    }
 }
 
 .appointment__psychologist__subtitle {
@@ -17,12 +26,27 @@
     opacity: 0.7;
     text-align: center;
     margin-bottom: 48px;
+
+    @media @breakpoint-mobile {
+        text-align: left;
+        margin-bottom: 32px;
+    }
 }
 
 .appointment__psychologist__consultation-page__row {
     justify-content: center;
+
+
+    @media @breakpoint-mobile {
+        justify-content: flex-start;
+    }
 }
 
 .contacts-btn__consultation__psychologist {
     text-align: center;
+
+
+    @media @breakpoint-mobile {
+        text-align: left;
+    }
 }
