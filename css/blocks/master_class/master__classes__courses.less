@@ -37,6 +37,10 @@
     font-size: 20px;
     line-height: 38px;
     margin-bottom: 32px;
+
+    @media @breakpoint-mobile {
+        margin-left: 20px;
+    }
 }
 
 .master-classes__course {
@@ -47,6 +51,15 @@
 
     &.master-classes__course--margin {
         margin-bottom: 128px;
+    }
+
+    @media @breakpoint-mobile {
+        padding: 24px 20px;
+        margin-bottom: 32px;
+
+        &.master-classes__course--margin {
+            margin-bottom: 80px;
+        }
     }
 }
 
@@ -59,6 +72,16 @@
     &.master-classes__course__box--blue {
         background-color: #F6F8FD;
     }
+
+    @media @breakpoint-mobile {
+        background-color: transparent;
+        padding: 0;
+        margin-bottom: 32px;
+
+        &.master-classes__course__box--blue {
+            background-color: transparent;
+        }
+    }
 }
 
 .master-classes__course__box__row {
@@ -69,6 +92,12 @@
     padding-bottom: 32px;
     border-bottom: 1px solid @grey;
     margin-bottom: 24px;
+
+    @media @breakpoint-mobile {
+        border: none;
+        padding: 0;
+        margin-bottom: 16px;
+    }
 }
 
 .master-classes-list {
@@ -81,6 +110,22 @@
         line-height: 24px;
         margin-bottom: 8px;
         display: inline-block;
+    }
+
+    @media @breakpoint-mobile {
+        & li {
+            color: #FFF;
+            display: block;
+            font-size: 13px;
+        }
+        column-count: 1;
+        width: 100%;
+
+        &.deep-mobile {
+            & li {
+                color: @deep;
+            }
+        }
     }
 }
 
@@ -184,9 +229,13 @@
         content: '';
         position: absolute;
         bottom: -32px;
-        width: 1180px;
+        width: 106%;
         left: -32px;
         border: 1px solid rgba(255, 255, 255, 0.3);
+
+        @media @breakpoint-mobile {
+            display: none;
+        }
     }
 
     &.master-classes__course-slaider--border__blue::before {
@@ -196,6 +245,10 @@
         bottom: -32px;
         width: 1180px;
         left: -32px;
+    }
+
+    @media @breakpoint-mobile {
+        margin-bottom: 20px;
     }
 }
 
@@ -293,6 +346,10 @@
     display: flex;
     column-gap: 32px;
     align-items: center;
+
+    @media @breakpoint-mobile {
+        padding: 0;
+    }
 }
 
 .master-classes__course__consultation__text {
@@ -381,5 +438,28 @@
 .master-classes__course__card__title {
     @media @breakpoint-mobile {
         color: @deep;
+    }
+}
+
+.master-classes__course__box__title {
+    @media @breakpoint-mobile {
+        color: #FFF;
+    }
+}
+
+.mobile-blue {
+    background: #FFF;
+    color: @deep;
+    @media @breakpoint-mobile {
+        background: #F6F8FD;
+    }
+}
+
+.courses-btns__mobile {
+    display: none;
+    margin-top: 24px;
+
+    @media @breakpoint-mobile {
+        display: flex;
     }
 }

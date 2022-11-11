@@ -11,10 +11,10 @@ $(document).ready(function() {
     $(".master-classes__course-slaider").owlCarousel({
         items: 3,
         autoWidth: true,
-        margin: 30,
         dots: false,
         nav: false,
         mouseDrag: false,
+        margin: 16,
 
         navText: [
             '<button id="master-classes__btn-pred" class="master-classes__btn"></button>',
@@ -24,6 +24,7 @@ $(document).ready(function() {
         responsive: {
             1250: {
                 nav: true,
+                margin: 30,
             }
         }
     });
@@ -57,7 +58,7 @@ $(document).ready(function() {
     });
 
 
-    $(".search-slider ").owlCarousel({
+    $(".search-slider").owlCarousel({
         dots: false,
         margin: 30,
         autoWidth: true,
