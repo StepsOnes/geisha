@@ -1,5 +1,5 @@
 const contactsBtns = document.querySelectorAll('.contacts-btn-form');
-const contactsMessage= document.querySelectorAll('.dropdown-form__btn');
+const contactsMessage = document.querySelectorAll('.dropdown-form__btn');
 
 
 contactsBtns.forEach((contactBtn) => {
@@ -22,10 +22,10 @@ contactsBtns.forEach((contactBtn) => {
                         clearInterval(timerId);
                         hideTime = 0;
                     }
-                }, 1000)
-            })
-        })
-    })
+                }, 1000);
+            });
+        });
+    });
 });
 
 const selectBtn = document.querySelectorAll('.templates-selected__button');
@@ -34,12 +34,12 @@ selectBtn.forEach((item)=>{
     item.addEventListener('click', function(){
         for (let elem of selectBtn){
             elem.classList.remove('select-btn');
-        };
+        }
 
         this.classList.add('select-btn')
 
     });
-})
+});
 
 
 
