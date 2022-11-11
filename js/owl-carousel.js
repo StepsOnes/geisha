@@ -39,7 +39,7 @@ $(document).ready(function() {
 
     $(".article_blocks__slaider").owlCarousel({
         dots: false,
-        margin: 30,
+        margin: 16,
         autoWidth: true,
         items: 4,
         nav: false,
@@ -52,6 +52,7 @@ $(document).ready(function() {
             500: {
                 items: 1,
                 nav: true,
+                margin: 30,
             }
         }
 
