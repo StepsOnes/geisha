@@ -4,6 +4,12 @@
     display: flex;
     gap: 16px;
     margin-bottom: 48px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
 }
 
 .test-block__main__button {
@@ -19,17 +25,35 @@
         border-radius: 8px;
         cursor: pointer;
         max-height: 93px;
+        -webkit-tap-highlight-color: transparent;
       }
+
+    @media @breakpoint-mobile {
+        & span {
+            border-radius: 12px;
+            padding: 22px 48px;
+            font-size: 15px;
+            line-height: 28px;
+        }
+    }
 
 }
 
 .test-block__main__button--40 span {
     padding: 31.5px 40px 31.5px 40px;
+
+    @media @breakpoint-mobile {
+        padding: 20px 24px;
+    }
 }
 
 .test-block__main__radio:checked + span {
    background-color: @deep;
    color: #FFF;
+}
+
+textarea.test-block__main__input{
+    height: 98px;
 }
 
 .test-block__main__input {
@@ -39,11 +63,30 @@
     font-size: 20px;
     line-height: 38px;
     color: #8E9CB2;
-    width: 776px;
+    width: 70%;
     margin-bottom: 32px;
     outline: none;
+    transition: .5s;
+    display: block;
+    resize: none;
 
     &.mb-none {
         margin-bottom: 0;
+    }
+
+    &:focus {
+        color: @deep;
+    }
+
+    &:hover {
+        border: 1px solid @deep;
+    }
+
+    @media @breakpoint-mobile {
+        width: 100%;
+        padding: 20px;
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 20px;
     }
 }

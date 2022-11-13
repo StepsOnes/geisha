@@ -4,6 +4,10 @@
     padding-bottom: 240px;
     background-color: #F6F8FD;
     position: relative;
+
+    @media @breakpoint-mobile {
+        padding-bottom: 270px
+    }
 }
 
 .header__content__test__title {
@@ -20,6 +24,12 @@
     font-size: 22px;
     line-height: 40px;
     margin-top: 30px;
+
+    @media @breakpoint-mobile {
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 28px;
+    }
 }
 
 .star__img {
@@ -29,6 +39,15 @@
     background-image: url(../images/test_img/star_icon.svg);
     width: 617px;
     height: 410px;
+    background-size: cover;
+
+    @media @breakpoint-mobile {
+        width: 352px;
+        height: 236px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
 
 .header__content__test-sent__title {

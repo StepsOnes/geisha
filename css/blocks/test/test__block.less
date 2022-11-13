@@ -10,6 +10,10 @@
     background-color: #FFF;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
+
+    @media @breakpoint-mobile {
+        padding: 27px 20px 64px 20px;
+    }
 }
 
 .test-block__main__title {
@@ -17,10 +21,19 @@
     font-weight: 600;
     font-size: 20px;
     line-height: 38px;
+
+    @media @breakpoint-mobile {
+        font-size: 15px;
+        line-height: 28px;
+    }
 }
 
 .test-block__main__box {
     margin-bottom: 48px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+    }
 }
 
 .test-block__main__chapter {
@@ -28,6 +41,10 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media @breakpoint-mobile {
+        margin-bottom: 64px;
     }
 }
 
@@ -37,6 +54,13 @@
     font-size: 40px;
     margin-bottom: 40px;
     max-width: 956px;
+
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 24px;
+        font-weight: 900;
+    }
 }
 
 .test-block__footer {
@@ -44,6 +68,10 @@
     background-color: #F6F8FD;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+
+    @media @breakpoint-mobile {
+        padding: 64px 20px 48px 20px;
+    }
 }
 
 .test-block__footer__about {
@@ -52,11 +80,22 @@
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 16px;
+    line-height: 24px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 32px;
+        max-width: 280px;
+    }
 }
 
 .captcha-row {
     display: flex;
     gap: 16px;
+    flex-wrap: wrap;
+
+    @media @breakpoint-mobile {
+        gap: 8px;
+    }
 }
 
 .captcha-inp {
@@ -67,6 +106,7 @@
     outline: none;
     border: none;
     width: 276px;
+    min-height: 88px;
 }
 
 .upload-captcha {
@@ -76,6 +116,18 @@
     margin-top: 16px;
     margin-bottom: 48px;
     cursor: pointer;
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    @media @breakpoint-mobile {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: right;
+        margin: 8px 0 32px 0;
+    }
 }
 
 .captcha-btn {
@@ -87,5 +139,24 @@
     border: none;
     cursor: pointer;
     transition: 0.5s;
+
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    @media @breakpoint-mobile {
+        max-width: 286px;
+        width: 100%;
+    }
+}
+
+.test-block__main__button {
+    display: inline-block;
+}
+
+.test-block__container {
+    max-width: 276px;
 }
 

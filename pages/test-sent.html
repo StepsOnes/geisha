@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тест отправлен</title>
-    <link rel="shortcut icon" href="../favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../favicon/favicon.png" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../fonts/stylesheet.css">
@@ -59,7 +59,7 @@
 
                 <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                        <input data-message-id="m1" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                        <input data-message-id="m1"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                 </div>
 
                 <div id="m1" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -85,6 +85,39 @@
             <div class="star__img"></div>
         </div>
     </header>
+
+    <div class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../index.html"><img src="../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
     
     <footer class="footer footer--white">
         <div class="container footer-row">
@@ -104,13 +137,13 @@
                     </p>
 
                     <div class="header-contacts">
-                        <button data-form-id="f2" class="contacts-btn contacts-btn--yellow contacts-btn-form">+7 950 638 8922 <img src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
-                        <a href="#" class="contacts-btn contacts-btn--yellow">Написать</a>
+                        <button data-form-id="f2" class="contacts-btn contacts-btn--yellow contacts-btn-form contacts-btn__footer__mob">+7 950 638 8922 <img src="../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                        <a href="#" class="contacts-btn contacts-btn--yellow contacts-btn__footer__mob">Написать</a>
 
                              <div class="contacts-btn__block">
                                 <div id="f2" class="contacts-dropdown-form contacts-dropdown-form__footer none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m2" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m2" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
                 
                                 <div id="m2" class="contacts-dropdown__box contacts-dropdown__box__footer none">
@@ -172,6 +205,16 @@
                     Вконтакте
                 </a>
             </div>
+            </div>
+
+            <div class="footer-logo__mobile">
+                <div class="footer-logo__mobile__img">
+                    <a href="#"><img src="../images/header/Logo_Geisha.svg" alt=""></a>
+                </div>
+
+                <p class="footer-logo__mobile__about">
+                    с 2005-2022
+                </p>
             </div>
 
         </div>

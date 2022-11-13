@@ -20,11 +20,16 @@
     gap: 12px;
 }
 
+.header-mobile__logo {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .header-mobile__menu__icon {
     width: 36px;
     height: 36px;
     border-radius: 6px;
     position: relative;
+    -webkit-tap-highlight-color: transparent;
 
     &.header-mobile__menu__icon--red {
         background-color: @red;
@@ -90,13 +95,12 @@
     color: #1C3965;
     opacity: 0.5;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 
     &.active {
         opacity: 1;
     }
 }
-
-
 
 .header-mobile {
     display: none;
@@ -131,6 +135,7 @@
 .dropdown-list__mobile {
     & li {
         margin-bottom: 24px;
+        -webkit-tap-highlight-color: transparent;
 
         &:last-child {
             margin-bottom: 0;
