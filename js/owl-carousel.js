@@ -137,6 +137,42 @@ $(document).ready(function() {
         }
     });
 
+
+
+    // $(".timetable__date-box--slaider").owlCarousel({
+    //     dots: false,
+    //     margin: 15,
+    //     autoWidth: true,
+    //
+    //     responsive: {
+    //         1250: {
+    //             items: 1,
+    //             margin: 30,
+    //         }
+    //     }
+    // });
+
+    $(window).on('resize', function(){
+        if($(window).width() <= 767) {
+            $('.timetable__date-box--slaider').addClass('owl-carousel');
+            $(".timetable__date-box--slaider").owlCarousel({
+                dots: false,
+                margin: 15,
+                autoWidth: true,
+                // responsive: {
+                //     1250: {
+                //         margin: 30,
+                //     }
+                // }
+            });
+        }
+        else {
+            $('.timetable__date-box--slaider').removeClass('owl-carousel');
+            $(".timetable__date-box--slaider").trigger('destroy.owl.carousel');
+        }
+    }).trigger('resize');
+
+
 });
 
 $(function () {
@@ -154,5 +190,16 @@ $(function () {
         }
     }).trigger('resize');
 })
+
+// $(document).ready(function(){
+//     $(window).on('resize', function(){
+//         if($(window).width() <= 767) {
+//             $('.timetable__date-box--slaider').addClass('owl-carousel');
+//         }
+//         else {
+//             $('.timetable__date-box--slaider').removeClass('owl-carousel');
+//         }
+//     }).trigger('resize');
+// });
 
   

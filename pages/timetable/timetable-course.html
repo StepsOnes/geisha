@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Расписание курса «Школа жен-подруг и любовниц»</title>
-    <link rel="shortcut icon" href="../../favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../../favicon/favicon.png" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header class="header">
@@ -52,14 +54,14 @@
             
             
             <a target = "_blank" href="https://yandex.ru/maps/54/yekaterinburg/?ll=60.576910%2C56.841514&mode=poi&poi%5Bpoint%5D=60.575870%2C56.841715&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D1592532139&z=17.74" class="header-icon header_icon--map"></a>
-            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+            <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
 
             <button data-form-id="f1" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
             <div class="contacts-btn__block">
 
                 <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                        <input data-message-id="m1" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                        <input data-message-id="m1"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                 </div>
 
                 <div id="m1" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -67,7 +69,7 @@
                 </div>
 
             </div>
-
+        </div>
         </nav>
 
         <div class="header-content header-content__timetable">
@@ -87,14 +89,14 @@
                             </p>
 
                             <div class="contacts-block__btns">
-                                <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                                <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                                
                                 <button data-form-id="f2" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                                 <div class="contacts-btn__block">
 
                                     <div id="f2" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                             <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                            <input data-message-id="m2" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                            <input data-message-id="m2"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                     </div>
 
                                     <div id="m2" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -112,6 +114,39 @@
             </div>   
         </div>
     </header>
+
+    <div class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../../index.html"><img src="../../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
 
     <main class="main">
         <div class="selected-buttons__temlates">
@@ -132,16 +167,16 @@
                             #1 Консультация с метафорическими картами
                         </h2>
 
-                        <div class="timetable__course-program__card__btns">
+                        <div class="timetable__course-program__card__btns mobile-none">
                             <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                             <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                         </div>
                     </div>
 
-                    <div class="timetable__date-box">
-                        <a href="#" class="timetable__date-item">СР 28 января, 16:00</a>
-                        <a href="#" class="timetable__date-item">ПН 4 февраля, 14:00</a>
-                        <a href="#" class="timetable__date-item">ПТ 8 февраля, 13:00</a>
+                    <div class="timetable__date-box timetable__date-box--slaider owl-theme">
+                            <a href="#" class="timetable__date-item">СР 28 января, 16:00</a>
+                            <a href="#" class="timetable__date-item">ПН 4 февраля, 14:00</a>
+                            <a href="#" class="timetable__date-item">ПТ 8 февраля, 13:00</a>
                     </div>
                 </div>
 
@@ -151,7 +186,7 @@
                             #2 Понимание мужчины. Развитие внимания и воображения. Вторая ступень
                         </h2>
 
-                        <div class="timetable__course-program__card__btns">
+                        <div class="timetable__course-program__card__btns mobile-none">
                             <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                             <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                         </div>
@@ -163,36 +198,36 @@
                     </div>
                 </div>
 
-                <div class="timetable__course-program__card">
-                    <div class="timetable__course-program__card__row">
-                        <h2 class="timetable__course-program__card__row__title">
-                            #3 Название урока
-                        </h2>
+<!--                <div class="timetable__course-program__card">-->
+<!--                    <div class="timetable__course-program__card__row">-->
+<!--                        <h2 class="timetable__course-program__card__row__title">-->
+<!--                            #3 Название урока-->
+<!--                        </h2>-->
 
-                        <div class="contacts-block__btns">
-                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
-                            
-                            <button data-form-id="f3" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
-                            <div class="contacts-btn__block">
+<!--                        <div class="contacts-block__btns">-->
+<!--                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>-->
+<!--                            -->
+<!--                            <button data-form-id="f3" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>-->
+<!--                            <div class="contacts-btn__block">-->
 
-                                <div id="f3" class="contacts-dropdown-form contacts-dropdown-form__header none">  
-                                        <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m3" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
-                                </div>
+<!--                                <div id="f3" class="contacts-dropdown-form contacts-dropdown-form__header none">  -->
+<!--                                        <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">-->
+<!--                                        <input data-message-id="m3"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">-->
+<!--                                </div>-->
 
-                                <div id="m3" class="contacts-dropdown__box contacts-dropdown__box__header none">
-                                    <img src="../../images/header/ring_volume.svg" alt=""> Вскоре мы вам перезвоним
-                                </div>
+<!--                                <div id="m3" class="contacts-dropdown__box contacts-dropdown__box__header none">-->
+<!--                                    <img src="../../images/header/ring_volume.svg" alt=""> Вскоре мы вам перезвоним-->
+<!--                                </div>-->
 
-                            </div>
-                        </div>
-                    </div>
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
 
-                    <div class="timetable__none-date">
-                        <p class="timetable__none-date__text">Урока нет в расписании? Позвони или напиши что бы назначить дату</p>
-                        <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
-                    </div>
-                </div>
+<!--                    <div class="timetable__none-date">-->
+<!--                        <p class="timetable__none-date__text">Урока нет в расписании? Позвони или напиши что бы назначить дату</p>-->
+<!--                        <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>-->
+<!--                    </div>-->
+<!--                </div>-->
 
                 <div class="timetable__course-program__card">
                     <div class="timetable__course-program__card__row">
@@ -200,13 +235,13 @@
                             #4 Название урока
                         </h2>
 
-                        <div class="timetable__course-program__card__btns">
+                        <div class="timetable__course-program__card__btns mobile-none">
                             <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                             <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                         </div>
                     </div>
 
-                    <div class="timetable__date-box">
+                    <div class="timetable__date-box timetable__date-box--slaider owl-carousel owl-theme">
                         <a href="#" class="timetable__date-item">ВТ 28 января, 16:00</a>
                         <a href="#" class="timetable__date-item">ПТ 4 февраля, 14:00</a>
                         <a href="#" class="timetable__date-item">ПТ 8 февраля, 13:00</a>
@@ -219,7 +254,7 @@
                             #5 Название урока
                         </h2>
 
-                        <div class="timetable__course-program__card__btns">
+                        <div class="timetable__course-program__card__btns mobile-none">
                             <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                             <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                         </div>
@@ -236,7 +271,7 @@
                             #6 Название урока
                         </h2>
 
-                        <div class="timetable__course-program__card__btns">
+                        <div class="timetable__course-program__card__btns mobile-none">
                             <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                             <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                         </div>
@@ -254,7 +289,7 @@
                             #7 Название урока
                         </h2>
 
-                        <div class="timetable__course-program__card__btns">
+                        <div class="timetable__course-program__card__btns mobile-none">
                             <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                             <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                         </div>
@@ -272,7 +307,7 @@
                             #8 Название урока
                         </h2>
 
-                        <div class="timetable__course-program__card__btns">
+                        <div class="timetable__course-program__card__btns mobile-none">
                             <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                             <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                         </div>
@@ -301,7 +336,7 @@
                                     #1 Название урока номер один
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -315,6 +350,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Школа жён-подруг и любовниц
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -325,7 +365,7 @@
                                     #2 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -340,6 +380,11 @@
                                     Школа жён-подруг и любовниц
                                 </div>
                             </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                            </div>
                         </div>
 
                         <div class="timetable-upcoming-classes__block__card">
@@ -349,7 +394,7 @@
                                     #3 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -363,6 +408,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Консультация
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -373,7 +423,7 @@
                                     #4 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -387,6 +437,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Консультация
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -397,7 +452,7 @@
                                     #4 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -411,6 +466,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Консультация
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
                     </div>
@@ -429,7 +489,7 @@
                                     #3 Название урока номер три
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -443,6 +503,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Школа жён-подруг и любовниц
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -453,7 +518,7 @@
                                     #1 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -468,6 +533,11 @@
                                     Школа жён-подруг и любовниц
                                 </div>
                             </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                            </div>
                         </div>
 
                         <div class="timetable-upcoming-classes__block__card">
@@ -477,7 +547,7 @@
                                     #9 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -491,6 +561,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Консультация
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -510,7 +585,7 @@
                                     #10 Название уроканомер три
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -524,6 +599,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Школа жён-подруг и любовниц
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -534,7 +614,7 @@
                                     #6 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -548,6 +628,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Школа жён-подруг и любовниц
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -567,7 +652,7 @@
                                     #3 Название урока номер три
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -581,6 +666,11 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Школа жён-подруг и любовниц
                                 </div>
+                            </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -591,7 +681,7 @@
                                     #1 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -606,6 +696,11 @@
                                     Школа жён-подруг и любовниц
                                 </div>
                             </div>
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
+                            </div>
                         </div>
 
                         <div class="timetable-upcoming-classes__block__card">
@@ -615,7 +710,7 @@
                                     #9 Название урока
                                 </h2>
 
-                                <div class="timetable__course-program__card__btns">
+                                <div class="timetable__course-program__card__btns mobile-none">
                                     <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
                                     <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                                 </div>
@@ -629,6 +724,12 @@
                                 <div class="timetable-upcoming-classes__block__card__about__box">
                                     Консультация
                                 </div>
+                            </div>
+
+
+                            <div class="timetable__course-program__card__btns mobile-active">
+                                <a href="#" class="timetable__course-program__card__btn__about">Подробнее</a>
+                                <a href="#" class="timetable__course-program__card__btn__enroll">Записаться</a>
                             </div>
                         </div>
 
@@ -654,13 +755,13 @@
                         </p>
 
                         <div class="contacts-block__btns help-about-block__btns">
-                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                             <button data-form-id="f4" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                             <div class="contacts-btn__block">
                 
                                 <div id="f4" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m4" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m4"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
                 
                                 <div id="m4" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -694,14 +795,14 @@
                     </p>
 
                     <div class="header-contacts">
-                        <button data-form-id="f5" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
-                        <a href="#" class="contacts-btn">Написать</a>
+                        <button data-form-id="f5" class="contacts-btn contacts-btn-form contacts-btn__footer__mob">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                        <a href="#" class="contacts-btn contacts-btn__footer__mob">Написать</a>
 
                         <div class="contacts-btn__block">
 
                             <div id="f5" class="contacts-dropdown-form contacts-dropdown-form__footer none">  
                                     <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                    <input data-message-id="m5" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                    <input data-message-id="m5"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                             </div>
 
                             <div id="m5" class="contacts-dropdown__box contacts-dropdown__box__footer none">
@@ -766,6 +867,16 @@
             </div>
             </div>
 
+            <div class="footer-logo__mobile">
+                <div class="footer-logo__mobile__img">
+                    <a href="#"><img src="../../images/header/Logo_Geisha.svg" alt=""></a>
+                </div>
+
+                <p class="footer-logo__mobile__about">
+                    с 2005-2022
+                </p>
+            </div>
+
         </div>
     </footer>
 
@@ -817,6 +928,8 @@
     <a href="../../pages/test.html" class="test-link">Пройти тест</a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../../js/owl-carousel.js"></script>
     <script type="text/javascript" src="../../js/jquery.inputmask.js"></script>
     <script src="../../js/header-scripts.js"></script>
     <script src="../../js/filter-script.js"></script>

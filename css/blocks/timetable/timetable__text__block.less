@@ -57,12 +57,24 @@
 .header-content__timetable__img {
     max-width: 400px;
     max-height: 439px;
-    background: linear-gradient(0deg, rgba(254, 101, 52, 0.1), rgba(254, 101, 52, 0.1));
     border-radius: 12px;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
 }
 
 .header-content__timetable__row {
     display: flex;
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
 }
+
+
 

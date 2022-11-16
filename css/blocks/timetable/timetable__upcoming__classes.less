@@ -3,6 +3,10 @@
 .timetable__upcoming-classes {
     padding: 96px 0 145px 0;
     font-family: 'Noto Sans';
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .timetable-upcoming-classes__block {
@@ -12,6 +16,12 @@
 
     &:last-child {
         margin-bottom: 0;
+    }
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+        margin-bottom: 64px;
     }
 }
 
@@ -35,11 +45,23 @@
     &:hover {
         background-color: @grey;
     }
+
+    @media @breakpoint-mobile {
+        width: 100%;
+        padding: 20px;
+    }
 }
 
 .timetable-upcoming-classes__block__card__title {
     font-size: 20px;
     line-height: 38px;
+
+    @media @breakpoint-mobile {
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+        margin-bottom: 20px;
+    }
 }
 
 .timetable-upcoming-classes__block__card__row {
@@ -47,11 +69,16 @@
     justify-content: space-between;
     align-items: flex-start;
     margin-bottom: 20px;
+
+    @media @breakpoint-mobile {
+        display: block;
+    }
 }
 
 .timetable-upcoming-classes__block__card__about {
     display: flex;
     gap: 8px;
+    align-items: center;
 }
 
 .timetable-upcoming-classes__block__card__about__box {
@@ -63,4 +90,9 @@
     font-size: 13px;
     line-height: 18px;
     opacity: 0.6;
+
+    @media @breakpoint-mobile {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
