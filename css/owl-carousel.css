@@ -2,4 +2,9 @@
     background-color: transparent;
 }
 
+.timetable__date-box.owl-drag .owl-item {
+    height: 30px;
+    margin-top: 5px;
+}
+
 

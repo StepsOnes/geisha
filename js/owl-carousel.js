@@ -137,21 +137,6 @@ $(document).ready(function() {
         }
     });
 
-
-
-    // $(".timetable__date-box--slaider").owlCarousel({
-    //     dots: false,
-    //     margin: 15,
-    //     autoWidth: true,
-    //
-    //     responsive: {
-    //         1250: {
-    //             items: 1,
-    //             margin: 30,
-    //         }
-    //     }
-    // });
-
     $(window).on('resize', function(){
         if($(window).width() <= 767) {
             $('.timetable__date-box--slaider').addClass('owl-carousel');
@@ -159,11 +144,6 @@ $(document).ready(function() {
                 dots: false,
                 margin: 15,
                 autoWidth: true,
-                // responsive: {
-                //     1250: {
-                //         margin: 30,
-                //     }
-                // }
             });
         }
         else {
@@ -172,8 +152,24 @@ $(document).ready(function() {
         }
     }).trigger('resize');
 
+    $(window).on('resize', function(){
+        if($(window).width() <= 767) {
+            $('#timetable-filter__btns').addClass('owl-carousel');
+            $("#timetable-filter__btns").owlCarousel({
+                dots: false,
+                margin: 12,
+                autoWidth: true,
+            });
+        }
+        else {
+            $('#timetable-filter__btns').removeClass('owl-carousel');
+            $("#timetable-filter__btns").trigger('destroy.owl.carousel');
+        }
+    }).trigger('resize');
+
 
 });
+
 
 $(function () {
     $(window).on('resize', function () {
@@ -184,22 +180,12 @@ $(function () {
                 margin: 16,
                 autoWidth: true,
                 items: 0,
+                autoHeight: true,
             });
         } else {
             owlCarousel && owlCarousel.destroy();
         }
     }).trigger('resize');
 })
-
-// $(document).ready(function(){
-//     $(window).on('resize', function(){
-//         if($(window).width() <= 767) {
-//             $('.timetable__date-box--slaider').addClass('owl-carousel');
-//         }
-//         else {
-//             $('.timetable__date-box--slaider').removeClass('owl-carousel');
-//         }
-//     }).trigger('resize');
-// });
 
   

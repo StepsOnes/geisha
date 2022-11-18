@@ -18,6 +18,13 @@
     font-size: 22px;
     line-height: 18px;
     position: relative;
+
+    @media @breakpoint-mobile {
+        font-size: 15px;
+        line-height: 15px;
+        padding: 18px 56px 18px 56px;
+        height: 64px;
+    }
 }
 
 .timetable-filter__block__inp {
@@ -31,6 +38,13 @@
         position: absolute;
         left: 32px;
         top: 24px;
+
+        @media @breakpoint-mobile {
+            width: 24px;
+            height: 24px;
+            left: 20px;
+            top: 20px;
+        }
     }
 
     margin-bottom: 48px;
@@ -48,4 +62,8 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 18px;
+
+    @media (max-width: 767px) {
+        margin: 0;
+    }
 }

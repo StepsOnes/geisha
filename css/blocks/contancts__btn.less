@@ -102,6 +102,11 @@
     opacity: 0.5;
     margin-bottom: 16px;
     outline: none;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 28px;
+    }
 }
 
 .dropdown-form__btn {
@@ -157,11 +162,19 @@
     right: -30px;
     top: 60px;
     z-index: 100;
+
+    @media @breakpoint-mobile {
+        width: 320px;
+    }
 }
 
 .contacts-dropdown__box__footer {
     font-size: 17px;
     line-height: 28px;
+
+    @media @breakpoint-mobile {
+        width: 320px;
+    }
 }
 
 .contacts-btn__footer__mob {
