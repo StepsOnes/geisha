@@ -13,6 +13,11 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 24px;
+    }
 }
 
 .contacts__block--article {

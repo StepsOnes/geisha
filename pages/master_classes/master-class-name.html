@@ -198,7 +198,7 @@
 
     </header>
 
-    <div class="header-mobile">
+    <div id="master-class__scroll" class="header-mobile">
         <div class="header-mobile__top">
             <div class="header-mobile__logo">
                 <a href="../../index.html"><img src="../../images/header/Logo_Geisha.svg" alt=""></a>
@@ -229,6 +229,14 @@
                 </li>
             </ul>
         </nav>
+    </div>
+
+    <div class="header-box__mobile header-box__mobile__scroll">
+        <h1 class="header-box__mobile__title">
+            Входит в курс “Школа жен...
+        </h1>
+
+        <a href="../courses/school-wives-friends-lovers.html" class="courses-about__btn courses-about__btn--visible">О курсе</a>
     </div>
 
 
@@ -370,12 +378,16 @@
         <div class="master-class__download__block">
             <div class="container">
 
-            <div class="download__block">
+            <div class="download__block margin-none ">
                 <p class="download__block__tetx">
-                    Подарок: “Что делать...dwdadw”
+                    Подарок: “Что делать...”
                 </p>
 
                 <button class="download__btn download__btn--white">Скачать</button>
+
+                <div class="about-us__btn__mobile">
+                    <img src="../../images/mobile_icons/save_alt_24px.svg" alt="">
+                </div>
             </div>
 
             </div>
@@ -1337,5 +1349,21 @@
     <script src="../../js/main.js"></script>
     <script src="../../js/CookieService.js"></script>
     <script src="../../js/popup.js"></script>
+
+    <script>
+        var header = $('#master-class__scroll'),
+            scrollPrev = 0;
+
+        $(window).scroll(function() {
+            var scrolled = $(window).scrollTop();
+
+            if ( scrolled > 100 && scrolled > scrollPrev ) {
+                header.addClass('visible');
+            } else {
+                header.removeClass('visible');
+            }
+            scrollPrev = scrolled;
+        });
+    </script>
 </body>
 </html>

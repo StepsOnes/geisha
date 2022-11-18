@@ -6,6 +6,10 @@
     border-radius: 12px;
     display: flex;
     column-gap: 32px;
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .article__main__course__img {
@@ -45,4 +49,15 @@
     .border();
     padding: 128px 0;
 
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
+}
+
+.article__main__course__mobile-active {
+    display: none;
+
+    @media @breakpoint-mobile {
+        display: flex;
+    }
 }
