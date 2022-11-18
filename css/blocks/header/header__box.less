@@ -6,6 +6,10 @@
     position: absolute;
     width: 100%;
     top: 90px;
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .header-box__row {
@@ -18,4 +22,28 @@
     font-family: 'Noto Sans';
     font-size: 20px;
     line-height: 38px;
+}
+
+.header-box__mobile {
+    display: none;
+    padding: 16px 20px;
+    background: @red;
+    position: absolute;
+    width: 100%;
+    top: 137px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media @breakpoint-mobile {
+        display: flex;
+    }
+}
+
+.header-box__mobile__title {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFF;
 }

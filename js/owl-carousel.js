@@ -167,7 +167,22 @@ $(document).ready(function() {
         }
     }).trigger('resize');
 
+    $(window).on('resize', function(){
+        if($(window).width() <= 767) {
+            $('.course-date__block--slaider').addClass('owl-carousel');
+            $(".course-date__block--slaider").owlCarousel({
+                dots: false,
+                margin: 15,
+                autoWidth: true,
+            });
+        }
+        else {
+            $('.course-date__block--slaider').removeClass('owl-carousel');
+            $(".course-date__block--slaider").trigger('destroy.owl.carousel');
+        }
+    }).trigger('resize');
 
+//course-date__block course-date__block--slaider
 });
 
 

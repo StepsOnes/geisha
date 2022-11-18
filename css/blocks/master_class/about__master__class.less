@@ -2,12 +2,26 @@
 
 .about__master-class {
     padding: 128px 0;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .about__master-class__row {
     margin-top: 72px;
     display: flex;
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        margin-top: 32px;
+    }
+}
+
+.about__master-class__row__title {
+    @media @breakpoint-mobile {
+        display: none;
+    }
 }
 
 .about__master-class__text {
@@ -15,4 +29,17 @@
     font-size: 20px;
     line-height: 40px;
     max-width: 776px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+    }
+}
+
+.about__master-class__img {
+    border-radius: 12px;
+    max-height: 425px;
+
+    & img {
+        max-width: 100%;
+    }
 }

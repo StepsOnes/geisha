@@ -3,6 +3,10 @@
 .master-class__course {
     padding: 128px 0;
     background-color: @red;
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .master-class__course__title {
@@ -12,6 +16,12 @@
     line-height: 48px;
     color: #FFF;
     margin-bottom: 64px;
+
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 48px;
+    }
 }
 
 .master-class__courses-enroll__btn {
@@ -32,6 +42,10 @@
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
     position: relative;
+
+    @media @breakpoint-mobile {
+        padding: 16px 16px 16px 54px;
+    }
 }
 
 .master-class__courses__block__sale__text {
@@ -40,6 +54,11 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 38px;
+
+    @media @breakpoint-mobile {
+        font-size: 15px;
+        line-height: 22px;
+    }
 }
 
 .sale__img {
@@ -47,6 +66,15 @@
     width: 32px;    
     height: 32px;
     background-image: url(../images/master_classes/sale_icon.svg);
+    background-size: cover;
     left: 32px;
     top: 30px;
+
+    @media @breakpoint-mobile{
+        left: 19px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 22px;
+    }
 }

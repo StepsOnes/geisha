@@ -3,18 +3,31 @@
 .master-classes__lessons__block {
     padding: 128px 0;
     font-family: 'Noto Sans';
+
+    @media @breakpoint-mobile {
+        padding: 64px 0;
+    }
 }
 
 .master-classes__lessons__cards {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        gap: 32px;
+    }
 }
 
 .master-classes__lessons__card {
     padding: 32px;
     background-color: #F6F8FD;
     border-radius: 12px;
+
+    @media @breakpoint-mobile {
+        padding: 16px;
+    }
 }
 
 .master-classes__lessons__card__content {
@@ -22,6 +35,10 @@
     background-color: #FFF;
     border-radius: 12px;
     margin-bottom: 24px;
+
+    @media @breakpoint-mobile {
+        padding: 20px;
+    }
 }
 
 .master-classes__lessons__card__content__title {
@@ -37,6 +54,10 @@
     text-decoration: line-through;
     margin-top: 48px;
     margin-bottom: 1px;
+
+    @media @breakpoint-mobile {
+        margin-top: 64px;
+    }
 }
 
 .master-classes__current-price {
@@ -62,6 +83,10 @@
     text-decoration: none;
     transition: 0.4s;
     border-radius: 6px;
+
+    @media @breakpoint-mobile {
+        width: 100%;
+    }
 }
 
 
@@ -75,6 +100,10 @@
     max-width: 644px;
     max-height: 501px;
     position: relative;
+
+    & img {
+        max-width: 100%;
+    }
 }
 
 .master-classes__lessons__product-card__content {
@@ -88,6 +117,16 @@
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 32px;
+
+    @media @breakpoint-mobile {
+        margin-bottom: 45px;
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+.master-classes__lessons__product-card__img--mb {
+    margin-bottom: 24px;
 }
 
 .master-class__course-fee__old-price {
@@ -98,6 +137,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @breakpoint-mobile {
+        flex-direction: column-reverse;
+
+    }
 }
 
 .master-classes__lessons__product-card__btn {
@@ -115,4 +159,11 @@
     display: flex;
     column-gap: 32px;
     color: #FFF;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        padding-top: 20px;
+        gap: 18px;
+    }
 }
