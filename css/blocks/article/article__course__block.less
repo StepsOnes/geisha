@@ -6,21 +6,32 @@
 }
 
 .article-course__block__video {
-    width: 474px;
-    height: 583px;
+    max-width: 474px;
+    max-height: 583px;
     border-radius: 12px;
-    background-color: rgb(0, 0, 0);
     position: relative;
+
+    & img {
+        max-width: 100%;
+    }
 }
 
 .article-course__block__row {
     display: flex;
     justify-content: space-between;
+
+    @media @breakpoint-mobile {
+        flex-direction: column-reverse;
+    }
 }
 
 .article-course__btns {
     display: flex;
     column-gap: 16px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+    }
 }
 
 .article-course__btn {
