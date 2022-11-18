@@ -1,6 +1,14 @@
+window.onload = function() {
+    let preloader = document.getElementById('preload');
+       if (preloader) {
+           preloader.style.display = 'none';
+       }
+}
+
+
+
 const contactsBtns = document.querySelectorAll('.contacts-btn-form');
 const contactsMessage = document.querySelectorAll('.dropdown-form__btn');
-
 
 contactsBtns.forEach((contactBtn) => {
     contactBtn.addEventListener('click', function(){
@@ -40,6 +48,8 @@ selectBtn.forEach((item)=>{
 
     });
 });
+
+
 
 
 

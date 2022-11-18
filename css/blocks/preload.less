@@ -1,0 +1,33 @@
+//main: ../main.css
+
+.preload {
+  min-width: 100%;
+  min-height: 100vh;
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  z-index: 10000;
+}
+
+.load-icon {
+  width: 222px;
+  height: 57px;
+  background: url(../images/header/Logo_Geisha.svg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: animate-load 2s infinite ease-in ;
+  animation-direction: alternate;
+}
+
+@keyframes animate-load {
+  from {
+    top:50%
+  }
+
+  to {
+    top: 40%
+  }
+}
