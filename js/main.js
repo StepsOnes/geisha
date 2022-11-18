@@ -5,8 +5,6 @@ window.onload = function() {
        }
 }
 
-
-
 const contactsBtns = document.querySelectorAll('.contacts-btn-form');
 const contactsMessage = document.querySelectorAll('.dropdown-form__btn');
 
