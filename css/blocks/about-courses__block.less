@@ -12,6 +12,8 @@
 
     @media @breakpoint-mobile {
         padding: 0;
+        flex-direction: column;
+        gap: 20px;
     }
 }
 
@@ -34,12 +36,27 @@
 
 .decor__courses__img,.decor__courses__img--top {
     position: relative;
+
+    @media @breakpoint-mobile {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 .decor__courses__img {
     max-width: 224px;
     max-height: 224px;
     border-radius: 50%;
+
+    & img {
+        width: 100%;
+    }
+
+    @media @breakpoint-mobile {
+        width: 129px;
+        height: 129px;
+        margin-top: 70px;
+    }
 }
 
 .decor__courses__img--top::before {
@@ -47,10 +64,18 @@
     background-image: url(../images/courses__img/decoration/star.svg);
     width: 301px;
     height: 294px;
+    background-size: cover;
 
     position: absolute;
     z-index: 999;
     top: -100px;
+
+    @media @breakpoint-mobile {
+        width: 143px;
+        height: 140px;
+        top: -26px;
+        left: 19px;
+    }
 }
 
 .decor__courses__img--bottom::before {
@@ -58,8 +83,16 @@
     background-image: url(../images/courses__img/decoration/star.svg);
     width: 301px;
     height: 294px;
+    background-size: cover;
 
     position: absolute;
     z-index: 999;
     top: 20px;
+
+    @media @breakpoint-mobile {
+        width: 143px;
+        height: 140px;
+        top: -26px;
+        left: 19px;
+    }
 }

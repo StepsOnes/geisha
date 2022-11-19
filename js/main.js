@@ -1,7 +1,9 @@
 window.onload = function() {
     let preloader = document.getElementById('preload');
        if (preloader) {
-           preloader.style.display = 'none';
+           setInterval(function() {
+               preloader.style.display = 'none';
+           }, 990);
        }
 }
 
