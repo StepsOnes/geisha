@@ -65,7 +65,7 @@
             <div class="contacts-btn__block">
                 <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                        <input data-message-id="m1" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                        <input data-message-id="m1"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                 </div>
 
                 <div id="m1" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -83,7 +83,7 @@
            
                     <div class="header-courses__about-course">
                         
-                        <div class="lessons__conditions">
+                        <div class="lessons__conditions conditions-mobile-none">
                             <div class="lessons-condition__box lessons-condition__box--white online">Онлайн</div>
                             <div class="lessons-condition__box lessons-condition__box--white offline">В Екатеринбурге</div>
                         </div>
@@ -91,6 +91,11 @@
                         <h1 class="header-courses__title header-courses__title--deep">
                             Флирт и актёрское <br> мастерство
                         </h1>
+
+                        <div class="lessons__conditions conditions-mobile-visible">
+                            <div class="lessons-condition__box lessons-condition__box--white online">Онлайн</div>
+                            <div class="lessons-condition__box lessons-condition__box--white offline">В Екатеринбурге</div>
+                        </div>
 
                         <p class="header-courses__subtitle header-courses__subtitle--deep">
                             Снятие комплексов и зажимов. <br> Умение красиво общаться с мужчинами.
@@ -109,6 +114,8 @@
                         </table>
 
                         <a href="#" class="header-courses__btn header-courses__btn--red">Записаться</a>
+
+                        <button class="about-video-course">Видео о курсе</button>
 
                         <p class="header-courses__contacts-text header-courses__contacts-text--deep">
                             Звони и пиши <a href="tel:+79506388922">+7 950 638 8922</a>  — проконсультируем 
@@ -161,7 +168,7 @@
                     <div class="contacts-btn__block">
                         <div id="f2" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                 <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                <input data-message-id="m2" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                <input data-message-id="m2"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                         </div>
         
                         <div id="m2" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -175,6 +182,44 @@
         </nav>
 
     </header>
+
+    <div id="header-mobile__course__scroll" class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../../index.html"><img src="../../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="mobile-header-nav__scroll" class="mobile-header-nav__scroll">
+        <a href="#" class="mobile-nav__scroll__btn">Записаться на пробное занятие</a>
+        <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__call__deep"></a>
+    </div>
 
     <main class="main">
         <div class="help__problems help__problems--border">
@@ -269,7 +314,7 @@
                     Ближайшие даты:
                 </p>
 
-                <div class="course-date__block">
+                <div class="course-date__block course-date__block--slaider owl-theme">
                     <a href="" class="course-date__link">
                         28 января, 16:00
                     </a>
@@ -441,6 +486,88 @@
                 </div>
             </div>
 
+                <div class="reviews-slaider-mobile owl-carousel owl-theme">
+                    <div class="reviews-slaide">
+                        <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="../../images/reviews__blocks/01.svg" alt="">
+                            </div>
+
+                            <h2 class="reviews-card__user__name__mobile">
+                                Ангелина
+                            </h2>
+
+                            <p class="reviews-card__user__about__mobile">
+                                Курс “Школа жен-подруг и любовниц”
+                            </p>
+                        </div>
+
+                        <p class="reviews-person__comment__mobile">
+                            Пришла с проблемой токсичных отношений. Уже была на грани развода, муж изменял. Боялась признаться себе, что страшно уходить от ненавистного мужа в некуда, с 3 детьми. Ни работы, ничего за плечами, пошла на консультацию к сексологу Андреевой. Она объяснила, что либо я принимаю все как есть и дальше мучаюсь, либо меняю отношение к мужу, его поведению, через новое отношение к себе, либо развод. Решили попробовать начать изменения с себя, пошла на «Школу жен». Записалась и сейчас уже прохожу 5 занятие. Отношение к мужу поменялось, поговорили по душам, приняли решение начать все заново. Спасибо Алексею и особенно Ларисе Баталовой за поддержку в начале моей трансформации. Настя Литвинцева все грамотно объяснила, четко по делу, какие ошибки я совершала, жду очередного занятия. Вы очень крутая
+                        </p>
+                    </div>
+
+                    <div class="reviews-slaide">
+                        <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="../../images/reviews__blocks/02.svg" alt="">
+                            </div>
+
+                            <h2 class="reviews-card__user__name__mobile">
+                                Катя
+                            </h2>
+
+                            <p class="reviews-card__user__about__mobile">
+                                Курс “Школа жен-подруг и любовниц”
+                            </p>
+                        </div>
+
+                        <p class="reviews-person__comment__mobile">
+                            Я встретила мужчину своей мечты. Он старше меня и конечно хотелось соответствовать его желаниям. Решила пройти все, что связано с сексом. Особенно впечатлили занятия «Лингам» и «Искусство орального секса»!!! Они побудили во мне море чувств, истинное желание женщины доставлять удовольствие и быть самой желанной! И главное, то, чему я научилась — приводить в восторг моего мужчину!
+                        </p>
+                    </div>
+
+                    <div class="reviews-slaide">
+                        <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="../../images/reviews__blocks/03.svg" alt="">
+                            </div>
+
+                            <h2 class="reviews-card__user__name__mobile">
+                                Ирина
+                            </h2>
+
+                            <p class="reviews-card__user__about__mobile">
+                                Курс “Школа жен-подруг и любовниц”
+                            </p>
+                        </div>
+
+                        <p class="reviews-person__comment__mobile">
+                            Спасибо специалистам и ведущим программы «Школы жён, подруг и любовниц». Мне очень помогли, практически спасли мою семью. Вернули мужа и папу в семью. Помогли мне избавиться от  затяжной депрессии. Счастья и процветания!!! Отдельное спасибо Мацкевичу Алексею, создателю этой программы и этого центра.
+                        </p>
+                    </div>
+
+                    <div class="reviews-slaide">
+                        <div class="reviews-card__user__box__mobile">
+                            <div class="reviews-card__user__photo">
+                                <img src="../../images/reviews__blocks/04.svg" alt="">
+                            </div>
+
+                            <h2 class="reviews-card__user__name__mobile">
+                                Артем
+                            </h2>
+
+                            <p class="reviews-card__user__about__mobile">
+                                Курс “Школа жен-подруг и любовниц”
+                            </p>
+                        </div>
+
+                        <p class="reviews-person__comment__mobile">
+                            Не смотря на название женский клуб «Гейша», тут обучают и мужчин. Спасибо за курс «Идеальный любовник» Наталии Андреевой. Получил много знаний и навыков по женскому телу, гормонам, ее оргазмам. Могу точно отметить в себе изменения в отношении к своей женщине, я стал спокойнее, тактичнее и грамотнее в управлении ласками, я больше слушаю и поддерживаю ее, так как понял, что женщины жалуются не всегда с призывом что-то идти и делать, иногда ей просто хочется поговорить, побыть маленькой девочкой, которую надо взять на ручки. Изменился подход к женщине. Всем рекомендую пройти курс, оказывается, есть где учиться, даже седым, брутальным и опытным
+                        </p>
+                    </div>
+                </div>
+
             <div class="reviews-links">
                 <a href="#" class="reviews-link">
                     <div class="reviews-links__box">
@@ -541,17 +668,21 @@
         <div class="about__courses">
             <div class="container">
 
+                <h1 class="about__video__mobile">
+                    Видео о курсе
+                </h1>
+
                 <div class="about__courses-video">
                     <div class="about__courses-video__priview">
                         <img src="../../images/video_img/courses/about/05.png" alt="">
-                        <div class="about__courses-video__play">Смотреть видео о курсе</div>
+                        <div class="about__courses-video__play"><span>Смотреть видео о курсе</span></div>
                     </div>
                 </div>
 
                 <div class="about-courses__row">
-                    <h2 class="main__title about-courses__row__title">О курсе</h2>
+                    <h2 class="main__title about-courses__row__title mobile-none">О курсе</h2>
 
-                    <div class="about-courses__block">
+                    <div class="about-courses__block border-none">
 
                         <div class="group">
 
@@ -883,7 +1014,7 @@
                         Ближайшие даты:
                     </p>
     
-                    <div class="course-date__block">
+                    <div class="course-date__block course-date__block--slaider owl-theme">
                         <a href="" class="course-date__link course-date__link--blue">
                             28 января, 16:00
                         </a>
@@ -1118,14 +1249,14 @@
                         </p>
 
                         <div class="contacts-block__btns help-about-block__btns">
-                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                            
                             <button data-form-id="f3" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
 
                             <div class="contacts-btn__block">
                                 <div id="f3" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m3" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m3"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
                 
                                 <div id="m3" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -1230,7 +1361,7 @@
                             Ближайшие даты пробного занятия в Екатеринбурге:
                         </p>
         
-                        <div class="course-date__block">
+                        <div class="course-date__block timetable__date-box--slaider owl-theme">
                             <a href="" class="course-date__link">
                                 28 января, 16:00
                             </a>
@@ -1254,14 +1385,14 @@
                     </p>
 
                     <div class="contacts-block__btns">
-                        <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                        <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                         
                         <button data-form-id="f4" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
 
                             <div class="contacts-btn__block">
                                 <div id="f4" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m4" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m4"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
                 
                                 <div id="m4" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -1294,14 +1425,14 @@
                     </p>
 
                     <div class="header-contacts">
-                        <button data-form-id="f5" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
-                        <a href="#" class="contacts-btn">Написать</a>
+                        <button data-form-id="f5" class="contacts-btn contacts-btn-form contacts-btn__footer__mob">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
+                        <a href="#" class="contacts-btn contacts-btn__footer__mob">Написать</a>
 
                         <div class="contacts-btn__block">
 
                             <div id="f5" class="contacts-dropdown-form contacts-dropdown-form__footer none">  
                                     <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                    <input data-message-id="m5" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                    <input data-message-id="m5"  class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                             </div>
 
                             <div id="m5" class="contacts-dropdown__box contacts-dropdown__box__footer none">
@@ -1364,6 +1495,16 @@
                     Вконтакте
                 </a>
             </div>
+            </div>
+
+            <div class="footer-logo__mobile">
+                <div class="footer-logo__mobile__img">
+                    <a href="#"><img src="../../images/header/Logo_Geisha.svg" alt=""></a>
+                </div>
+
+                <p class="footer-logo__mobile__about">
+                    с 2005-2022
+                </p>
             </div>
 
         </div>

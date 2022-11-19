@@ -38,8 +38,8 @@
     position: relative;
 
     @media @breakpoint-mobile {
-        width: 140px;
-        height: 140px;
+        max-width: 140px;
+        max-height: 140px;
     }
 }
 
@@ -49,7 +49,13 @@
     border-radius: 50%;
 
     & img {
-        width: 100%;
+        max-width: 224px;
+        max-height: 224px;
+
+        @media @breakpoint-mobile {
+            width: 129px;
+            height: 129px;
+        }
     }
 
     @media @breakpoint-mobile {
