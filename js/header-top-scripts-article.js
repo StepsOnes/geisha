@@ -10,3 +10,17 @@ else {
 }
 });
 
+var header = $('#article-mob__scroll'),
+    scrollPrev = 0;
+
+$(window).scroll(function() {
+    var scrolled = $(window).scrollTop();
+
+    if ( scrolled > 100 && scrolled > scrollPrev ) {
+        header.addClass('visible');
+    } else {
+        header.removeClass('visible');
+    }
+    scrollPrev = scrolled;
+});
+

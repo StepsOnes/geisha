@@ -4,6 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media @breakpoint-mobile {
+        .footer-order__row.contacts-block__btns {
+            display: none;
+        }
+        display: block;
+    }
 }
 
 .footer-order {
@@ -15,7 +22,11 @@
     display: flex;
     column-gap: 40px;
     align-items: center;
-    
+
+    @media @breakpoint-mobile {
+        justify-content: space-between;
+        column-gap: 0px;
+    }
 }
 
 .footer-logo__order_about {

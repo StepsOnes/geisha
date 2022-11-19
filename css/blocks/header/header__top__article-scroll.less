@@ -64,3 +64,51 @@
         left: -5px;
     }
 }
+
+.header__mobile-top__article-scroll {
+    position: fixed;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    background: #FFF;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.article-about__course__btn {
+    font-family: 'Open Sans';
+    display: inline-block;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 18px;
+    color: #FFF;
+    background: #FE6534;
+    border-radius: 6px;
+    padding: 9px 24px;
+    text-decoration: none;
+}
+
+.article-about__course__subtitle {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 78px;
+    color: #1C3965;
+    opacity: 0.7;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        background:url(../images/header_mobile/supervisor_account.svg);
+        left: -30px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}

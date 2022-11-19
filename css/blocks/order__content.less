@@ -3,6 +3,10 @@
 .order__content {
     padding: 196px 0 128px 0;
     font-family: 'Noto Sans';
+
+    @media @breakpoint-mobile {
+        padding-bottom: 64px;
+    }
 }
 
 .order__title {
@@ -10,6 +14,11 @@
     font-weight: 900;
     font-size: 56px;
     margin-bottom: 16px;
+
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        line-height: 40px;
+    }
 }
 
 .order__subtitle {
@@ -18,20 +27,33 @@
     line-height: 38px;
     padding-bottom: 96px;
     .border();
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 28px;
+        padding-bottom: 64px;
+    }
 }
 
 .payment__block {
     display: flex;
     justify-content: space-between;
-}
-
-.payment__block {
     margin-top: 65px;
+
+    @media @breakpoint-mobile {
+        flex-direction: column;
+        margin-top: 48px;
+    }
 }
 
 .participation-type__block {
     width: 776px;
+
+    @media @breakpoint-mobile {
+        width: 100%;
+    }
 }
+
 .checkbox__wrapper__title {
     font-family: 'Open Sans';
     font-weight: 700;
@@ -48,12 +70,32 @@
     font-size: 20px;
     line-height: 38px;
     opacity: 0.45;
+
+    &.radio-btn__price--mob {
+        display: none;
+        margin-top: 8px;
+    }
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 28px;
+        display: none;
+
+        &.radio-btn__price--mob {
+            display: block;
+        }
+    }
 }
 
 .radio-btn__about {
     opacity: 0.5;
     font-size: 15px;
     line-height: 25px;
-    margin-left: 30px;
     max-width: 486px;
+
+    @media @breakpoint-mobile {
+        margin-top: 8px;
+        font-size: 13px;
+        line-height: 24px;
+    }
 }

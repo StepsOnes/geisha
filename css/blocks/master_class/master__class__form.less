@@ -7,11 +7,28 @@
     border: 1px solid #EDEEEF;
     border-radius: 8px;
     padding: 24px 0 26px 37px;
-    color: rgba(28, 57, 101, 0.5);
     font-family: 'Noto Sans';
     font-size: 20px;
     line-height: 38px;
     outline: none;
+    transition: 0.5s;
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color: #8E9CB2;
+    }
+
+    &:hover {
+        border: 1px solid @deep;
+    }
+
+    &:focus {
+        color: @deep;
+    }
+
+    @media @breakpoint-mobile  {
+        font-size: 17px;
+        border-radius: 12px;
+    }
 }
 
 .master-class__form--free {
