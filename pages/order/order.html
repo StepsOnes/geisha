@@ -73,6 +73,39 @@
 
         
     </header>
+
+    <div class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../../index.html"><img src="../../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
     
     <main class="main">
         <div class="container">
@@ -96,7 +129,7 @@
 
                                 <label for="participation-online" class="radio-btn">
                                     <div class="group-inp">
-                                        <input type="radio" id="participation-online" name="radio" class="radio-rate"  value="rate-block-1">
+                                        <input type="radio" id="participation-online" name="radio" class="radio-rate"  value="rate-block-1" hidden>
                                         <span></span>
 
                                         <p class="radio-btn__name">Картой онлайн</p>
@@ -105,7 +138,7 @@
     
                                 <label for="participation-offline" class="radio-btn">
                                     <div class="group-inp">
-                                        <input type="radio" id="participation-offline" name="radio" class="radio-rate"  value="rate-block-2">
+                                        <input type="radio" id="participation-offline" name="radio" class="radio-rate"  value="rate-block-2"  hidden>
                                         <span></span>
 
                                         <p class="radio-btn__name">Наличными или картой администратору</p>
@@ -153,7 +186,7 @@
         </div>
 
 
-        <div class="help-about">
+        <div class="help-about help-about-order">
             <div class="container">
                 <div class="help-about__row help-about__row__order">
                     <div class="help-about__row__img">
@@ -170,7 +203,7 @@
                         </p>
 
                         <div class="contacts-block__btns help-about-block__btns">
-                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                             <button data-form-id="f2" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                             <div class="contacts-btn__block">
 
@@ -197,7 +230,7 @@
             <div class="footer-order__row">
                 <div class="footer-logo__group">
                     <div class="footer-logo__order">
-                    <a href="../../pages/home.html"><img src="../../images/footer/logo_order.svg" alt="geisha"></a> 
+                    <a href="../../index.html"><img src="../../images/footer/logo_order.svg" alt="geisha"></a>
                     </div>
 
                     <p class="footer-logo__order_about">
@@ -205,7 +238,7 @@
                     </p>
                 </div>
 
-                <div class="contacts-block__btns">
+                <div class="contacts-block__btns mobile-none">
                     <a href="#" class="contacts-btn contacts-btn--white ">Написать в WhatsApp</a>
                     <button class="contacts-btn contacts-btn--white ">+7 950 638 8922 <img src="../../images/header/keyboard_arrow_gray.svg" alt="arrow"></button>
                 </div>

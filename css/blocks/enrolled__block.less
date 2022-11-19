@@ -6,7 +6,9 @@
     padding-bottom: 171px;
     position: relative;
 
-    
+    @media @breakpoint-mobile {
+        padding-bottom: 230px;
+    }
 }
 
 .enrolled-block__content__title {
@@ -16,6 +18,12 @@
     line-height: 70px;
     margin-bottom: 16px;
     max-width: 780px;
+
+    @media @breakpoint-mobile {
+        font-size: 28px;
+        line-height: 40px;
+        margin-bottom: 8px;
+    }
 }
 
 .enrolled-block__content__subtitle {
@@ -23,6 +31,11 @@
     font-size: 22px;
     line-height: 36px;
     max-width: 516px;
+
+    @media @breakpoint-mobile {
+        font-size: 17px;
+        line-height: 28px;
+    }
 }
 
 .enrolled-block__star {
@@ -32,4 +45,12 @@
     width: 611px;
     height: 293px;
     background-image: url(../images/test_img/star_icon.svg);
+    background-size: cover;
+
+    @media @breakpoint-mobile {
+        width: 360px;
+        height: 170px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }

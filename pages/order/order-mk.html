@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оформление заказа</title>
-    <link rel="shortcut icon" href="../../favicon/favicon.png" rel="icon" type="image/vnd.microsoft.icon">
+    <link rel="shortcut icon" href="../../favicon/favicon.png" type="image/vnd.microsoft.icon">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../fonts/stylesheet.css">
@@ -59,7 +59,7 @@
 
                 <div id="f1" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                        <input data-message-id="m1" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                        <input data-message-id="m1" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                 </div>
 
                 <div id="m1" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -73,6 +73,39 @@
 
         
     </header>
+
+    <div class="header-mobile">
+        <div class="header-mobile__top">
+            <div class="header-mobile__logo">
+                <a href="../../index.html"><img src="../../images/header/Logo_Geisha.svg" alt=""></a>
+            </div>
+
+            <menu class="header-mobile__menu">
+                <a href="../../pages/timetable/timetable-main.html" class="header-mobile__menu__icon header-mobile__menu__icon--grey header-mobile__menu__icon__timetable"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__message"></a>
+                <a href="#" class="header-mobile__menu__icon header-mobile__menu__icon--red header-mobile__menu__icon__call"></a>
+            </menu>
+        </div>
+
+        <nav class="header-mobile__nav">
+            <ul class="header-mobile__nav-list">
+                <li><a href="../../pages/template-courses.html" class="header-mobile__nav-item active">Все курсы</a></li>
+                <li><a href="../../pages/consultations.html" class="header-mobile__nav-item">Консультации</a></li>
+                <li>
+                    <button id="dropdown-btn__mobile" class="header-mobile__nav-item header-mobile__nav__dropdown">О центре</button>
+
+                    <div id="dropdown-box__mobile" class="dropdown-box__mobile none">
+                        <ul class="dropdown-list__mobile">
+                            <li><a href="../../pages/contacts.html" class="dropdown-item__mobile">Контакты</a></li>
+                            <li><a href="../../pages/about-us.html" class="dropdown-item__mobile">О центре</a></li>
+                            <li><a href="../../pages/articles/articles-main.html" class="dropdown-item__mobile">Статьи</a></li>
+                            <li><a href="../../pages/master-class.html" class="dropdown-item__mobile">Мастер-классы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
     
     <main class="main">
         <div class="container">
@@ -96,7 +129,7 @@
 
                                 <label for="participation-online" class="radio-btn">
                                     <div class="group-inp">
-                                        <input type="radio" id="participation-online" name="radio" class="radio-rate"  value="rate-block-1">
+                                        <input type="radio" id="participation-online" name="radio" class="radio-rate"  value="rate-block-1" hidden>
                                         <span></span>
 
                                         <p class="radio-btn__name">Онлайн</p>
@@ -105,7 +138,7 @@
     
                                 <label for="participation-offline" class="radio-btn">
                                     <div class="group-inp">
-                                        <input type="radio" id="participation-offline" name="radio" class="radio-rate"  value="rate-block-2">
+                                        <input type="radio" id="participation-offline" name="radio" class="radio-rate"  value="rate-block-2" hidden>
                                         <span></span>
 
                                         <p class="radio-btn__name">Вживую в Екатеринбурге</p>
@@ -123,7 +156,7 @@
                                     <div class="radio__row">
 
                                         <div class="group-inp">
-                                            <input type="radio" class="radio-form" value="radio-form" id="master-class-online" name="radio-form">
+                                            <input type="radio" class="radio-form" value="radio-form" id="master-class-online" name="radio-form" hidden>
                                             <span></span>
 
                                             <p class="radio-btn__name">Видеозапись</p>
@@ -135,12 +168,14 @@
                                     <p class="radio-btn__about">
                                         Просмотр обучающего мастер-класса в формате видео
                                     </p>
+
+                                   <p class="radio-btn__price radio-btn__price--mob">55000 руб</p>
                                 </label>
     
                                 <label for="master-class-offline" class="radio-btn">
                                     <div class="radio__row">
                                         <div class="group-inp">
-                                            <input type="radio" class="radio-form" value="radio-form" id="master-class-offline" name="radio-form">
+                                            <input type="radio" class="radio-form" value="radio-form" id="master-class-offline" name="radio-form" hidden>
                                             <span></span>
 
                                             <p class="radio-btn__name">Индивидуально с преподавателем</p>
@@ -152,6 +187,8 @@
                                     <p class="radio-btn__about">
                                         Индивидуальное онлайн занятие 1 на 1 с нашим преподавателем
                                     </p>
+
+                                    <p class="radio-btn__price radio-btn__price--mob">55000 руб</p>
                                 </label>
 
                             </div>
@@ -164,7 +201,7 @@
                                 <label for="masster-classes-online-group" class="radio-btn">
                                     <div class="radio__row">
                                         <div class="group-inp">
-                                            <input type="radio" class="radio-form" value="radio-form" id="masster-classes-online-group" name="radio-form-2">
+                                            <input type="radio" class="radio-form" value="radio-form" id="masster-classes-online-group" name="radio-form-2" hidden>
                                             <span></span>
 
                                             <p class="radio-btn__name">Групповое занятие</p>
@@ -176,12 +213,14 @@
                                     <p class="radio-btn__about">
                                         Занятие в группе
                                     </p>
+
+                                    <p class="radio-btn__price radio-btn__price--mob">55000 руб</p>
                                 </label>
     
                                 <label for="masster-classes-online-indivil" class="radio-btn">
                                     <div class="radio__row">
                                         <div class="group-inp">
-                                            <input type="radio" class="radio-form" value="radio-form" id="masster-classes-online-indivil" name="radio-form-2">
+                                            <input type="radio" class="radio-form" value="radio-form" id="masster-classes-online-indivil" name="radio-form-2" hidden>
                                             <span></span>
 
                                             <p class="radio-btn__name">Индивидуально</p>
@@ -193,6 +232,8 @@
                                     <p class="radio-btn__about">
                                         Индивидуальное онлайн занятие 1 на 1 с нашим преподавателем
                                     </p>
+
+                                    <p class="radio-btn__price radio-btn__price--mob">55000 руб</p>
                                 </label>
     
                             </div>
@@ -206,7 +247,7 @@
                                 <form action="">
                                     <input class="master-class__form-inp" type="text" name="" id="" placeholder="Имя">
 
-                                    <input class="master-class__form-inp" type="text" name="" id="" placeholder="Телефон">
+                                    <input class="master-class__form-inp phone" type="text" name="" id="" placeholder="Телефон">
 
                                     <input class="master-class__form-inp" type="text" name="" id="" placeholder="Эл. почта">
                                 </form>
@@ -250,7 +291,7 @@
         </div>
 
 
-        <div class="help-about">
+        <div class="help-about help-about-order">
             <div class="container">
                 <div class="help-about__row help-about__row__order">
                     <div class="help-about__row__img">
@@ -267,13 +308,13 @@
                         </p>
 
                         <div class="contacts-block__btns help-about-block__btns">
-                            <a href="#" class="contacts-btn">Написать в WhatsApp</a>
+                            <a href="#" class="contacts-btn">Написать <span>в WhatsApp</span></a>
                             <button data-form-id="f2" class="contacts-btn contacts-btn-form">+7 950 638 8922 <img class="dropdown-arrow" src="../../images/header/keyboard_arrow_white.svg" alt="arrow"></button>
                             <div class="contacts-btn__block">
 
                                 <div id="f2" class="contacts-dropdown-form contacts-dropdown-form__header none">  
                                         <input  class="dropdown-form__inp phone" type="tel" name="" placeholder="Ваш номер телефона">
-                                        <input data-message-id="m2" id="dropdown-form__btn" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
+                                        <input data-message-id="m2" class="dropdown-form__btn" type="submit" value="Заказать обратный звонок">
                                 </div>
         
                                 <div id="m2" class="contacts-dropdown__box contacts-dropdown__box__header none">
@@ -294,7 +335,7 @@
             <div class="footer-order__row">
                 <div class="footer-logo__group">
                     <div class="footer-logo__order">
-                    <a href="../../pages/home.html"><img src="../../images/footer/logo_order.svg" alt="geisha"></a> 
+                    <a href="../../index.html"><img src="../../images/footer/logo_order.svg" alt="geisha"></a>
                     </div>
 
                     <p class="footer-logo__order_about">
@@ -302,7 +343,7 @@
                     </p>
                 </div>
 
-                <div class="contacts-block__btns">
+                <div class="contacts-block__btns mobile-none">
                     <a href="#" class="contacts-btn contacts-btn--white ">Написать в WhatsApp</a>
                     <button class="contacts-btn contacts-btn--white ">+7 950 638 8922 <img src="../../images/header/keyboard_arrow_gray.svg" alt="arrow"></button>
                 </div>
