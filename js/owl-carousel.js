@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
     $(".company-teachers__slaider").owlCarousel({
         dots: false,
@@ -88,19 +87,6 @@ $(document).ready(function() {
         }
     });
 
-    $("#select-buttons-carousel-1").owlCarousel({
-        dots: false,
-        autoWidth: true,
-        margin: 12,
-
-        responsive: {
-            1250: {
-                margin: 30,
-            }
-        }
-
-    });
-
     $("#course-date__block__slaider").owlCarousel({
         dots: false,
         autoWidth: true,
@@ -182,7 +168,21 @@ $(document).ready(function() {
         }
     }).trigger('resize');
 
-//course-date__block course-date__block--slaider
+    $(window).on('resize', function(){
+        if($(window).width() <= 767) {
+            $('#select-buttons-carousel-1').addClass('owl-carousel');
+            $("#select-buttons-carousel-1").owlCarousel({
+                dots: false,
+                margin: 15,
+                autoWidth: true,
+            });
+        }
+        else {
+            $('#select-buttons-carousel-1').removeClass('owl-carousel');
+            $("#select-buttons-carousel-1").trigger('destroy.owl.carousel');
+        }
+    }).trigger('resize');
+
 });
 
 

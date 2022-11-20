@@ -53,10 +53,14 @@
 }
 
 textarea.test-block__main__input{
-    height: 98px;
-    font-size: 15px;
+    height: 88px;
     line-height: 28px;
     font-family: 'Noto Sans';
+
+    @media @breakpoint-mobile {
+        height: 98px;
+        font-size: 15px;
+    }
 }
 
 .test-block__main__input {
@@ -72,6 +76,10 @@ textarea.test-block__main__input{
     transition: .5s;
     display: block;
     resize: none;
+
+    &::-webkit-input-placeholder { /* WebKit browsers */
+        color:    #8E9CB2;
+    }
 
     &.mb-none {
         margin-bottom: 0;
