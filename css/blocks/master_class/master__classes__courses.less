@@ -48,6 +48,7 @@
     border-radius: 12px;
     margin-bottom: 64px;
     position: relative;
+    padding-right: 0;
 
     &.master-classes__course--margin {
         margin-bottom: 128px;
@@ -68,6 +69,7 @@
     padding: 32px;
     border-radius: 12px;
     margin-bottom: 48px;
+    margin-right: 32px;
 
     &.master-classes__course__box--blue {
         background-color: #F6F8FD;
@@ -77,6 +79,7 @@
         background-color: transparent;
         padding: 0;
         margin-bottom: 32px;
+        margin-right: 0;
 
         &.master-classes__course__box--blue {
             background-color: transparent;
@@ -173,7 +176,7 @@
       content: "";
       position: absolute;
       height: 3px;
-      width: 11px;
+      width: 10px;
       background-color: @deep;
       top: 50%;
       left: 50%;
@@ -198,7 +201,7 @@
       content: "";
       position: absolute;
       height: 3px;
-      width: 11px;
+      width: 10px;
       background-color: #1C3965;
       top: 50%;
       left: 50%;
@@ -319,7 +322,7 @@
 
 .master-classes__course__card__btn {
     display: block;
-     background-color: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 6px;
     font-family: 'Noto Sans Display', sans-serif;
     font-weight: 600;
@@ -329,9 +332,16 @@
     text-decoration: none;
     color: @deep;
     transition: 0.4s;
+    font-size: 14px;
 
     &.master-classes__course__card__btn--blue {
         background-color: #F6F8FD;
+    }
+
+    &.mob-wht {
+        @media @breakpoint-mobile {
+            background: #FFF;
+        }
     }
 
     @media @breakpoint-mobile {
@@ -427,12 +437,17 @@
 
     &.master-classes__course__card--border__blue {
         border: 1px solid #EDEEEF;
+
+        @media @breakpoint-mobile {
+            background: rgba(246, 248, 253, 1);
+            border: none;
+        }
     }
 
     @media @breakpoint-mobile {
         width: 300px;
-        background: #FFF;
         color: #1C3965;
+        background: #FFF;
         padding: 16px;
 
         &.master-classes__course__card__title {
@@ -471,3 +486,9 @@
         display: flex;
     }
 }
+
+//.mob-wht {
+//    @media @breakpoint-mobile {
+//        background: #FFF;
+//    }
+//}

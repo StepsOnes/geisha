@@ -71,7 +71,7 @@
 .footer-map__link {
     display: block;
     margin-top: 32px;
-    padding: 29px 50px 29px 54px;
+    padding: 29px 50px 29px 60px;
     border-radius: 12px;
     background-color: #FFF;
     text-decoration: none;
@@ -85,7 +85,7 @@
         width: 24px;
         height: 24px;
         position: absolute;
-        top: 23px;
+        top: 24px;
         left: 24px;
     }
 
@@ -95,9 +95,14 @@
 
     @media @breakpoint-mobile {
         margin-bottom: 40px;
-        padding: 20px 39px 20px 56px;
+        padding: 20px 39px 20px 50px;
         font-size: 13px;
         line-height: 24px;
+
+        &::before {
+            top: 22px;
+            left: 18px;
+        }
     }
 }
 

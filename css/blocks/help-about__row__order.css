@@ -1,0 +1,7 @@
+.help-about__row__content__order {
+  margin-top: 80px;
+}
+.help-about__row__content__order::before {
+  background-image: none;
+  display: none;
+}

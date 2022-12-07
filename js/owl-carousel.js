@@ -33,6 +33,14 @@ $(document).ready(function() {
         margin: 30,
         autoWidth: true,
         items: 3,
+        nav: false,
+
+        responsive: {
+            500: {
+                items: 1,
+                margin: 16,
+            }
+        }
 
     });
 
@@ -90,11 +98,11 @@ $(document).ready(function() {
     $("#course-date__block__slaider").owlCarousel({
         dots: false,
         autoWidth: true,
-        margin: 12,
+        margin: 8,
 
         responsive: {
             1250: {
-                margin: 30,
+                margin: 16,
             }
         }
     });
@@ -102,11 +110,11 @@ $(document).ready(function() {
     $("#course-date__block__slaider-2").owlCarousel({
         dots: false,
         autoWidth: true,
-        margin: 12,
+        margin: 8,
 
         responsive: {
             1250: {
-                margin: 30,
+                margin: 16,
             }
         }
     });
@@ -114,11 +122,11 @@ $(document).ready(function() {
     $("#course-date__block__slaider-3").owlCarousel({
         dots: false,
         autoWidth: true,
-        margin: 12,
+        margin: 8,
 
         responsive: {
             1250: {
-                margin: 30,
+                margin: 16,
             }
         }
     });

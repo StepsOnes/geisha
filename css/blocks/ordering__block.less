@@ -1,7 +1,14 @@
 //main: ../main.css
 
+.ordering__group {
+    position: relative;
+}
+
 .ordering__block {
     margin-top: 67px;
+    position: sticky;
+    bottom: 450px;
+    top: 100px;
 
     @media @breakpoint-mobile {
         margin-top: 48px;
@@ -13,6 +20,10 @@
     background-color: @blue;
     border-radius: 8px;
     margin-bottom: 16px;
+
+    @media @breakpoint-mobile {
+        padding: 24px;
+    }
 }
 
 .purchase-card__old-price {
@@ -49,6 +60,10 @@
     display: block;
     margin-top: 16px;
     transition: 0.4s;
+
+    @media @breakpoint-mobile {
+        min-width: 100%;
+    }
 }
 
 .promo-box {

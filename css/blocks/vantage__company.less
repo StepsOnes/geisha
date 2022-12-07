@@ -30,10 +30,21 @@
 
 .vantage-company__card {
     position: relative;
+    overflow: hidden;
 
     @media @breakpoint-mobile {
         max-width: 320px;
     }
+
+    &:hover .vantage-company__card__hover-animate {
+        transform: translateX(0%);
+    }
+}
+
+.vantage-star {
+    position: absolute;
+    left: 32px;
+    top: 32px;
 }
 
 .vantage-company__card__img {
@@ -48,6 +59,29 @@
 
 }
 
+.vantage-company__card__hover-animate {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #FE6534;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    transition: 0.4s;
+
+    &.vantage-company__card__hover-animate--left {
+        transform: translateX(-100%);
+    }
+
+    &.vantage-company__card__hover-animate--right {
+        transform: translateX(100%);
+    }
+
+    @media @breakpoint-mobile {
+        display: none;
+    }
+}
+
 
 .vantage-company__text {
     font-family: 'Noto Sans';
@@ -56,6 +90,7 @@
     line-height: 34px;
     color: #FFFFFF;
     max-width: 341px;
+    z-index: 100;
 
     position: absolute;
     bottom: 32px;

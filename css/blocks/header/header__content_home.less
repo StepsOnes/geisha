@@ -5,8 +5,9 @@
     margin-bottom: 24px;
 
     @media @breakpoint-mobile {
-        max-width: 320px;
         margin-bottom: 24px;
+        font-size: 34px;
+        line-height: 46px;
     }
 }
 
@@ -14,7 +15,6 @@
     margin-bottom: 24px;
 
     @media @breakpoint-mobile {
-        max-width: 320px;
         margin-bottom: 0;
     }
 }
@@ -71,7 +71,7 @@
 
 .header__row--home {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
 
     @media @breakpoint-mobile {
@@ -87,8 +87,8 @@
 }
 
 .play-video {
-    width: 48px;
-    height: 48px;
+    height: 64px;
+    width: 64px;
     background: #FFB924;
     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);
     border-radius: 50%;
@@ -105,14 +105,23 @@
         height: 32px;
         background-image: url(../images/video_img/play_arrow_24px.svg);
         top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        left: 52%;
+        transform: translate(-50%, -52%);
         position: absolute;
     }
 
     &.play-video-64px {
-        height: 64px;
-        width: 64px;
+
+    }
+
+    &.play-video__home {
+        width: 48px;
+        height: 48px;
+
+        &::before {
+            top: 24px;
+            left: 25px;
+        }
     }
 }
 

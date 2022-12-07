@@ -29,7 +29,6 @@
     background: #FFB924;
     border-radius: 100px;
     display: block;
-    cursor: pointer;
 
     &.lessons-condition__box--grey  {
         .block__color (rgb(243, 242, 242));
@@ -44,6 +43,12 @@
     &.lessons-condition__box--blue {
         background-color: #F6F8FD;
         color: @deep;
+    }
+
+    &.mob-wht {
+        @media @breakpoint-mobile {
+            background: #FFF;
+        }
     }
 }
 
