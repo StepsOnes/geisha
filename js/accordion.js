@@ -22,7 +22,7 @@ function boxHandler(e){
 
 
     if (currentBody.classList.contains('active-body')) {
-        currentBody.style.maxHeight = (currentBody.scrollHeight + 40) + "px"; // открываем контент
+        currentBody.style.maxHeight = (currentBody.scrollHeight + 20) + "px"; // открываем контент
         currentBox.classList.remove('arrow-rotate__2');
         currentBox.classList.add('arrow-rotate__1');
     } else {
@@ -41,17 +41,17 @@ function boxHandler2(e){
     currentBox.classList.toggle('faq__rotate');
 
     if (currentBody.classList.contains('active-body')) {
-        currentBody.style.maxHeight = (currentBody.scrollHeight + 40) + "px"; // открываем контент
+        currentBody.style.maxHeight = (currentBody.scrollHeight) + "px"; // открываем контент
     } else {
         currentBody.style.maxHeight = 0;
     }
 }
 
-if(boxes[0]){
-    boxes[0].nextElementSibling.classList.add('active-body');
-if (boxes[0].nextElementSibling.classList.contains('active-body')) {
-    boxes[0].nextElementSibling.style.maxHeight = (boxes[0].nextElementSibling.scrollHeight + 60) + "px"; // открываем контент
-    boxes[0].nextElementSibling.classList.toggle('body-margin');
-    boxes[0].classList.toggle('none--border');
-}
-}
+// if(boxes[0]){
+//     boxes[0].nextElementSibling.classList.add('active-body');
+// if (boxes[0].nextElementSibling.classList.contains('active-body')) {
+//     boxes[0].nextElementSibling.style.maxHeight = (boxes[0].nextElementSibling.scrollHeight + 60) + "px"; // открываем контент
+//     boxes[0].nextElementSibling.classList.toggle('body-margin');
+//     boxes[0].classList.toggle('none--border');
+// }
+// }
