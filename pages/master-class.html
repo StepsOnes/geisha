@@ -156,10 +156,10 @@
         <div class="selected-buttons__temlates">
             <div class="container">
                 <div id="select-buttons-carousel-1" class="selected-buttons__temlates-row owl-carousel owl-theme">
-                    <button class="templates-selected__button select-btn">Все мастер-классы</button>
-                    <button class="templates-selected__button">Женщинам</button>
-                    <button class="templates-selected__button">Мужчинам</button>
-                    <button class="templates-selected__button">Парам</button>
+                    <button data-f="all" class="templates-selected__button select-btn">Все мастер-классы</button>
+                    <button data-f="female" class="templates-selected__button">Женщинам</button>
+                    <button data-f="male" class="templates-selected__button">Мужчинам</button>
+                    <button data-f="couples" class="templates-selected__button">Парам</button>
                 </div>
             </div>
         </div>
@@ -171,7 +171,7 @@
                 Основные курсы
             </p>
 
-            <div class="master-classes__course master-classes__course--red">
+            <div class="master-classes__course master-classes__course--red filter-class female">
 
                 <div class="master-classes__course__box">
 
@@ -342,7 +342,7 @@
 
             </div>       
 
-            <div class="master-classes__course master-classes__course--yellow">
+            <div class="master-classes__course master-classes__course--yellow filter-class female">
 
                 <div class="master-classes__course__box">
 
@@ -512,7 +512,7 @@
 
             </div>      
 
-            <div class="master-classes__course master-classes__course--pink">
+            <div class="master-classes__course master-classes__course--pink filter-class female">
 
                 <div class="master-classes__course__box">
 
@@ -681,7 +681,7 @@
                 </div>
             </div>      
 
-            <div class="master-classes__course master-classes__course--deep master-classes__course--margin">
+            <div class="master-classes__course master-classes__course--deep master-classes__course--margin filter-class male">
 
                 <div class="master-classes__course__box">
 
@@ -856,7 +856,7 @@
                 Другие наши курсы
             </p>
 
-            <div class="master-classes__course master-classes__course--white">
+            <div class="master-classes__course master-classes__course--white filter-class couples">
 
                 <div class="master-classes__course__box master-classes__course__box--blue">
 
@@ -1024,7 +1024,7 @@
                 </div>
             </div>  
 
-            <div class="master-classes__course master-classes__course--white">
+            <div class="master-classes__course master-classes__course--white filter-class couples">
 
                 <div class="master-classes__course__box master-classes__course__box--blue">
 
@@ -1806,6 +1806,7 @@
     <script type="text/javascript" src="../js/jquery.inputmask.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/owl-carousel.js"></script>
+    <script src="../js/filterCourse.js"></script>
     <script src="../js/header-scripts.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/CookieService.js"></script>

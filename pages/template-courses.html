@@ -151,10 +151,10 @@
         <div class="selected-buttons__temlates">
             <div class="container">
                 <div id="select-buttons-carousel-1" class="selected-buttons__temlates-row owl-carousel owl-theme">
-                    <button class="templates-selected__button select-btn">Все курсы</button>
-                    <button class="templates-selected__button">Женщинам</button>
-                    <button class="templates-selected__button">Мужчинам</button>
-                    <button class="templates-selected__button">Парам</button>
+                    <button data-f="all" class="templates-selected__button select-btn">Все курсы</button>
+                    <button data-f="female" class="templates-selected__button">Женщинам</button>
+                    <button data-f="male" class="templates-selected__button">Мужчинам</button>
+                    <button data-f="couples" class="templates-selected__button">Парам</button>
                 </div>
             </div>
         </div>
@@ -164,8 +164,7 @@
            
 
             <div class="main-courses__blocks main-courses__blocks__courses">
-                <div class="courses__block courses__block--orange">
-
+                <div class="courses__block courses__block--orange filter-class female">
                     <div class="courses-block__content">
                         <h2 class="courses-block__title">
                             Школа жен-подруг и любовниц
@@ -194,7 +193,7 @@
                     </div>
                 </div>
 
-                <div class="courses__block courses__block--yellow">
+                <div class="courses__block courses__block--yellow filter-class  female">
 
                     <div class="courses-block__content">
                         <h2 class="courses-block__title">
@@ -224,7 +223,7 @@
                     </div>
                 </div>
 
-                <div class="courses__block courses__block--pink">
+                <div class="courses__block courses__block--pink filter-class  female">
 
                     <div class="courses-block__content">
                         <h2 class="courses-block__title courses-block__title--blue">
@@ -254,7 +253,7 @@
                     </div>
                 </div>
 
-                <div class="courses__block courses__block--blue">
+                <div class="courses__block courses__block--blue filter-class  male">
 
                     <div class="courses-block__content">
                         <h2 class="courses-block__title">
@@ -283,13 +282,11 @@
                         <img src="../images/courses__img/04.png" alt="">
                     </div>
                 </div>
-
                 </div>
-            
 
             <div class="courses-product__cards courses-product__cards--home">
 
-                <div class="courses-product__card">
+                <div class="courses-product__card filter-class  couples">
 
                     <div class="courses-product-card__about">
                         <div class="courses-product-card__img">
@@ -315,7 +312,7 @@
                     </div>
                 </div>
 
-                <div class="courses-product__card">
+                <div class="courses-product__card filter-class  couples">
 
                     <div class="courses-product-card__about">
                         <div class="courses-product-card__img">
@@ -680,6 +677,7 @@
     <script type="text/javascript" src="../js/jquery.inputmask.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../js/owl-carousel.js"></script>
+    <script src="../js/filterCourse.js"></script>
     <script src="../js/header-scripts.js"></script>
     <script src="../js/main.js"></script>
     <script src="../js/CookieService.js"></script>
